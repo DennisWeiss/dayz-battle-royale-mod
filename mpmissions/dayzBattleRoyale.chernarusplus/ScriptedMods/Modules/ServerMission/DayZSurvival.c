@@ -35,8 +35,8 @@ class DayZSurvival : MissionServer
 	ref array<Man> m_PlayersInRound;
 	ref set<Man> playersOutOfZone;
 
-	const float PRINT_RADIUS_INTERVAL = 0.1;
-	float lastTimeRadiusPrinted = 0.0;
+	const float PRINT_PLAYERS_ALIVE_INTERVAL = 0.1;
+	float lastTimePlayersAlivePrinted = 0.0;
 
 	void DayZSurvival()
 	{
@@ -409,14 +409,17 @@ class DayZSurvival : MissionServer
         {
             DealDamageToPlayerOutsideOfZone(m_Players, timeslice);
             ManageCirclePhases();
-
-            // ONLY FOR DEBUG PURPOSES
-            if (m_RoundTime - lastTimeRadiusPrinted > PRINT_RADIUS_INTERVAL)
-            {
-                Print(m_RoundTime.ToString() + ": " + GetCenter() + ", " + GetRadius().ToString());
-                lastTimeRadiusPrinted = m_RoundTime;
-            }
+			
+			if (m_RoundTime - lastTimePlayersAlivePrinted > PRINT_PLAYERS_ALIVE_INTERVAL)
+			{
+				PrintPlayersAlive();
+			}
         }
+	}
+	
+	void PrintPlayersAlive()
+	{
+		GlobalMessage("Players Alive: " + m_PlayersInRound.Count() + "/" + m_PlayersStartedRound);
 	}
 
 	private vector GenerateNextCenter(int circlePhase)
@@ -461,7 +464,7 @@ class DayZSurvival : MissionServer
 	    player.SetPosition(GenerateRandomVectorBasedOnZone());
 	    player.SetHealth("GlobalHealth", "Blood", 5000);
 	    player.SetHealth("GlobalHealth", "Health", 5000);
-	    player.SetHealth("GlobalHealth", "Shock", 5000);
+	    player.SetHealth("GlobalHealth", "Shock", 0);
     }
 
     private vector GenerateRandomVectorBasedOnZone()

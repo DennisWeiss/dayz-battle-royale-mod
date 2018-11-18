@@ -23,12 +23,12 @@ modded class PlayerBase
 				distance = vector.Distance(GetPosition(), KillerDude.GetPosition());
 				Rounded = Math.Round(distance);
 				Message = KillerName + " Killed " + KilledName + " with " + "["+ KillerDude.GetHumanInventory().GetEntityInHands().GetDisplayName() +"]" + " ("+ Rounded.ToString() + "m" +")";
-				GetGame().ChatPlayer(1, Message); //Global Chat
+				GetGame().ChatPlayer(0, Message); //Global Chat
 		    }
 			else if (KillerDude.IsMan() && killerIdentity.GetId() == killedIdentity.GetId())  //SUICIDE
 		    {
 				Message = KilledName + " managed to kill himself";
-				GetGame().ChatPlayer(1, Message); //Global Chat
+				GetGame().ChatPlayer(0, Message); //Global Chat
 		    }
         }
     }
