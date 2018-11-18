@@ -1,0 +1,231 @@
+
+
+=====================================================================
+== C:\Program Files (x86)\Steam\steamapps\common\DayZServer\DayZServer_x64.exe
+== DayZServer_x64.exe  -mod=ModdedScripts -config=TestMod\serverDZ.cfg -profiles=TestMod -name=GR-eSports
+=====================================================================
+Exe timestamp: 2018/11/17 12:12:14
+Current time:  2018/11/17 23:07:25
+
+Version 0.63.149464
+23:07:25 [Inputs] Loading inputs cfg "TestMod\Users\GR-eSports\Server.core.xml"
+23:07:25 !!! [Inputs] Cannot read inputs cfg "TestMod\Users\GR-eSports\Server.core.xml", parser error
+23:07:25 [Inputs] Loading inputs cfg "dz/data/inputsdefault/core.xml"
+23:07:25 !!! [Inputs] Cannot read preset "user" file"TestMod\Users\GR-eSports\Server.dayz_preset_User.xml", parser error
+23:07:25 [Inputs] Exporting inputs cfg "TestMod\Users\GR-eSports\Server.core.xml"
+23:07:34 [CE][Hive] :: Initializing OFFLINE
+23:07:34 [CE][Hive] :: Loading core data ... 
+23:07:34 [CE][CoreData] :: 7 root classes, 0 defaults, 0 updaters...
+23:07:34 [CE][Hive] :: Loading map data ... 
+23:07:34 !!! File "$CurrentDir:mpmissions\DayZSurvival.chernarusplus\cfgignorelist.xml" does not exist...
+23:07:35 [CE][LoadPrototype] :: loaded 227 prototypes
+23:07:35   488 containers, 7137 points
+23:07:35   0 dispatches, 0 proxies
+23:07:35 !!! [CE][LoadPrototype] 5 groups have no points...
+23:07:35 [CE][LoadPrototype] :: last group name: Land_Wreck_Volha_Police...
+23:07:35 [CE][LoadPrototype] :: loaded 0 prototypes
+23:07:35   0 containers, 0 points
+23:07:35   0 dispatches, 0 proxies
+23:07:35 [CE][LoadPrototype] :: last group name: Rail9...
+23:07:35 [CE][LoadMap] "Group" :: loaded 11602 groups, largest group range: 34.2
+23:07:35 !!! File "$CurrentDir:mpmissions\DayZSurvival.chernarusplus\mapgroupdirt.xml" does not exist...
+23:07:35 !!! [CE][LoadMap] "Dirt" :: Failed to read group instances ($CurrentDir:mpmissions\DayZSurvival.chernarusplus\mapgroupdirt.xml)
+23:07:35 [CE][Links] found 1852 total links between groups, of 11602
+23:07:35 [CE][LoadClusters] "Cluster" :: Loading files...
+23:07:35 [CE][LoadClusters] :: file: "mapgroupcluster.xml", 9 types, 50000 instances
+23:07:35 [CE][LoadClusters] :: file: "mapgroupcluster01", 9 types, 50000 instances
+23:07:36 [CE][LoadClusters] :: file: "mapgroupcluster02", 9 types, 50000 instances
+23:07:36 [CE][LoadClusters] :: file: "mapgroupcluster03", 9 types, 50000 instances
+23:07:36 [CE][LoadClusters] :: file: "mapgroupcluster04", 9 types, 17207 instances
+23:07:37 [CE] :: WARNING :: Preset (cargo) with name 'food' was not found.
+23:07:37 [CE] :: WARNING :: Preset (cargo) with name 'tools' was not found.
+23:07:37 [CE][TypeSetup] :: 368 classes setuped...
+23:07:37 [CE][RegisterBind] :: 0 classes binded...
+23:07:37 [CE][RegisterConfig] :: 2580 config classes registered, 1 sub-counters...
+23:07:37 [CE][offlineDB] :: Loaded 33 dynamic events 205 total types 0 total positions.
+23:07:37 !!! File "$CurrentDir:mpmissions\DayZSurvival.chernarusplus\db\messages.xml" does not exist...
+23:07:37 [CE][offlineDB] :: File 'db/messages.xml' not found.
+23:07:37 [CE][Hive] :: Empty storage folder, reinitializing ... 
+23:07:37 [CE][Hive] :: Initializing ... 
+23:07:37 [CE][Hive] :: Initializing spawners ... 
+23:07:38 !!! [CE][Point] Removing 13339.060547, 11969.413086 from Land_Boat_Small1
+23:07:39 !!! [CE][Point] Removing 11162.427734, 2436.680664 from Land_Boat_Small1
+23:07:39 !!! [CE][Point] Removing 6925.983887, 11363.373047 from Land_Castle_Gate
+23:07:40 !!! [CE][Point] Removing 6924.685547, 11362.654297 from Land_Castle_Gate
+23:07:41 !!! [CE][Point] Removing 11160.130859, 2436.536865 from Land_Boat_Small1
+23:07:41 [CE][LootRespawner] (PRIDummy) :: Item [0] is hard to place, performance drops: "AKM"
+23:07:41 [CE][LootRespawner] (PRIDummy) :: Item [1] is hard to place, performance drops: "AKM"
+23:07:41 [CE][LootRespawner] (PRIDummy) :: Item [2] is hard to place, performance drops: "AKM"
+23:07:41 [CE][LootRespawner] (PRIDummy) :: Item [3] is hard to place, performance drops: "AKM"
+23:07:41 [CE][LootRespawner] (PRIDummy) :: Item [4] is hard to place, performance drops: "AKM"
+23:07:41 [CE][LootRespawner] (PRIDummy) :: Item [5] is hard to place, performance drops: "AKM"
+23:07:41 [CE][LootRespawner] (PRIDummy) :: Item [6] is hard to place, performance drops: "AKM"
+23:07:41 [CE][LootRespawner] (PRIDummy) :: Item [7] is hard to place, performance drops: "AKM"
+23:07:41 [CE][LootRespawner] (PRIDummy) :: Item [8] is hard to place, performance drops: "AKM"
+23:07:41 [CE][LootRespawner] (PRIDummy) :: Item [9] is hard to place, performance drops: "AKM"
+23:07:41 [CE][LootRespawner] (PRIDummy) :: Item [10] is hard to place, performance drops: "AKM"
+23:07:41 [CE][LootRespawner] (PRIDummy) :: Item [11] is hard to place, performance drops: "AKM"
+23:07:41 [CE][LootRespawner] (PRIDummy) :: Item [12] is hard to place, performance drops: "AKM"
+23:07:41 [CE][LootRespawner] (PRIDummy) :: Item [13] is hard to place, performance drops: "AKM"
+23:07:41 [CE][LootRespawner] (PRIDummy) :: Item [14] is hard to place, performance drops: "AKM"
+23:07:41 [CE][LootRespawner] (PRIDummy) :: Item [15] is hard to place, performance drops: "AKM"
+23:07:41 [CE][LootRespawner] (PRIDummy) :: Item [16] is hard to place, performance drops: "AKM"
+23:07:41 [CE][LootRespawner] (PRIDummy) :: Item [17] is hard to place, performance drops: "AKM"
+23:07:41 [CE][LootRespawner] (PRIDummy) :: Item [18] is hard to place, performance drops: "AKM"
+23:07:41 [CE][LootRespawner] (PRIDummy) :: Item [19] is hard to place, performance drops: "AKM"
+23:07:42 !!! [CE][Point] Removing 1501.756470, 9193.394531 from Land_Castle_Gate
+23:07:45 !!! [CE][Point] Removing 11161.161133, 2437.848389 from Land_Boat_Small1
+23:07:52 !!! [CE][Point] Removing 10168.661133, 12078.206055 from Land_Castle_Gate
+23:07:54 !!! [CE][Point] Removing 10167.707031, 12078.453125 from Land_Castle_Gate
+23:07:54 !!! [CE][Point] Removing 7830.502441, 3018.110107 from Land_Container_1Aoh
+23:07:54 !!! [CE][Point] Removing 13337.491211, 11970.943359 from Land_Boat_Small1
+23:07:54 !!! [CE][Point] Removing 11161.310547, 2435.417480 from Land_Boat_Small1
+23:07:54 !!! [CE][Point] Removing 7830.973633, 3017.061035 from Land_Container_1Aoh
+23:07:54 !!! [CE][Point] Removing 13337.955078, 11969.321289 from Land_Boat_Small1
+23:07:54 !!! [CE][Point] Removing 15198.544922, 13816.417969 from Land_Boat_Small1
+23:07:54 !!! [CE][Point] Removing 11161.755859, 2437.563477 from Land_Boat_Small1
+23:07:55 [CE][LootRespawner] (PRIDummy) :: Item [0] causing search overtime: "AK_Suppressor"
+23:07:55 [CE][LootRespawner] (PRIDummy) :: Item [1] causing search overtime: "AK_Suppressor"
+23:07:55 [CE][LootRespawner] (PRIDummy) :: Item [2] causing search overtime: "AK_Suppressor"
+23:07:55 [CE][LootRespawner] (PRIDummy) :: Item [3] causing search overtime: "WeaponCleaningKit"
+23:07:55 [CE][LootRespawner] (PRIDummy) :: Item [4] causing search overtime: "WeaponCleaningKit"
+23:07:55 [CE][LootRespawner] (PRIDummy) :: Item [5] causing search overtime: "HuntingBag"
+23:07:55 [CE][LootRespawner] (PRIDummy) :: Item [6] causing search overtime: "Breeches_Blackcheck"
+23:07:55 [CE][LootRespawner] (PRIDummy) :: Item [7] causing search overtime: "TShirt_Green"
+23:07:55 [CE][LootRespawner] (PRIDummy) :: Item [8] causing search overtime: "NBCPantsGray"
+23:07:55 [CE][LootRespawner] (PRIDummy) :: Item [9] causing search overtime: "NBCPantsGray"
+23:07:55 [CE][LootRespawner] (PRIDummy) :: Item [10] causing search overtime: "NBCPantsGray"
+23:07:55 [CE][LootRespawner] (PRIDummy) :: Item [11] causing search overtime: "NBCPantsGray"
+23:07:55 [CE][LootRespawner] (PRIDummy) :: Item [12] causing search overtime: "WoolCoat_Beige"
+23:07:55 [CE][LootRespawner] (PRIDummy) :: Item [13] causing search overtime: "WoolCoat_Beige"
+23:07:55 [CE][LootRespawner] (PRIDummy) :: Item [14] causing search overtime: "WoolCoat_Beige"
+23:07:55 [CE][LootRespawner] (PRIDummy) :: Item [15] causing search overtime: "WoolCoat_Beige"
+23:07:55 [CE][LootRespawner] (PRIDummy) :: Item [16] causing search overtime: "WoolCoat_Beige"
+23:07:55 [CE][LootRespawner] (PRIDummy) :: Item [17] causing search overtime: "WoolCoat_Beige"
+23:07:55 [CE][LootRespawner] (PRIDummy) :: Item [18] causing search overtime: "WoolCoat_Beige"
+23:07:55 [CE][LootRespawner] (PRIDummy) :: Item [19] causing search overtime: "WoolCoat_Beige"
+23:07:56 [CE][LootRespawner] (PRIDummy) :: Initially (re)spawned:46112, Nominal:55579, Total in Map: 46147 at 18 (sec)
+23:07:56   tests:50540, repeats:343 fails:4085, overtime:9472
+23:07:56 [CE][Links] found 0 total links between groups, of 1
+23:07:56 [CE][SpawnRandomLoot] (StaticHeliCrash) :: ChildType: Wreck_Mi8, lootmin: 10, lootmax: 20, wanted: 19
+23:07:56 [CE][Links] found 0 total links between groups, of 2
+23:07:56 [CE][SpawnRandomLoot] (StaticHeliCrash) :: ChildType: Wreck_UH1Y, lootmin: 10, lootmax: 20, wanted: 17
+23:07:56 [CE][Links] found 0 total links between groups, of 3
+23:07:56 [CE][SpawnRandomLoot] (StaticHeliCrash) :: ChildType: Wreck_Mi8, lootmin: 10, lootmax: 20, wanted: 13
+23:07:56 [CE][Links] found 0 total links between groups, of 4
+23:07:56 [CE][SpawnRandomLoot] (StaticPoliceCar) :: ChildType: Land_Wreck_Volha_Police, lootmin: 3, lootmax: 5, wanted: 3
+23:07:56 [CE][Links] found 0 total links between groups, of 5
+23:07:56 [CE][SpawnRandomLoot] (StaticPoliceCar) :: ChildType: Land_Wreck_Volha_Police, lootmin: 3, lootmax: 5, wanted: 3
+23:07:56 [CE][Links] found 0 total links between groups, of 6
+23:07:56 [CE][SpawnRandomLoot] (StaticPoliceCar) :: ChildType: Land_Wreck_Volha_Police, lootmin: 3, lootmax: 5, wanted: 3
+23:07:56 [CE][Links] found 0 total links between groups, of 7
+23:07:56 [CE][SpawnRandomLoot] (StaticPoliceCar) :: ChildType: Land_Wreck_Volha_Police, lootmin: 3, lootmax: 5, wanted: 4
+23:07:56 [CE][Links] found 0 total links between groups, of 8
+23:07:56 [CE][SpawnRandomLoot] (StaticPoliceCar) :: ChildType: Land_Wreck_Volha_Police, lootmin: 3, lootmax: 5, wanted: 4
+23:07:56 [CE][Links] found 0 total links between groups, of 9
+23:07:56 [CE][SpawnRandomLoot] (StaticPoliceCar) :: ChildType: Land_Wreck_Volha_Police, lootmin: 3, lootmax: 5, wanted: 4
+23:07:56 [CE][Links] found 0 total links between groups, of 10
+23:07:56 [CE][SpawnRandomLoot] (StaticPoliceCar) :: ChildType: Land_Wreck_Volha_Police, lootmin: 3, lootmax: 5, wanted: 3
+23:07:56 [CE][Links] found 0 total links between groups, of 11
+23:07:56 [CE][SpawnRandomLoot] (StaticPoliceCar) :: ChildType: Land_Wreck_Volha_Police, lootmin: 3, lootmax: 5, wanted: 4
+23:07:56 [CE][Links] found 0 total links between groups, of 12
+23:07:56 [CE][SpawnRandomLoot] (StaticPoliceCar) :: ChildType: Land_Wreck_Volha_Police, lootmin: 3, lootmax: 5, wanted: 4
+23:07:56 [CE][Links] found 0 total links between groups, of 13
+23:07:56 [CE][SpawnRandomLoot] (StaticPoliceCar) :: ChildType: Land_Wreck_Volha_Police, lootmin: 3, lootmax: 5, wanted: 4
+23:07:56 !!! [CE][VehicleRespawner] (PRICivilianVan) :: Respawning: "VehicleCivilianVan" - There are not enough positions in "cfgeventspawns.xml", 1 < 40
+23:07:56 [CE][DynEvent] :: 33 types
+23:07:56 [00] AmbientHen
+23:07:56   Primary Spawner: "Ambient", active: yes, repeat: 1
+23:07:56 [01] AnimalCow
+23:07:56   Primary Spawner: "Animal", active: yes, repeat: 1
+23:07:56 [02] AnimalDeer
+23:07:56   Primary Spawner: "Animal", active: yes, repeat: 1
+23:07:56 [03] AnimalGoat
+23:07:56   Primary Spawner: "Animal", active: yes, repeat: 1
+23:07:56 [04] AnimalPig
+23:07:56   Primary Spawner: "Animal", active: yes, repeat: 1
+23:07:56 [05] AnimalRoeDeer
+23:07:56   Primary Spawner: "Animal", active: yes, repeat: 1
+23:07:56 [06] AnimalSheep
+23:07:56   Primary Spawner: "Animal", active: yes, repeat: 1
+23:07:56 [07] AnimalWildBoar
+23:07:56   Primary Spawner: "Animal", active: yes, repeat: 1
+23:07:56 [08] AnimalWolf
+23:07:56   Primary Spawner: "Animal", active: yes, repeat: 1
+23:07:56 [09] InfectedArmy
+23:07:56   Primary Spawner: "Infected", active: yes, repeat: 1
+23:07:56 [10] InfectedCity
+23:07:56   Primary Spawner: "Infected", active: yes, repeat: 1
+23:07:56 [11] InfectedFirefighter
+23:07:56   Primary Spawner: "Infected", active: yes, repeat: 1
+23:07:56 [12] InfectedIndustrial
+23:07:56   Primary Spawner: "Infected", active: yes, repeat: 1
+23:07:56 [13] InfectedMedic
+23:07:56   Primary Spawner: "Infected", active: yes, repeat: 1
+23:07:56 [14] InfectedPolice
+23:07:56   Primary Spawner: "Infected", active: yes, repeat: 1
+23:07:56 [15] InfectedPrisoner
+23:07:56   Primary Spawner: "Infected", active: yes, repeat: 1
+23:07:56 [16] InfectedReligious
+23:07:56   Primary Spawner: "Infected", active: yes, repeat: 1
+23:07:56 [17] InfectedSolitude
+23:07:56   Primary Spawner: "Infected", active: yes, repeat: 1
+23:07:56 [18] InfectedVillage
+23:07:56   Primary Spawner: "Infected", active: yes, repeat: 1
+23:07:56 [19] ItemPlanks
+23:07:56   Primary Spawner: "Item", active: yes, repeat: 1
+23:07:56 [20] Loot
+23:07:56   Primary Spawner: "Loot", active: yes, repeat: 2
+23:07:56 [21] StaticHeliCrash
+23:07:56   Primary Spawner: "Vehicle", active: yes, repeat: 1
+23:07:56 [22] StaticPoliceCar
+23:07:56   Primary Spawner: "Vehicle", active: yes, repeat: 1
+23:07:56 [23] TrajectoryApple
+23:07:56   Primary Spawner: "Trajectory", active: yes, repeat: 1
+23:07:56 [24] TrajectoryCanina
+23:07:56   Primary Spawner: "Trajectory", active: yes, repeat: 1
+23:07:56 [25] TrajectoryConiferous
+23:07:56   Primary Spawner: "Trajectory", active: yes, repeat: 1
+23:07:56 [26] TrajectoryDeciduous
+23:07:56   Primary Spawner: "Trajectory", active: yes, repeat: 1
+23:07:56 [27] TrajectoryHumus
+23:07:56   Primary Spawner: "Trajectory", active: yes, repeat: 1
+23:07:56 [28] TrajectoryPear
+23:07:56   Primary Spawner: "Trajectory", active: yes, repeat: 1
+23:07:56 [29] TrajectoryPlum
+23:07:56   Primary Spawner: "Trajectory", active: yes, repeat: 1
+23:07:56 [30] TrajectorySambucus
+23:07:56   Primary Spawner: "Trajectory", active: yes, repeat: 1
+23:07:56 [31] TrajectoryStones
+23:07:56   Primary Spawner: "Trajectory", active: yes, repeat: 1
+23:07:56 [32] VehicleCivilianVan
+23:07:56   Primary Spawner: "Vehicle", active: yes, repeat: 1
+23:07:56 [CE][Hive] :: Initializing of spawners done.
+23:07:56 [CE][Hive] :: Init sequence finished.
+23:07:57 Player connect enabled
+23:07:57 [Login]: Adding player Survivor (1849106938) to login queue at position 1
+23:07:57 [LoginMachine]: Add player Survivor (1849106938)
+23:07:57 [StateMachine]: Player Survivor (dpnid 1849106938 uid ) Entering PreCreatePlayerLoginState
+23:07:57 [StateMachine]: Player Survivor (dpnid 1849106938 uid ) Entering WaitPreCreatePlayerLoginState
+23:07:59 [StateMachine]: Player Survivor (dpnid 1849106938 uid d5o4DaGfl15Sbl2H3alV8NGUj4bZeJ9SDWeaH+C7MLw=) Entering GetCharacterLoginState
+23:07:59 [StateMachine]: Player Survivor (dpnid 1849106938 uid d5o4DaGfl15Sbl2H3alV8NGUj4bZeJ9SDWeaH+C7MLw=) Entering CreateNetObjectsLoginState
+23:07:59 !!! File "$CurrentDir:mpmissions\DayZSurvival.chernarusplus\spawnpoints_players.bin" does not exist...
+23:07:59 [StateMachine]: Player Survivor (dpnid 1849106938 uid d5o4DaGfl15Sbl2H3alV8NGUj4bZeJ9SDWeaH+C7MLw=) Entering PreloadCamLoginState
+23:07:59 [StateMachine]: Player Survivor (dpnid 1849106938 uid d5o4DaGfl15Sbl2H3alV8NGUj4bZeJ9SDWeaH+C7MLw=) Entering WaitPreloadCamLoginState
+23:08:06 [StateMachine]: Player Survivor (dpnid 1849106938 uid d5o4DaGfl15Sbl2H3alV8NGUj4bZeJ9SDWeaH+C7MLw=) Entering GetNewCharLoginState
+23:08:08 <CREATE NEW CHAR>:
+    charID 1
+    playerID 1
+    dpnid 1849106938
+    uid d5o4DaGfl15Sbl2H3alV8NGUj4bZeJ9SDWeaH+C7MLw=
+23:08:50 !!! [CE][Point] Removing 51.172794, 12166.227539 from PiceaAbies_2d
+23:09:16 !!! [CE][Point] Removing 145.629150, 12234.166016 from PathRCurve
+23:10:12 !!! [CE][Point] Removing 358.917938, 12405.686523 from PlumTree1
+23:10:22 [Disconnect]: Client 1849106938 normal disconnect
+23:10:23 [Disconnect]: Start script disconnect 1849106938 (dbCharacterId 1 dbPlayerId 1) logoutTime 0
+23:10:23 [Disconnect]: Finish script disconnect 1849106938
+23:10:23 [Disconnect]: DisconnectPlayerFinish 1849106938
+23:10:23 [Disconnect]: Remove player info 1849106938
+23:10:23 Player Survivor (1849106938) kicked from server: 2 (Auth error: AUTH CANCELED)
+23:10:23 [Disconnect]: Remove player info 1849106938
+23:10:29  --- Termination successfully completed --- 

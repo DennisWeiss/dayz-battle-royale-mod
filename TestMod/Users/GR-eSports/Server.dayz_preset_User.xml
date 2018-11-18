@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<preset>
+    <input name="UAMoveForward">
+        <btn name="kW" />
+        <btn name="x1LeftThumbUp" />
+    </input>
+    <input name="UAMoveBack">
+        <btn name="kS" />
+        <btn name="x1LeftThumbDown" />
+    </input>
+    <input name="UATurnLeft">
+        <btn name="kA" />
+        <btn name="x1LeftThumbLeft" />
+    </input>
+    <input name="UATurnRight">
+        <btn name="kD" />
+        <btn name="x1LeftThumbRight" />
+    </input>
+    <input name="UATurbo">
+        <btn name="kLShift" />
+        <btn name="x1ThumbLeft" />
+    </input>
+    <input name="UAWalkRunTemp">
+        <btn name="kLControl" />
+    </input>
+    <input name="UAGetOver">
+        <btn name="kSpace" />
+        <btn name="x1A" />
+    </input>
+    <input name="UAStand">
+        <btn name="kC" />
+        <btn name="x1B" />
+    </input>
+    <input name="UALeanLeft">
+        <btn name="kQ" />
+    </input>
+    <input name="UALeanRight">
+        <btn name="kE" />
+    </input>
+    <input name="UAAimLeft">
+        <btn name="mLeft" />
+        <btn name="x1RightThumbLeft" />
+    </input>
+    <input name="UAAimRight">
+        <btn name="mRight" />
+        <btn name="x1RightThumbRight" />
+    </input>
+    <input name="UAAimUp">
+        <btn name="mUp" />
+        <btn name="x1RightThumbUp" />
+    </input>
+    <input name="UAAimDown">
+        <btn name="mDown" />
+        <btn name="x1RightThumbDown" />
+    </input>
+    <input name="UAPersonView">
+        <btn name="kV" />
+        <btn name="kReturn" />
+        <btn name="kNumpadEnter" />
+    </input>
+    <input name="UALookAround">
+        <btn name="kLMenu" />
+    </input>
+    <input name="UAZoomIn">
+        <btn name="mBMiddle" />
+        <btn name="x1ShoulderRight" />
+    </input>
+    <input name="UAADSToggle">
+        <btn name="kLShift" />
+    </input>
+    <input name="UAZoomInOptics">
+        <btn name="mWheelUp" />
+    </input>
+    <input name="UAZoomOutOptics">
+        <btn name="mWheelDown" />
+    </input>
+    <input name="UAGear">
+        <btn name="kTab" />
+        <btn name="x1View" />
+    </input>
+    <input name="UAFire">
+        <btn name="mBLeft" />
+    </input>
+    <input name="UADefaultAction">
+        <btn name="mBLeft" />
+        <btn name="x1Y" />
+    </input>
+    <input name="UAAction">
+        <btn name="kF" />
+        <btn name="x1X" />
+    </input>
+    <input name="UADropItem">
+        <btn name="kG" />
+    </input>
+    <input name="UAPrevAction">
+        <btn name="mWheelUp" />
+    </input>
+    <input name="UANextAction">
+        <btn name="mWheelDown" />
+    </input>
+    <input name="UATempRaiseWeapon">
+        <btn name="mBRight" />
+        <btn name="x1TriggerLeft" />
+    </input>
+    <input name="UAReloadMagazine">
+        <btn name="kR" />
+    </input>
+    <input name="UAQuickReload">
+        <btn name="kR" />
+        <btn name="x1X" />
+    </input>
+    <input name="UAZeroingUp">
+        <btn name="kEquals" />
+        <btn name="kPrior" />
+    </input>
+    <input name="UAZeroingDown">
+        <btn name="kMinus" />
+        <btn name="kNext" />
+    </input>
+    <input name="UAToggleWeapons">
+        <btn name="kX" />
+    </input>
+    <input name="UAUIQuickbarToggle">
+        <btn name="kGrave" />
+    </input>
+    <input name="UAItem0">
+        <btn name="k1" />
+    </input>
+    <input name="UAItem1">
+        <btn name="k2" />
+    </input>
+    <input name="UAItem2">
+        <btn name="k3" />
+    </input>
+    <input name="UAItem3">
+        <btn name="k4" />
+    </input>
+    <input name="UAItem4">
+        <btn name="k5" />
+    </input>
+    <input name="UAItem5">
+        <btn name="k6" />
+    </input>
+    <input name="UAItem6">
+        <btn name="k7" />
+    </input>
+    <input name="UAItem7">
+        <btn name="k8" />
+    </input>
+    <input name="UAItem8">
+        <btn name="k9" />
+    </input>
+    <input name="UAItem9">
+        <btn name="k0" />
+    </input>
+    <input name="UAChat">
+        <btn name="kT" />
+        <btn name="kSlash" />
+    </input>
+    <input name="UAPushToTalk">
+        <btn name="kCapital" />
+    </input>
+    <input name="UAVoiceOverNet">
+        <btn name="kCapital" />
+    </input>
+    <input name="UAGestureSlot01">
+        <btn name="kF1" />
+    </input>
+    <input name="UAGestureSlot02">
+        <btn name="kF2" />
+    </input>
+    <input name="UAGestureSlot03">
+        <btn name="kF3" />
+    </input>
+    <input name="UAGestureSlot04">
+        <btn name="kF4" />
+    </input>
+    <input name="UAGestureSlot05">
+        <btn name="kF5" />
+    </input>
+    <input name="UAGestureSlot06">
+        <btn name="kF6" />
+    </input>
+    <input name="UAGestureSlot07">
+        <btn name="kF7" />
+    </input>
+    <input name="UAGestureSlot08">
+        <btn name="kF8" />
+    </input>
+    <input name="UAGestureSlot09">
+        <btn name="kF9" />
+    </input>
+    <input name="UAGestureSlot10">
+        <btn name="kF10" />
+    </input>
+    <input name="UAGestureSlot11">
+        <btn name="kF11" />
+    </input>
+    <input name="UAGestureSlot12">
+        <btn name="kF12" />
+    </input>
+    <input name="UACarLeft">
+        <btn name="kA" />
+        <btn name="x1LeftThumbLeft" />
+    </input>
+    <input name="UACarRight">
+        <btn name="kD" />
+        <btn name="x1LeftThumbRight" />
+    </input>
+    <input name="UACarForward">
+        <btn name="kW" />
+        <btn name="x1TriggerRight" />
+    </input>
+    <input name="UACarBack">
+        <btn name="kS" />
+        <btn name="x1TriggerLeft" />
+    </input>
+    <input name="UACarShiftGearUp">
+        <btn name="kE" />
+        <btn name="x1Y" />
+    </input>
+    <input name="UACarShiftGearDown">
+        <btn name="kQ" />
+        <btn name="x1A" />
+    </input>
+    <input name="UAVehicleTurbo">
+        <btn name="kLShift" />
+    </input>
+    <input name="UAVehicleSlow">
+        <btn name="kLControl" />
+    </input>
+    <input name="UAUILeft">
+        <btn name="kLeft" />
+        <btn name="x1PadLeft" />
+        <btn name="x1LeftThumbLeft" />
+        <btn name="x1RightThumbLeft" />
+    </input>
+    <input name="UAUIRight">
+        <btn name="kRight" />
+        <btn name="x1PadRight" />
+        <btn name="x1LeftThumbRight" />
+        <btn name="x1RightThumbRight" />
+    </input>
+    <input name="UAUIUp">
+        <btn name="kUp" />
+        <btn name="x1PadUp" />
+        <btn name="x1LeftThumbUp" />
+        <btn name="x1RightThumbUp" />
+    </input>
+    <input name="UAUIDown">
+        <btn name="kDown" />
+        <btn name="x1PadDown" />
+        <btn name="x1LeftThumbDown" />
+        <btn name="x1RightThumbDown" />
+    </input>
+    <input name="UAUISelect">
+        <btn name="kReturn" />
+        <btn name="kNumpadEnter" />
+        <btn name="x1A" />
+    </input>
+    <input name="UAUIBack">
+        <btn name="kEscape" />
+        <btn name="x1B" />
+    </input>
+    <input name="UAUIMenu">
+        <btn name="kEscape" />
+        <btn name="x1Menu" />
+    </input>
+    <input name="UAUITabLeft">
+        <btn name="x1ShoulderLeft" />
+    </input>
+    <input name="UAUITabRight">
+        <btn name="kTab" />
+        <btn name="x1ShoulderRight" />
+    </input>
+    <input name="UAUIRightStickHorizontal">
+        <btn name="x1RightThumbHorizontal" />
+    </input>
+    <input name="UAUIRightStickVertical">
+        <btn name="x1RightThumbVertical" />
+    </input>
+    <input name="UAUIRadialMenuPick">
+        <btn name="x1Y" />
+    </input>
+    <input name="UAUIGesturesOpen">
+        <btn name="x1PadLeft" />
+        <btn name="kPeriod" />
+    </input>
+    <input name="UAUIQuickbarRadialOpen">
+        <btn name="x1PadRight" />
+    </input>
+    <input name="UAUIQuickbarRadialInventoryOpen">
+        <btn name="x1ThumbLeft" />
+    </input>
+    <input name="UAUINextUp">
+        <btn name="x1TriggerLeft" />
+    </input>
+    <input name="UAUINextDown">
+        <btn name="x1TriggerRight" />
+    </input>
+    <input name="UAUIFastEquipOrSplit">
+        <btn name="x1X" />
+    </input>
+    <input name="UAUIFastTransferItem">
+        <event name="press" />
+        <btn name="x1Y" />
+    </input>
+    <input name="UAUIFastTransferToVicinity">
+        <event name="hold" />
+        <btn name="x1Y" />
+    </input>
+    <input name="UAUIExpandCollapseContainer">
+        <btn name="x1RightThumbRight" />
+    </input>
+    <input name="UAUISelectItem">
+        <btn name="x1A" />
+    </input>
+    <input name="UAAltTab">
+        <btn name="kLMenu">
+            <btn name="kTab" />
+        </btn>
+    </input>
+    <input name="UATimeInc">
+        <btn name="kEquals" />
+    </input>
+    <input name="UATimeDec">
+        <btn name="kMinus" />
+    </input>
+    <input name="UAMoveUp">
+        <btn name="kQ" />
+        <btn name="x1TriggerRight" />
+    </input>
+    <input name="UAMoveDown">
+        <btn name="kZ" />
+        <btn name="x1TriggerLeft" />
+    </input>
+    <input name="UAMoveLeft">
+        <btn name="kA" />
+        <btn name="x1LeftThumbLeft" />
+    </input>
+    <input name="UAMoveRight">
+        <btn name="kD" />
+        <btn name="x1LeftThumbRight" />
+    </input>
+    <input name="UAAimHeadLeft">
+        <btn name="kLeft" />
+        <btn name="mLeft" />
+        <btn name="x1RightThumbLeft" />
+    </input>
+    <input name="UAAimHeadRight">
+        <btn name="kRight" />
+        <btn name="mRight" />
+        <btn name="x1RightThumbRight" />
+    </input>
+    <input name="UAAimHeadUp">
+        <btn name="mUp" />
+        <btn name="x1RightThumbUp" />
+    </input>
+    <input name="UAAimHeadDown">
+        <btn name="mDown" />
+        <btn name="x1RightThumbDown" />
+    </input>
+    <input name="UABuldResetCamera">
+        <btn name="kNumpad0" />
+    </input>
+    <input name="UABuldTurbo">
+        <btn name="kU" />
+    </input>
+    <input name="UABuldSlow">
+        <btn name="kJ" />
+    </input>
+    <input name="UABuldFreeLook">
+        <btn name="kNumpad5" />
+    </input>
+    <input name="UABuldRunScript">
+        <btn name="kF10" />
+    </input>
+    <input name="UABuldSelectToggle">
+        <btn name="kSpace" />
+    </input>
+    <input name="UABuldSelect">
+        <btn name="mBLeft" />
+    </input>
+    <input name="UABuldSelectAddMod">
+        <btn name="k7" />
+    </input>
+    <input name="UABuldSelectRemoveMod">
+        <btn name="k8" />
+    </input>
+    <input name="UABuldModifySelected">
+        <btn name="mBRight" />
+    </input>
+    <input name="UABuldCycleMod">
+        <btn name="k5" />
+    </input>
+    <input name="UABuldRotationXAxisMod">
+        <btn name="k1" />
+    </input>
+    <input name="UABuldRotationZAxisMod">
+        <btn name="k3" />
+    </input>
+    <input name="UABuldCoordModCycle">
+        <btn name="k6" />
+    </input>
+    <input name="UABuldSampleTerrainHeight">
+        <btn name="mBRight" />
+    </input>
+    <input name="UABuldSetTerrainHeight">
+        <btn name="mBLeft" />
+    </input>
+    <input name="UABuldScaleMod">
+        <btn name="kE" />
+    </input>
+    <input name="UABuldElevateMod">
+        <btn name="kT" />
+    </input>
+    <input name="UABuldSmoothMod">
+        <btn name="kLShift" />
+    </input>
+    <input name="UABuldFlattenMod">
+        <btn name="kLMenu" />
+    </input>
+    <input name="UABuldBrushRatioUp">
+        <btn name="kB">
+            <btn name="mWheelUp" />
+        </btn>
+    </input>
+    <input name="UABuldBrushRatioDown">
+        <btn name="kB">
+            <btn name="mWheelDown" />
+        </btn>
+    </input>
+    <input name="UABuldBrushOuterUp">
+        <btn name="kN">
+            <btn name="mWheelUp" />
+        </btn>
+    </input>
+    <input name="UABuldBrushOuterDown">
+        <btn name="kN">
+            <btn name="mWheelDown" />
+        </btn>
+    </input>
+    <input name="UABuldBrushStrengthUp">
+        <btn name="kM">
+            <btn name="mWheelUp" />
+        </btn>
+    </input>
+    <input name="UABuldBrushStrengthDown">
+        <btn name="kM">
+            <btn name="mWheelDown" />
+        </btn>
+    </input>
+    <input name="UABuldToggleNearestObjectArrow">
+        <btn name="kH" />
+    </input>
+    <input name="UABuldCycleBrushMod">
+        <btn name="kG" />
+    </input>
+    <input name="UABuldSelectionType">
+        <btn name="kF" />
+    </input>
+    <input name="UABuldCreateLastSelectedObject">
+        <btn name="kV" />
+    </input>
+    <input name="UABuldDuplicateSelection">
+        <btn name="kC" />
+    </input>
+    <input name="UABuldDeleteSelection">
+        <btn name="kR" />
+    </input>
+    <input name="UABuldUndo">
+        <btn name="kLControl">
+            <btn name="kX" />
+        </btn>
+    </input>
+    <input name="UABuldRedo">
+        <btn name="kLControl">
+            <btn name="kY" />
+        </btn>
+    </input>
+    <input name="UABuldMoveLeft">
+        <btn name="mLeft" />
+        <btn name="kA" />
+    </input>
+    <input name="UABuldMoveRight">
+        <btn name="mRight" />
+        <btn name="kD" />
+    </input>
+    <input name="UABuldMoveForward">
+        <btn name="mUp" />
+        <btn name="kW" />
+    </input>
+    <input name="UABuldMoveBack">
+        <btn name="mDown" />
+        <btn name="kS" />
+    </input>
+    <input name="UABuldMoveUp">
+        <btn name="kQ" />
+    </input>
+    <input name="UABuldMoveDown">
+        <btn name="kZ" />
+    </input>
+    <input name="UABuldLeft">
+        <btn name="kLeft" />
+    </input>
+    <input name="UABuldRight">
+        <btn name="kRight" />
+    </input>
+    <input name="UABuldForward">
+        <btn name="kUp" />
+    </input>
+    <input name="UABuldBack">
+        <btn name="kDown" />
+    </input>
+    <input name="UABuldLookLeft">
+        <btn name="kNumpad4" />
+    </input>
+    <input name="UABuldLookRight">
+        <btn name="kNumpad6" />
+    </input>
+    <input name="UABuldLookUp">
+        <btn name="kNumpad8" />
+    </input>
+    <input name="UABuldLookDown">
+        <btn name="kNumpad2" />
+    </input>
+    <input name="UABuldZoomIn">
+        <btn name="kAdd" />
+    </input>
+    <input name="UABuldZoomOut">
+        <btn name="kSubstract" />
+    </input>
+    <input name="UABuldTextureInfo">
+        <btn name="kI" />
+    </input>
+    <input name="UABuldObjectRotateLeft">
+        <btn name="kNumpad4" />
+        <btn name="mBLeft">
+            <btn name="mLeft" />
+        </btn>
+    </input>
+    <input name="UABuldObjectRotateRight">
+        <btn name="kNumpad6" />
+        <btn name="mBLeft">
+            <btn name="mRight" />
+        </btn>
+    </input>
+    <input name="UABuldObjectRotateForward">
+        <btn name="kNumpad8" />
+        <btn name="mBLeft">
+            <btn name="mUp" />
+        </btn>
+    </input>
+    <input name="UABuldObjectRotateBack">
+        <btn name="kNumpad2" />
+        <btn name="mBLeft">
+            <btn name="mDown" />
+        </btn>
+    </input>
+    <input name="UABuldViewerMoveLeft">
+        <btn name="kA" />
+        <btn name="mBRight">
+            <btn name="mLeft" />
+        </btn>
+    </input>
+    <input name="UABuldViewerMoveRight">
+        <btn name="kD" />
+        <btn name="mBRight">
+            <btn name="mRight" />
+        </btn>
+    </input>
+    <input name="UABuldViewerMoveForward">
+        <btn name="kW" />
+        <btn name="mBRight">
+            <btn name="mUp" />
+        </btn>
+    </input>
+    <input name="UABuldViewerMoveBack">
+        <btn name="kS" />
+        <btn name="mBRight">
+            <btn name="mDown" />
+        </btn>
+    </input>
+    <input name="UABuldViewerMoveUp">
+        <btn name="kQ" />
+    </input>
+    <input name="UABuldViewerMoveDown">
+        <btn name="kZ" />
+    </input>
+    <input name="UABuldPreviousAnimation">
+        <btn name="kPrior" />
+        <btn name="kLBracket" />
+    </input>
+    <input name="UABuldNextAnimation">
+        <btn name="kNext" />
+        <btn name="kRBracket" />
+    </input>
+    <input name="UABuldRecedeAnimation">
+        <btn name="mWheelUp" />
+        <btn name="kSemicolon" />
+    </input>
+    <input name="UABuldAdvanceAnimation">
+        <btn name="mWheelDown" />
+        <btn name="kApostrophe" />
+    </input>
+</preset>

@@ -1,0 +1,42 @@
+
+
+=====================================================================
+== C:\DayZServer\DayZServer_x64.exe
+== DayZServer_x64.exe  -mod=ModdedScripts -config=TestMod\serverDZ.cfg -profiles=TestMod -name=GR-eSports
+=====================================================================
+Exe timestamp: 2018/11/14 17:24:52
+Current time:  2018/11/14 21:16:51
+
+Version 0.63.149442
+21:16:51 [Inputs] Loading inputs cfg "TestMod\Users\GR-eSports\Server.core.xml"
+21:16:51 !!! [Inputs] Cannot read inputs cfg "TestMod\Users\GR-eSports\Server.core.xml", parser error
+21:16:51 [Inputs] Loading inputs cfg "dz/data/inputsdefault/core.xml"
+21:16:51 !!! [Inputs] Cannot read preset "user" file"TestMod\Users\GR-eSports\Server.dayz_preset_User.xml", parser error
+21:16:51 [Inputs] Exporting inputs cfg "TestMod\Users\GR-eSports\Server.core.xml"
+21:17:12 [CE][Hive] :: Initializing OFFLINE
+21:17:12 [CE][Hive] :: Loading core data ... 
+21:17:12 [CE][CoreData] :: 7 root classes, 0 defaults, 0 updaters...
+21:17:12 [CE][Hive] :: Loading map data ... 
+21:17:12 !!! File "$CurrentDir:mpmissions\DayZSurvival.chernarusplus\cfgignorelist.xml" does not exist...
+21:17:12 [CE][LoadPrototype] :: loaded 227 prototypes
+21:17:12   488 containers, 7137 points
+21:17:12   0 dispatches, 0 proxies
+21:17:12 !!! [CE][LoadPrototype] 5 groups have no points...
+21:17:12 [CE][LoadPrototype] :: last group name: Land_Wreck_Volha_Police...
+21:17:12 [CE][LoadPrototype] :: loaded 0 prototypes
+21:17:12   0 containers, 0 points
+21:17:12   0 dispatches, 0 proxies
+21:17:12 [CE][LoadPrototype] :: last group name: Rail9...
+21:17:12 [CE][LoadMap] "Group" :: loaded 11602 groups, largest group range: 34.2
+21:17:12 !!! File "$CurrentDir:mpmissions\DayZSurvival.chernarusplus\mapgroupdirt.xml" does not exist...
+21:17:12 !!! [CE][LoadMap] "Dirt" :: Failed to read group instances ($CurrentDir:mpmissions\DayZSurvival.chernarusplus\mapgroupdirt.xml)
+21:17:13 [CE][Links] found 1852 total links between groups, of 11602
+21:17:13 [CE][LoadClusters] "Cluster" :: Loading files...
+21:17:13 [CE][LoadClusters] :: file: "mapgroupcluster.xml", 9 types, 50000 instances
+21:17:14 [CE][LoadClusters] :: file: "mapgroupcluster01", 9 types, 50000 instances
+21:17:14 [CE][LoadClusters] :: file: "mapgroupcluster02", 9 types, 50000 instances
+21:17:15 [CE][LoadClusters] :: file: "mapgroupcluster03", 9 types, 50000 instances
+21:17:15 [CE][LoadClusters] :: file: "mapgroupcluster04", 9 types, 17207 instances
+error: Minidump is unavailable, dlghelp.dll load error...
+===ErrorMessage====>>>>>>BEG
+===ErrorMessage====>>>>>>END

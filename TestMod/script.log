@@ -1,0 +1,662 @@
+---------------------------------------------
+Log C:\Program Files (x86)\Steam\steamapps\common\DayZServer\TestMod\script.log started at 18.11. 13:28:04
+
+SCRIPT       : Registered 361 temporary action enum(s), UAN==361
+SCRIPT    (W): @"scripts/3_Game/dayzplayer.c,348": Missing ';' at the end of line
+SCRIPT       : CreateGame()
+SCRIPT    (W): @"scripts/4_World/entities\manbase\playerbase.c,193": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"scripts/4_World/entities\manbase\playerbase.c,204": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"scripts/4_World/entities\manbase\playerbase.c,205": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"scripts/4_World/entities\manbase\playerbase.c,211": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"scripts/4_World/entities\manbase\playerbase.c,212": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"scripts/4_World/entities\manbase\playerbase.c,213": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"scripts/4_World/entities\manbase\playerbase.c,214": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"scripts/4_World/entities\manbase\playerbase.c,215": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"scripts/4_World/entities\manbase\playerbase.c,216": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"scripts/4_World/entities\manbase\playerbase.c,219": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"scripts/4_World/entities\manbase\playerbase.c,221": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"scripts/4_World/entities\manbase\playerbase.c,222": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"scripts/4_World/entities\manbase\playerbase.c,223": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"scripts/4_World/entities\manbase\playerbase.c,224": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"scripts/4_World/entities\manbase\playerbase.c,228": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"scripts/4_World/entities\manbase\playerbase.c,229": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"scripts/4_World/entities\manbase\playerbase.c,234": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"scripts/4_World/entities\manbase\playerbase.c,235": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"scripts/4_World/entities\manbase\playerbase.c,236": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"scripts/4_World/entities\manbase\playerbase.c,237": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"scripts/4_World/entities\manbase\playerbase.c,238": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"scripts/4_World/entities\manbase\playerbase.c,239": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"scripts/4_World/entities\manbase\playerbase.c,253": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"scripts/4_World/entities\manbase\playerbase.c,641": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"scripts/4_World/entities\manbase\playerbase.c,1185": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"scripts/4_World/entities\manbase\playerbase.c,1195": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"scripts/4_World/entities\manbase\playerbase.c,1656": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"scripts/4_World/entities\manbase\playerbase.c,2922": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"scripts/4_World/entities\manbase\playerbase.c,2983": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"scripts/4_World/entities\manbase\playerbase.c,3023": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"scripts/4_World/entities\manbase\playerbase.c,3048": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"scripts/4_World/entities\manbase\playerbase.c,3077": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"scripts/4_World/entities\manbase\playerbase.c,3082": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"scripts/4_World/entities\manbase\playerbase.c,3230": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"scripts/4_World/entities\manbase\playerbase.c,3232": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"scripts/4_World/entities\manbase\playerbase.c,3245": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"scripts/4_World/entities\manbase\playerbase.c,3659": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"scripts/4_World/entities\creatures\infected\zombiebase.c,34": Unsafe down-casting, use 'ZombieBase.Cast' for safe down-casting
+SCRIPT    (W): @"ModdedScripts/scripts/4_World/entities\manbase\playerbase.c,8": Unsafe down-casting, use 'Man.Cast' for safe down-casting
+SCRIPT    (W): @"ModdedScripts/scripts/4_World/entities\manbase\playerbase.c,9": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"ModdedScripts/scripts/4_World/entities\creatures\infected\zombiebase.c,69": Unsafe down-casting, use 'EntityAI.Cast' for safe down-casting
+SCRIPT    (W): @"ModdedScripts/scripts/4_World/entities\creatures\infected\zombiebase.c,75": Unsafe down-casting, use 'EntityAI.Cast' for safe down-casting
+SCRIPT    (W): @"$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//ServerMission//DayZSurvival.c,344": Missing ';' at the end of line
+SCRIPT    (W): @"$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//ServerMission//DayZSurvival.c,352": Missing ';' at the end of line
+SCRIPT    (W): @"$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//AdminTool//AdminTool.c,122": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//AdminTool//AdminTool.c,144": Unsafe down-casting, use 'EntityAI.Cast' for safe down-casting
+SCRIPT    (W): @"$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//AdminTool//AdminTool.c,216": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//AdminTool//AdminTool.c,239": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//AdminTool//AdminTool.c,266": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//AdminTool//AdminTool.c,355": Unsafe down-casting, use 'Magazine.Cast' for safe down-casting
+SCRIPT    (W): @"$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//AdminTool//AdminTool.c,477": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//AdminTool//AdminTool.c,493": Unsafe down-casting, use 'EntityAI.Cast' for safe down-casting
+SCRIPT    (W): @"$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//AdvancedLoadouts//AdvancedLoadouts.c,134": Unsafe down-casting, use 'ItemBase.Cast' for safe down-casting
+SCRIPT    (W): @"$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//AdvancedLoadouts//AdvancedLoadouts.c,135": Unsafe down-casting, use 'ItemBase.Cast' for safe down-casting
+SCRIPT    (W): @"$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//AdvancedLoadouts//AdvancedLoadouts.c,136": Unsafe down-casting, use 'ItemBase.Cast' for safe down-casting
+SCRIPT    (W): @"$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//AdvancedLoadouts//AdvancedLoadouts.c,137": Unsafe down-casting, use 'ItemBase.Cast' for safe down-casting
+SCRIPT    (W): @"$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//AdvancedLoadouts//AdvancedLoadouts.c,138": Unsafe down-casting, use 'ItemBase.Cast' for safe down-casting
+SCRIPT    (W): @"$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//AdvancedLoadouts//AdvancedLoadouts.c,139": Unsafe down-casting, use 'ItemBase.Cast' for safe down-casting
+SCRIPT    (W): @"$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//AdvancedLoadouts//AdvancedLoadouts.c,140": Unsafe down-casting, use 'ItemBase.Cast' for safe down-casting
+SCRIPT    (W): @"$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//AdvancedLoadouts//AdvancedLoadouts.c,141": Unsafe down-casting, use 'ItemBase.Cast' for safe down-casting
+SCRIPT    (W): @"$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//AdvancedLoadouts//AdvancedLoadouts.c,142": Unsafe down-casting, use 'ItemBase.Cast' for safe down-casting
+SCRIPT    (W): @"$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//AdvancedLoadouts//AdvancedLoadouts.c,143": Unsafe down-casting, use 'ItemBase.Cast' for safe down-casting
+SCRIPT    (W): @"$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//AdvancedLoadouts//AdvancedLoadouts.c,144": Unsafe down-casting, use 'ItemBase.Cast' for safe down-casting
+SCRIPT    (W): @"$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//AdvancedLoadouts//AdvancedLoadouts.c,145": Unsafe down-casting, use 'ItemBase.Cast' for safe down-casting
+SCRIPT    (W): @"$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//AdvancedLoadouts//AdvancedLoadouts.c,146": Unsafe down-casting, use 'ItemBase.Cast' for safe down-casting
+SCRIPT    (W): @"$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//AdvancedLoadouts//AdvancedLoadouts.c,610": Unsafe down-casting, use 'Magazine.Cast' for safe down-casting
+SCRIPT    (W): @"$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//AdvancedLoadouts//AdvancedLoadouts.c,652": Unsafe down-casting, use 'Magazine.Cast' for safe down-casting
+SCRIPT    (W): @"$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//ServerEvents//InfectedHordes.c,86": Unsafe down-casting, use 'EntityAI.Cast' for safe down-casting
+SCRIPT    (W): @"$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//ServerMission//DayZSurvival.c,344": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//ServerMission//DayZSurvival.c,352": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT    (W): @"$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//ServerMission//DayZSurvival.c,497": Unsafe down-casting, use 'PlayerBase.Cast' for safe down-casting
+SCRIPT       : BATTLE ROYALE IS ALIVE!!
+SCRIPT       : Zone 1: 8, 12
+SCRIPT       : Zone 2: 16, 18
+SCRIPT       : Zone 3: 22, 24
+SCRIPT       : Zone 4: 28, 30
+SCRIPT       : Zone 5: 32, 34
+SCRIPT       : Zone 6: 36, 37
+SCRIPT       : Zone 7: 38, 39
+SCRIPT       : Zone 8: 40, 40.5
+SCRIPT       : Zone 9: 42, 42.5
+SCRIPT       : Zone 10: 44, 44.5
+SCRIPT       : Zone 11: 50, 50.2
+SCRIPT       : ModTunables:: Init():: Loading Mod Settings...
+SCRIPT    (E): NULL pointer to instance
+Class:      'DayZSurvival'
+Function: 'StartingEquipSetup'
+Stack trace:
+$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//ServerMission//DayZSurvival.c:246
+scripts/5_Mission/mission\missionserver.c:316
+scripts/5_Mission/mission\missionserver.c:351
+scripts/5_Mission/mission\missionserver.c:149
+$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//ServerMission//DayZSurvival.c:207
+scripts/3_Game/dayzgame.c:872
+SCRIPT       : PlayerBase.c OnAction
+SCRIPT       : PlayerBase.c OnAction
+SCRIPT       : PlayerBase.c OnAction
+SCRIPT       : PlayerBase.c OnAction
+SCRIPT       : PlayerBase.c OnAction
+SCRIPT       : PlayerBase.c OnAction
+SCRIPT       : string s =    'ActionBase.c | ActionBaseCB | OnFinish called : false'
+SCRIPT    (E): NULL pointer to instance
+Class:      'DayZSurvival'
+Function: 'StartRound'
+Stack trace:
+$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//ServerMission//DayZSurvival.c:499
+$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//ServerMission//DayZSurvival.c:404
+scripts/5_Mission/mission\missionserver.c:72
+scripts/3_Game/dayzgame.c:1643
+SCRIPT       : 0.101: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 0.201: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 0.302: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 0.402998: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 0.503997: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 0.604996: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 0.705994: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 0.806993: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 0.907992: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 1.00899: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 1.15699: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 1.25699: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 1.35699: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 1.45699: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 1.557: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 1.657: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 1.75701: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 1.85701: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 1.95702: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 2.07101: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 2.17201: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 2.273: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 2.37399: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 2.51299: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 2.71299: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 2.84899: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 2.94999: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 3.05098: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 3.15197: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 3.25297: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 3.35396: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 3.45496: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 3.55595: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 3.65695: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 3.75794: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 3.85893: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 3.95993: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 4.06092: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 4.16192: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 4.26291: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 4.3639: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 4.4649: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 4.56589: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 4.66688: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 4.76787: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 4.86887: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 4.96986: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 5.07085: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 5.17185: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 5.27284: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 5.37383: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 5.47482: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 5.57682: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 5.67781: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 5.77981: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 5.8818: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 5.98279: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 6.08378: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 6.18878: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 6.28977: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 6.39076: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 6.49176: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 6.59275: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 6.69374: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 6.79473: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 6.89573: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 6.99672: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 7.09771: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 7.19871: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 7.2997: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 7.40069: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 7.50168: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 7.60268: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 7.70367: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 7.80466: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 7.90566: <5550.309570, 100.000000, 8019.653809>, 8000
+SCRIPT       : 8.00665: <5550.309570, 100.000000, 8019.653809>, 7993.35
+SCRIPT       : 8.10669: <5550.309570, 100.000000, 8019.653809>, 7893.31
+SCRIPT       : 8.20673: <5550.309570, 100.000000, 8019.653809>, 7793.27
+SCRIPT       : 8.30677: <5550.309570, 100.000000, 8019.653809>, 7693.23
+SCRIPT       : 8.40677: <5550.309570, 100.000000, 8019.653809>, 7593.23
+SCRIPT       : 8.50681: <5550.309570, 100.000000, 8019.653809>, 7493.19
+SCRIPT       : 8.60685: <5550.309570, 100.000000, 8019.653809>, 7393.15
+SCRIPT       : 8.70689: <5550.309570, 100.000000, 8019.653809>, 7293.11
+SCRIPT       : 8.80693: <5550.309570, 100.000000, 8019.653809>, 7193.07
+SCRIPT       : 8.90697: <5550.309570, 100.000000, 8019.653809>, 7093.03
+SCRIPT       : 9.008: <5550.309570, 100.000000, 8019.653809>, 6992
+SCRIPT       : 9.10803: <5550.309570, 100.000000, 8019.653809>, 6891.97
+SCRIPT       : 9.20807: <5550.309570, 100.000000, 8019.653809>, 6791.93
+SCRIPT       : 9.30811: <5550.309570, 100.000000, 8019.653809>, 6691.89
+SCRIPT       : 9.40815: <5550.309570, 100.000000, 8019.653809>, 6591.85
+SCRIPT       : 9.50819: <5550.309570, 100.000000, 8019.653809>, 6491.81
+SCRIPT       : 9.60822: <5550.309570, 100.000000, 8019.653809>, 6391.78
+SCRIPT       : 9.70826: <5550.309570, 100.000000, 8019.653809>, 6291.74
+SCRIPT       : 9.81929: <5550.309570, 100.000000, 8019.653809>, 6180.71
+SCRIPT       : 9.91933: <5550.309570, 100.000000, 8019.653809>, 6080.67
+SCRIPT       : 10.0194: <5550.309570, 100.000000, 8019.653809>, 5980.63
+SCRIPT       : 10.1194: <5550.309570, 100.000000, 8019.653809>, 5880.59
+SCRIPT       : 10.2194: <5550.309570, 100.000000, 8019.653809>, 5780.56
+SCRIPT       : 10.3195: <5550.309570, 100.000000, 8019.653809>, 5680.52
+SCRIPT       : 10.4195: <5550.309570, 100.000000, 8019.653809>, 5580.48
+SCRIPT       : 10.5196: <5550.309570, 100.000000, 8019.653809>, 5480.44
+SCRIPT       : 10.6196: <5550.309570, 100.000000, 8019.653809>, 5380.4
+SCRIPT       : 10.7196: <5550.309570, 100.000000, 8019.653809>, 5280.36
+SCRIPT       : 10.8197: <5550.309570, 100.000000, 8019.653809>, 5180.33
+SCRIPT       : 10.9197: <5550.309570, 100.000000, 8019.653809>, 5080.29
+SCRIPT       : 11.0198: <5550.309570, 100.000000, 8019.653809>, 4980.25
+SCRIPT       : 11.1198: <5550.309570, 100.000000, 8019.653809>, 4880.21
+SCRIPT       : 11.2198: <5550.309570, 100.000000, 8019.653809>, 4780.18
+SCRIPT       : 11.3199: <5550.309570, 100.000000, 8019.653809>, 4680.14
+SCRIPT       : 11.4199: <5550.309570, 100.000000, 8019.653809>, 4580.1
+SCRIPT       : 11.5199: <5550.309570, 100.000000, 8019.653809>, 4480.06
+SCRIPT       : 11.62: <5550.309570, 100.000000, 8019.653809>, 4380.02
+SCRIPT       : 11.72: <5550.309570, 100.000000, 8019.653809>, 4279.99
+SCRIPT       : 11.8201: <5550.309570, 100.000000, 8019.653809>, 4179.95
+SCRIPT       : 11.9201: <5550.309570, 100.000000, 8019.653809>, 4079.91
+SCRIPT       : offset: <724.443420, 0.000000, 248.729889>
+SCRIPT       : 12.0201: <5550.309570, 100.000000, 8019.653809>, 4000
+SCRIPT       : 12.1202: <5550.309570, 100.000000, 8019.653809>, 4000
+SCRIPT       : 12.2202: <5550.309570, 100.000000, 8019.653809>, 4000
+SCRIPT       : 12.3202: <5550.309570, 100.000000, 8019.653809>, 4000
+SCRIPT       : 12.4203: <5550.309570, 100.000000, 8019.653809>, 4000
+SCRIPT       : 12.5203: <5550.309570, 100.000000, 8019.653809>, 4000
+SCRIPT       : 12.6203: <5550.309570, 100.000000, 8019.653809>, 4000
+SCRIPT       : 12.7204: <5550.309570, 100.000000, 8019.653809>, 4000
+SCRIPT       : 12.8204: <5550.309570, 100.000000, 8019.653809>, 4000
+SCRIPT       : 12.9205: <5550.309570, 100.000000, 8019.653809>, 4000
+SCRIPT       : 13.0205: <5550.309570, 100.000000, 8019.653809>, 4000
+SCRIPT       : 13.1205: <5550.309570, 100.000000, 8019.653809>, 4000
+SCRIPT       : 13.2206: <5550.309570, 100.000000, 8019.653809>, 4000
+SCRIPT       : 13.3206: <5550.309570, 100.000000, 8019.653809>, 4000
+SCRIPT       : 13.4207: <5550.309570, 100.000000, 8019.653809>, 4000
+SCRIPT       : 13.5207: <5550.309570, 100.000000, 8019.653809>, 4000
+SCRIPT       : 13.6207: <5550.309570, 100.000000, 8019.653809>, 4000
+SCRIPT       : 13.7208: <5550.309570, 100.000000, 8019.653809>, 4000
+SCRIPT       : 13.8208: <5550.309570, 100.000000, 8019.653809>, 4000
+SCRIPT       : 13.9219: <5550.309570, 100.000000, 8019.653809>, 4000
+SCRIPT       : 14.0219: <5550.309570, 100.000000, 8019.653809>, 4000
+SCRIPT       : 14.1259: <5550.309570, 100.000000, 8019.653809>, 4000
+SCRIPT       : 14.2259: <5550.309570, 100.000000, 8019.653809>, 4000
+SCRIPT       : 14.326: <5550.309570, 100.000000, 8019.653809>, 4000
+SCRIPT       : 14.426: <5550.309570, 100.000000, 8019.653809>, 4000
+SCRIPT       : 14.526: <5550.309570, 100.000000, 8019.653809>, 4000
+SCRIPT       : 14.6261: <5550.309570, 100.000000, 8019.653809>, 4000
+SCRIPT       : 14.7261: <5550.309570, 100.000000, 8019.653809>, 4000
+SCRIPT       : 14.8262: <5550.309570, 100.000000, 8019.653809>, 4000
+SCRIPT       : 14.9262: <5550.309570, 100.000000, 8019.653809>, 4000
+SCRIPT       : 15.0262: <5550.309570, 100.000000, 8019.653809>, 4000
+SCRIPT       : 15.1263: <5550.309570, 100.000000, 8019.653809>, 4000
+SCRIPT       : 15.2263: <5550.309570, 100.000000, 8019.653809>, 4000
+SCRIPT       : 15.3263: <5550.309570, 100.000000, 8019.653809>, 4000
+SCRIPT       : 15.4264: <5550.309570, 100.000000, 8019.653809>, 4000
+SCRIPT       : 15.5274: <5550.309570, 100.000000, 8019.653809>, 4000
+SCRIPT       : 15.6275: <5550.309570, 100.000000, 8019.653809>, 4000
+SCRIPT       : 15.7275: <5550.309570, 100.000000, 8019.653809>, 4000
+SCRIPT       : 15.8275: <5550.309570, 100.000000, 8019.653809>, 4000
+SCRIPT       : 15.9276: <5550.309570, 100.000000, 8019.653809>, 4000
+SCRIPT       : 16.0276: <5560.298828, 100.000000, 8023.083496>, 3972.42
+SCRIPT       : 16.1285: <5596.864746, 100.000000, 8035.638184>, 3871.47
+SCRIPT       : 16.2335: <5634.878418, 100.000000, 8048.689453>, 3766.53
+SCRIPT       : 16.3344: <5671.444336, 100.000000, 8061.244141>, 3665.58
+SCRIPT       : 16.4354: <5708.008301, 100.000000, 8073.797852>, 3564.63
+SCRIPT       : 16.5363: <5744.574707, 100.000000, 8086.352539>, 3463.68
+SCRIPT       : 16.6373: <5781.139648, 100.000000, 8098.906738>, 3362.74
+SCRIPT       : 16.7382: <5817.704102, 100.000000, 8111.460938>, 3261.79
+SCRIPT       : 16.8392: <5854.270508, 100.000000, 8124.015625>, 3160.84
+SCRIPT       : 16.9401: <5890.836914, 100.000000, 8136.570313>, 3059.89
+SCRIPT       : 17.0521: <5931.386230, 100.000000, 8150.492188>, 2947.95
+SCRIPT       : 17.153: <5967.952637, 100.000000, 8163.046875>, 2847
+SCRIPT       : 17.2539: <6004.516602, 100.000000, 8175.601074>, 2746.05
+SCRIPT       : 17.3549: <6041.082031, 100.000000, 8188.155273>, 2645.11
+SCRIPT       : 17.4558: <6077.647949, 100.000000, 8200.709961>, 2544.16
+SCRIPT       : 17.5568: <6114.213867, 100.000000, 8213.264648>, 2443.21
+SCRIPT       : 17.6577: <6150.782227, 100.000000, 8225.819336>, 2342.25
+SCRIPT       : 17.7587: <6187.348633, 100.000000, 8238.374023>, 2241.3
+SCRIPT       : 17.8596: <6223.915039, 100.000000, 8250.928711>, 2140.35
+SCRIPT       : 17.9606: <6260.479492, 100.000000, 8263.483398>, 2039.41
+SCRIPT       : offset: <913.010132, 0.000000, -110.522301>
+SCRIPT       : 18.0615: <6274.752930, 100.000000, 8268.383789>, 2000
+SCRIPT       : 18.1625: <6274.752930, 100.000000, 8268.383789>, 2000
+SCRIPT       : 18.2634: <6274.752930, 100.000000, 8268.383789>, 2000
+SCRIPT       : 18.3644: <6274.752930, 100.000000, 8268.383789>, 2000
+SCRIPT       : 18.4653: <6274.752930, 100.000000, 8268.383789>, 2000
+SCRIPT       : 18.5663: <6274.752930, 100.000000, 8268.383789>, 2000
+SCRIPT       : 18.6672: <6274.752930, 100.000000, 8268.383789>, 2000
+SCRIPT       : 18.7682: <6274.752930, 100.000000, 8268.383789>, 2000
+SCRIPT       : 18.8691: <6274.752930, 100.000000, 8268.383789>, 2000
+SCRIPT       : 18.9701: <6274.752930, 100.000000, 8268.383789>, 2000
+SCRIPT       : 19.0711: <6274.752930, 100.000000, 8268.383789>, 2000
+SCRIPT       : 19.172: <6274.752930, 100.000000, 8268.383789>, 2000
+SCRIPT       : 19.273: <6274.752930, 100.000000, 8268.383789>, 2000
+SCRIPT       : 19.3739: <6274.752930, 100.000000, 8268.383789>, 2000
+SCRIPT       : 19.4748: <6274.752930, 100.000000, 8268.383789>, 2000
+SCRIPT       : 19.5758: <6274.752930, 100.000000, 8268.383789>, 2000
+SCRIPT       : 19.6768: <6274.752930, 100.000000, 8268.383789>, 2000
+SCRIPT       : 19.7777: <6274.752930, 100.000000, 8268.383789>, 2000
+SCRIPT       : 19.8787: <6274.752930, 100.000000, 8268.383789>, 2000
+SCRIPT       : 19.9796: <6274.752930, 100.000000, 8268.383789>, 2000
+SCRIPT       : 20.0805: <6274.752930, 100.000000, 8268.383789>, 2000
+SCRIPT       : 20.1815: <6274.752930, 100.000000, 8268.383789>, 2000
+SCRIPT       : 20.2824: <6274.752930, 100.000000, 8268.383789>, 2000
+SCRIPT       : 20.3834: <6274.752930, 100.000000, 8268.383789>, 2000
+SCRIPT       : 20.4843: <6274.752930, 100.000000, 8268.383789>, 2000
+SCRIPT       : 20.5853: <6274.752930, 100.000000, 8268.383789>, 2000
+SCRIPT       : 20.6862: <6274.752930, 100.000000, 8268.383789>, 2000
+SCRIPT       : 20.7872: <6274.752930, 100.000000, 8268.383789>, 2000
+SCRIPT       : 20.8881: <6274.752930, 100.000000, 8268.383789>, 2000
+SCRIPT       : 20.9891: <6274.752930, 100.000000, 8268.383789>, 2000
+SCRIPT       : 21.09: <6274.752930, 100.000000, 8268.383789>, 2000
+SCRIPT       : 21.192: <6274.752930, 100.000000, 8268.383789>, 2000
+SCRIPT       : 21.2929: <6274.752930, 100.000000, 8268.383789>, 2000
+SCRIPT       : 21.3939: <6274.752930, 100.000000, 8268.383789>, 2000
+SCRIPT       : 21.4948: <6274.752930, 100.000000, 8268.383789>, 2000
+SCRIPT       : 21.5958: <6274.752930, 100.000000, 8268.383789>, 2000
+SCRIPT       : 21.6967: <6274.752930, 100.000000, 8268.383789>, 2000
+SCRIPT       : 21.7977: <6274.752930, 100.000000, 8268.383789>, 2000
+SCRIPT       : 21.8986: <6274.752930, 100.000000, 8268.383789>, 2000
+SCRIPT       : 21.9996: <6274.752930, 100.000000, 8268.383789>, 2000
+SCRIPT       : 22.1005: <6320.644043, 100.000000, 8262.828125>, 1949.74
+SCRIPT       : 22.2015: <6366.734375, 100.000000, 8257.249023>, 1899.25
+SCRIPT       : 22.3024: <6412.816895, 100.000000, 8251.670898>, 1848.78
+SCRIPT       : 22.4034: <6458.898438, 100.000000, 8246.092773>, 1798.31
+SCRIPT       : 22.5043: <6504.982910, 100.000000, 8240.513672>, 1747.83
+SCRIPT       : 22.6053: <6551.066406, 100.000000, 8234.935547>, 1697.36
+SCRIPT       : 22.7062: <6597.147949, 100.000000, 8229.357422>, 1646.89
+SCRIPT       : 22.8072: <6643.229492, 100.000000, 8223.778320>, 1596.42
+SCRIPT       : 22.9081: <6689.313965, 100.000000, 8218.200195>, 1545.94
+SCRIPT       : 23.0131: <6737.225098, 100.000000, 8212.400391>, 1493.46
+SCRIPT       : 23.114: <6783.306641, 100.000000, 8206.822266>, 1442.99
+SCRIPT       : 23.218: <6830.759766, 100.000000, 8201.077148>, 1391.02
+SCRIPT       : 23.3189: <6876.841309, 100.000000, 8195.499023>, 1340.55
+SCRIPT       : 23.4209: <6923.384766, 100.000000, 8189.865234>, 1289.57
+SCRIPT       : 23.5218: <6969.468262, 100.000000, 8184.286621>, 1239.09
+SCRIPT       : 23.6228: <7015.551758, 100.000000, 8178.708008>, 1188.62
+SCRIPT       : 23.7237: <7061.636719, 100.000000, 8173.129395>, 1138.14
+SCRIPT       : 23.8247: <7107.719238, 100.000000, 8167.550781>, 1087.67
+SCRIPT       : 23.9256: <7153.800781, 100.000000, 8161.972656>, 1037.2
+SCRIPT       : offset: <-23.876987, 0.000000, 5.974782>
+SCRIPT       : 24.0266: <7187.763184, 100.000000, 8157.861328>, 1000
+SCRIPT       : 24.1275: <7187.763184, 100.000000, 8157.861328>, 1000
+SCRIPT       : 24.2285: <7187.763184, 100.000000, 8157.861328>, 1000
+SCRIPT       : 24.3294: <7187.763184, 100.000000, 8157.861328>, 1000
+SCRIPT       : 24.4304: <7187.763184, 100.000000, 8157.861328>, 1000
+SCRIPT       : 24.5313: <7187.763184, 100.000000, 8157.861328>, 1000
+SCRIPT       : 24.6323: <7187.763184, 100.000000, 8157.861328>, 1000
+SCRIPT       : 24.7332: <7187.763184, 100.000000, 8157.861328>, 1000
+SCRIPT       : 24.8342: <7187.763184, 100.000000, 8157.861328>, 1000
+SCRIPT       : 24.9351: <7187.763184, 100.000000, 8157.861328>, 1000
+SCRIPT       : 25.039: <7187.763184, 100.000000, 8157.861328>, 1000
+SCRIPT       : 25.14: <7187.763184, 100.000000, 8157.861328>, 1000
+SCRIPT       : 25.2409: <7187.763184, 100.000000, 8157.861328>, 1000
+SCRIPT       : 25.3419: <7187.763184, 100.000000, 8157.861328>, 1000
+SCRIPT       : 25.4428: <7187.763184, 100.000000, 8157.861328>, 1000
+SCRIPT       : 25.5438: <7187.763184, 100.000000, 8157.861328>, 1000
+SCRIPT       : 25.6447: <7187.763184, 100.000000, 8157.861328>, 1000
+SCRIPT       : 25.7457: <7187.763184, 100.000000, 8157.861328>, 1000
+SCRIPT       : 25.8466: <7187.763184, 100.000000, 8157.861328>, 1000
+SCRIPT       : 25.9476: <7187.763184, 100.000000, 8157.861328>, 1000
+SCRIPT       : 26.0485: <7187.763184, 100.000000, 8157.861328>, 1000
+SCRIPT       : 26.1495: <7187.763184, 100.000000, 8157.861328>, 1000
+SCRIPT       : 26.2504: <7187.763184, 100.000000, 8157.861328>, 1000
+SCRIPT       : 26.3514: <7187.763184, 100.000000, 8157.861328>, 1000
+SCRIPT       : 26.4523: <7187.763184, 100.000000, 8157.861328>, 1000
+SCRIPT       : 26.5533: <7187.763184, 100.000000, 8157.861328>, 1000
+SCRIPT       : 26.6542: <7187.763184, 100.000000, 8157.861328>, 1000
+SCRIPT       : 26.7552: <7187.763184, 100.000000, 8157.861328>, 1000
+SCRIPT       : 26.8561: <7187.763184, 100.000000, 8157.861328>, 1000
+SCRIPT       : 26.9571: <7187.763184, 100.000000, 8157.861328>, 1000
+SCRIPT       : 27.058: <7187.763184, 100.000000, 8157.861328>, 1000
+SCRIPT       : 27.159: <7187.763184, 100.000000, 8157.861328>, 1000
+SCRIPT       : 27.2599: <7187.763184, 100.000000, 8157.861328>, 1000
+SCRIPT       : 27.3609: <7187.763184, 100.000000, 8157.861328>, 1000
+SCRIPT       : 27.4618: <7187.763184, 100.000000, 8157.861328>, 1000
+SCRIPT       : 27.5628: <7187.763184, 100.000000, 8157.861328>, 1000
+SCRIPT       : 27.6637: <7187.763184, 100.000000, 8157.861328>, 1000
+SCRIPT       : 27.7647: <7187.763184, 100.000000, 8157.861328>, 1000
+SCRIPT       : 27.8656: <7187.763184, 100.000000, 8157.861328>, 1000
+SCRIPT       : 27.9666: <7187.763184, 100.000000, 8157.861328>, 1000
+SCRIPT       : 28.0675: <7186.957520, 100.000000, 8158.062988>, 983.125
+SCRIPT       : 28.1684: <7185.752441, 100.000000, 8158.364746>, 957.889
+SCRIPT       : 28.2694: <7184.546875, 100.000000, 8158.666016>, 932.651
+SCRIPT       : 28.3703: <7183.341797, 100.000000, 8158.967773>, 907.413
+SCRIPT       : 28.4713: <7182.136719, 100.000000, 8159.269043>, 882.176
+SCRIPT       : 28.5722: <7180.931641, 100.000000, 8159.570801>, 856.939
+SCRIPT       : 28.6732: <7179.726563, 100.000000, 8159.872559>, 831.703
+SCRIPT       : 28.7741: <7178.520996, 100.000000, 8160.173828>, 806.467
+SCRIPT       : 28.8751: <7177.315918, 100.000000, 8160.475586>, 781.23
+SCRIPT       : 28.976: <7176.110840, 100.000000, 8160.776855>, 755.994
+SCRIPT       : 29.077: <7174.905762, 100.000000, 8161.078613>, 730.757
+SCRIPT       : 29.1779: <7173.700684, 100.000000, 8161.379883>, 705.521
+SCRIPT       : 29.2789: <7172.495605, 100.000000, 8161.681641>, 680.284
+SCRIPT       : 29.3798: <7171.290527, 100.000000, 8161.983398>, 655.048
+SCRIPT       : 29.4808: <7170.084961, 100.000000, 8162.284668>, 629.81
+SCRIPT       : 29.5817: <7168.879883, 100.000000, 8162.586426>, 604.567
+SCRIPT       : 29.6827: <7167.674316, 100.000000, 8162.888184>, 579.324
+SCRIPT       : 29.7847: <7166.457031, 100.000000, 8163.192871>, 553.831
+SCRIPT       : 29.8856: <7165.251465, 100.000000, 8163.494141>, 528.588
+SCRIPT       : 29.9866: <7164.046387, 100.000000, 8163.795898>, 503.35
+SCRIPT       : offset: <169.741791, 0.000000, 55.383205>
+SCRIPT       : 30.0875: <7163.886230, 100.000000, 8163.835938>, 500
+SCRIPT       : 30.1885: <7163.886230, 100.000000, 8163.835938>, 500
+SCRIPT       : 30.2894: <7163.886230, 100.000000, 8163.835938>, 500
+SCRIPT       : 30.3904: <7163.886230, 100.000000, 8163.835938>, 500
+SCRIPT       : 30.4913: <7163.886230, 100.000000, 8163.835938>, 500
+SCRIPT       : 30.5923: <7163.886230, 100.000000, 8163.835938>, 500
+SCRIPT       : 30.6942: <7163.886230, 100.000000, 8163.835938>, 500
+SCRIPT       : 30.7952: <7163.886230, 100.000000, 8163.835938>, 500
+SCRIPT       : 30.8961: <7163.886230, 100.000000, 8163.835938>, 500
+SCRIPT       : 30.9971: <7163.886230, 100.000000, 8163.835938>, 500
+SCRIPT       : 31.098: <7163.886230, 100.000000, 8163.835938>, 500
+SCRIPT       : 31.199: <7163.886230, 100.000000, 8163.835938>, 500
+SCRIPT       : 31.2999: <7163.886230, 100.000000, 8163.835938>, 500
+SCRIPT       : 31.4009: <7163.886230, 100.000000, 8163.835938>, 500
+SCRIPT       : 31.5018: <7163.886230, 100.000000, 8163.835938>, 500
+SCRIPT       : 31.6028: <7163.886230, 100.000000, 8163.835938>, 500
+SCRIPT       : 31.7037: <7163.886230, 100.000000, 8163.835938>, 500
+SCRIPT       : 31.8047: <7163.886230, 100.000000, 8163.835938>, 500
+SCRIPT       : 31.9056: <7163.886230, 100.000000, 8163.835938>, 500
+SCRIPT       : 32.0066: <7164.442871, 100.000000, 8164.017578>, 499.18
+SCRIPT       : 32.1075: <7173.010254, 100.000000, 8166.812988>, 486.562
+SCRIPT       : 32.2085: <7181.577637, 100.000000, 8169.608398>, 473.944
+SCRIPT       : 32.3094: <7190.145020, 100.000000, 8172.403320>, 461.326
+SCRIPT       : 32.4103: <7198.712402, 100.000000, 8175.198730>, 448.707
+SCRIPT       : 32.5113: <7207.279785, 100.000000, 8177.994141>, 436.089
+SCRIPT       : 32.6122: <7215.846680, 100.000000, 8180.789551>, 423.471
+SCRIPT       : 32.7132: <7224.414063, 100.000000, 8183.584961>, 410.853
+SCRIPT       : 32.8141: <7232.981445, 100.000000, 8186.379883>, 398.235
+SCRIPT       : 32.9151: <7241.548828, 100.000000, 8189.175293>, 385.617
+SCRIPT       : 33.016: <7250.116211, 100.000000, 8191.970703>, 372.998
+SCRIPT       : 33.117: <7258.683594, 100.000000, 8194.765625>, 360.38
+SCRIPT       : 33.2179: <7267.250488, 100.000000, 8197.561523>, 347.762
+SCRIPT       : 33.3188: <7275.817871, 100.000000, 8200.356445>, 335.144
+SCRIPT       : 33.4198: <7284.385254, 100.000000, 8203.152344>, 322.526
+SCRIPT       : 33.5207: <7292.952637, 100.000000, 8205.947266>, 309.908
+SCRIPT       : 33.6217: <7301.520020, 100.000000, 8208.742188>, 297.289
+SCRIPT       : 33.7236: <7310.172363, 100.000000, 8211.565430>, 284.546
+SCRIPT       : 33.8246: <7318.739746, 100.000000, 8214.361328>, 271.928
+SCRIPT       : 33.9275: <7327.477051, 100.000000, 8217.211914>, 259.059
+SCRIPT       : offset: <39.719143, 0.000000, 109.545013>
+SCRIPT       : 34.0285: <7333.627930, 100.000000, 8219.218750>, 250
+SCRIPT       : 34.1294: <7333.627930, 100.000000, 8219.218750>, 250
+SCRIPT       : 34.2304: <7333.627930, 100.000000, 8219.218750>, 250
+SCRIPT       : 34.3313: <7333.627930, 100.000000, 8219.218750>, 250
+SCRIPT       : 34.4323: <7333.627930, 100.000000, 8219.218750>, 250
+SCRIPT       : 34.5332: <7333.627930, 100.000000, 8219.218750>, 250
+SCRIPT       : 34.6342: <7333.627930, 100.000000, 8219.218750>, 250
+SCRIPT       : 34.7351: <7333.627930, 100.000000, 8219.218750>, 250
+SCRIPT       : 34.836: <7333.627930, 100.000000, 8219.218750>, 250
+SCRIPT       : 34.937: <7333.627930, 100.000000, 8219.218750>, 250
+SCRIPT       : 35.0379: <7333.627930, 100.000000, 8219.218750>, 250
+SCRIPT       : 35.1389: <7333.627930, 100.000000, 8219.218750>, 250
+SCRIPT       : 35.2398: <7333.627930, 100.000000, 8219.218750>, 250
+SCRIPT       : 35.3408: <7333.627930, 100.000000, 8219.218750>, 250
+SCRIPT       : 35.4417: <7333.627930, 100.000000, 8219.218750>, 250
+SCRIPT       : 35.5427: <7333.627930, 100.000000, 8219.218750>, 250
+SCRIPT       : 35.6436: <7333.627930, 100.000000, 8219.218750>, 250
+SCRIPT       : 35.7446: <7333.627930, 100.000000, 8219.218750>, 250
+SCRIPT       : 35.8455: <7333.627930, 100.000000, 8219.218750>, 250
+SCRIPT       : 35.9464: <7333.627930, 100.000000, 8219.218750>, 250
+SCRIPT       : 36.0474: <7335.510254, 100.000000, 8224.410156>, 244.076
+SCRIPT       : 36.1483: <7339.519531, 100.000000, 8235.467773>, 231.458
+SCRIPT       : 36.2493: <7343.529297, 100.000000, 8246.526367>, 218.84
+SCRIPT       : 36.3502: <7347.538574, 100.000000, 8257.583984>, 206.222
+SCRIPT       : 36.4512: <7351.548340, 100.000000, 8268.642578>, 193.604
+SCRIPT       : 36.5581: <7355.795898, 100.000000, 8280.358398>, 180.235
+SCRIPT       : 36.6591: <7359.805664, 100.000000, 8291.416016>, 167.617
+SCRIPT       : 36.76: <7363.814941, 100.000000, 8302.473633>, 154.999
+SCRIPT       : 36.861: <7367.824707, 100.000000, 8313.532227>, 142.38
+SCRIPT       : 36.9619: <7371.833984, 100.000000, 8324.590820>, 129.762
+SCRIPT       : offset: <-1.777511, 0.000000, 13.758219>
+SCRIPT       : 37.0629: <7373.347168, 100.000000, 8328.763672>, 125
+SCRIPT       : 37.1638: <7373.347168, 100.000000, 8328.763672>, 125
+SCRIPT       : 37.2748: <7373.347168, 100.000000, 8328.763672>, 125
+SCRIPT       : 37.3757: <7373.347168, 100.000000, 8328.763672>, 125
+SCRIPT       : 37.4856: <7373.347168, 100.000000, 8328.763672>, 125
+SCRIPT       : 37.5866: <7373.347168, 100.000000, 8328.763672>, 125
+SCRIPT       : 37.6875: <7373.347168, 100.000000, 8328.763672>, 125
+SCRIPT       : 37.7885: <7373.347168, 100.000000, 8328.763672>, 125
+SCRIPT       : 37.8894: <7373.347168, 100.000000, 8328.763672>, 125
+SCRIPT       : 37.9904: <7373.347168, 100.000000, 8328.763672>, 125
+SCRIPT       : 38.0913: <7373.185059, 100.000000, 8330.020508>, 119.291
+SCRIPT       : 38.1923: <7373.005371, 100.000000, 8331.409180>, 112.982
+SCRIPT       : 38.2932: <7372.826172, 100.000000, 8332.797852>, 106.673
+SCRIPT       : 38.3942: <7372.646484, 100.000000, 8334.186523>, 100.363
+SCRIPT       : 38.4951: <7372.467285, 100.000000, 8335.575195>, 94.0542
+SCRIPT       : 38.5961: <7372.287598, 100.000000, 8336.964844>, 87.7447
+SCRIPT       : 38.697: <7372.108398, 100.000000, 8338.353516>, 81.4354
+SCRIPT       : 38.798: <7371.928711, 100.000000, 8339.742188>, 75.1259
+SCRIPT       : 38.8989: <7371.749512, 100.000000, 8341.130859>, 68.8169
+SCRIPT       : 38.9999: <7371.569824, 100.000000, 8342.519531>, 62.5072
+SCRIPT       : offset: <4.456531, 0.000000, 7.880690>
+SCRIPT       : 39.1008: <7371.569824, 100.000000, 8342.521484>, 62.5
+SCRIPT       : 39.2018: <7371.569824, 100.000000, 8342.521484>, 62.5
+SCRIPT       : 39.3027: <7371.569824, 100.000000, 8342.521484>, 62.5
+SCRIPT       : 39.4037: <7371.569824, 100.000000, 8342.521484>, 62.5
+SCRIPT       : 39.5046: <7371.569824, 100.000000, 8342.521484>, 62.5
+SCRIPT       : 39.6056: <7371.569824, 100.000000, 8342.521484>, 62.5
+SCRIPT       : 39.7065: <7371.569824, 100.000000, 8342.521484>, 62.5
+SCRIPT       : 39.8075: <7371.569824, 100.000000, 8342.521484>, 62.5
+SCRIPT       : 39.9084: <7371.569824, 100.000000, 8342.521484>, 62.5
+SCRIPT       : 40.0094: <7371.653320, 100.000000, 8342.668945>, 61.9147
+SCRIPT       : 40.1103: <7372.553223, 100.000000, 8344.259766>, 55.6054
+SCRIPT       : 40.2113: <7373.452637, 100.000000, 8345.851563>, 49.2959
+SCRIPT       : 40.3122: <7374.352539, 100.000000, 8347.442383>, 42.9869
+SCRIPT       : 40.4132: <7375.252441, 100.000000, 8349.033203>, 36.6778
+SCRIPT       : offset: <-4.331885, 0.000000, 9.607447>
+SCRIPT       : 40.5141: <7376.026367, 100.000000, 8350.402344>, 31.25
+SCRIPT       : 40.6151: <7376.026367, 100.000000, 8350.402344>, 31.25
+SCRIPT       : 40.716: <7376.026367, 100.000000, 8350.402344>, 31.25
+SCRIPT       : 40.817: <7376.026367, 100.000000, 8350.402344>, 31.25
+SCRIPT       : 40.9179: <7376.026367, 100.000000, 8350.402344>, 31.25
+SCRIPT       : 41.0188: <7376.026367, 100.000000, 8350.402344>, 31.25
+SCRIPT       : 41.1198: <7376.026367, 100.000000, 8350.402344>, 31.25
+SCRIPT       : 41.2207: <7376.026367, 100.000000, 8350.402344>, 31.25
+SCRIPT       : 41.3217: <7376.026367, 100.000000, 8350.402344>, 31.25
+SCRIPT       : 41.4226: <7376.026367, 100.000000, 8350.402344>, 31.25
+SCRIPT       : 41.5236: <7376.026367, 100.000000, 8350.402344>, 31.25
+SCRIPT       : 41.6245: <7376.026367, 100.000000, 8350.402344>, 31.25
+SCRIPT       : 41.7255: <7376.026367, 100.000000, 8350.402344>, 31.25
+SCRIPT       : 41.8264: <7376.026367, 100.000000, 8350.402344>, 31.25
+SCRIPT       : 41.9274: <7376.026367, 100.000000, 8350.402344>, 31.25
+SCRIPT       : 42.0283: <7375.781250, 100.000000, 8350.946289>, 30.3651
+SCRIPT       : 42.1293: <7374.906250, 100.000000, 8352.885742>, 27.2106
+SCRIPT       : 42.2302: <7374.031738, 100.000000, 8354.826172>, 24.056
+SCRIPT       : 42.3312: <7373.157227, 100.000000, 8356.765625>, 20.9013
+SCRIPT       : 42.4321: <7372.282715, 100.000000, 8358.705078>, 17.7468
+SCRIPT       : offset: <-1.211337, 0.000000, -2.544046>
+SCRIPT       : 42.533: <7371.694336, 100.000000, 8360.009766>, 15.625
+SCRIPT       : 42.634: <7371.694336, 100.000000, 8360.009766>, 15.625
+SCRIPT       : 42.7349: <7371.694336, 100.000000, 8360.009766>, 15.625
+SCRIPT       : 42.8359: <7371.694336, 100.000000, 8360.009766>, 15.625
+SCRIPT       : 42.9368: <7371.694336, 100.000000, 8360.009766>, 15.625
+SCRIPT       : 43.0378: <7371.694336, 100.000000, 8360.009766>, 15.625
+SCRIPT       : 43.1387: <7371.694336, 100.000000, 8360.009766>, 15.625
+SCRIPT       : 43.2397: <7371.694336, 100.000000, 8360.009766>, 15.625
+SCRIPT       : 43.3406: <7371.694336, 100.000000, 8360.009766>, 15.625
+SCRIPT       : 43.4416: <7371.694336, 100.000000, 8360.009766>, 15.625
+SCRIPT       : 43.5425: <7371.694336, 100.000000, 8360.009766>, 15.625
+SCRIPT       : 43.6435: <7371.694336, 100.000000, 8360.009766>, 15.625
+SCRIPT       : 43.7444: <7371.694336, 100.000000, 8360.009766>, 15.625
+SCRIPT       : 43.8454: <7371.694336, 100.000000, 8360.009766>, 15.625
+SCRIPT       : 43.9463: <7371.694336, 100.000000, 8360.009766>, 15.625
+SCRIPT       : 44.0472: <7371.580078, 100.000000, 8359.769531>, 14.8868
+SCRIPT       : 44.1482: <7371.335449, 100.000000, 8359.255859>, 13.3094
+SCRIPT       : 44.2491: <7371.090820, 100.000000, 8358.742188>, 11.7321
+SCRIPT       : 44.3501: <7370.846191, 100.000000, 8358.228516>, 10.1548
+SCRIPT       : 44.452: <7370.599121, 100.000000, 8357.709961>, 8.56179
+SCRIPT       : offset: <-1.708062, 0.000000, -0.299183>
+SCRIPT       : 44.553: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 44.6539: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 44.7549: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 44.8558: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 44.9568: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 45.0577: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 45.1597: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 45.2606: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 45.3616: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 45.4625: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 45.5635: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 45.6644: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 45.7654: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 45.8663: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 45.9673: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 46.0682: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 46.1691: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 46.2701: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 46.371: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 46.472: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 46.5729: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 46.6739: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 46.7748: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 46.8758: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 46.9767: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 47.0777: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 47.1786: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 47.2796: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 47.3805: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 47.4815: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 47.5824: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 47.6924: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 47.7933: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 47.8942: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 47.9952: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 48.0961: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 48.1971: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 48.298: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 48.399: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 48.4999: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 48.6009: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 48.7018: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 48.8028: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 48.9037: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 49.0057: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 49.1066: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 49.2076: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : EEKilled, you have died
+SCRIPT       : 49.3105: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 49.4114: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 49.5124: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 49.6133: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 49.7143: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 49.8152: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 49.9162: <7370.482910, 100.000000, 8357.465820>, 7.8125
+SCRIPT       : 50.0171: <7370.336426, 100.000000, 8357.440430>, 7.47797
+SCRIPT       : 50.1181: <7369.474609, 100.000000, 8357.289063>, 5.50633
+SCRIPT       : 50.219: <7368.612305, 100.000000, 8357.138672>, 3.53469
+SCRIPT       : 50.32: <7367.750488, 100.000000, 8356.987305>, 1.56305
+SCRIPT       : 50.4209: <7366.888184, 100.000000, 8356.836914>, -0.408513
+SCRIPT       : 50.5219: <7366.026367, 100.000000, 8356.686523>, -2.38015
+SCRIPT       : 50.6228: <7365.164063, 100.000000, 8356.535156>, -4.35172
+SCRIPT       : m_Player.m_HealthLevel:4
+SCRIPT       : 50.7238: <7364.302246, 100.000000, 8356.384766>, -6.32328
+SCRIPT       : 50.8247: <7363.439941, 100.000000, 8356.233398>, -8.29492
+SCRIPT       : 50.9256: <7362.577637, 100.000000, 8356.083008>, -10.2665
+SCRIPT       : 51.0266: <7361.715820, 100.000000, 8355.931641>, -12.2382
+SCRIPT       : 51.1275: <7360.853516, 100.000000, 8355.781250>, -14.2098
+SCRIPT       : 51.2285: <7359.991699, 100.000000, 8355.629883>, -16.1814
+SCRIPT       : 51.3294: <7359.129395, 100.000000, 8355.479492>, -18.153
+SCRIPT       : 51.4304: <7358.267578, 100.000000, 8355.329102>, -20.1246
+SCRIPT       : 51.5313: <7357.405273, 100.000000, 8355.177734>, -22.0962
+SCRIPT       : 51.6323: <7356.542969, 100.000000, 8355.027344>, -24.068
+SCRIPT       : 51.7332: <7355.681152, 100.000000, 8354.875977>, -26.0395
+SCRIPT       : 51.8342: <7354.818848, 100.000000, 8354.725586>, -28.0111
+SCRIPT       : 51.9351: <7353.957031, 100.000000, 8354.574219>, -29.9827
+SCRIPT       : 52.0361: <7353.094727, 100.000000, 8354.423828>, -31.9543
+SCRIPT       : 52.137: <7352.232910, 100.000000, 8354.272461>, -33.926
+SCRIPT       : [Logout]: New player d5o4DaGfl15Sbl2H3alV8NGUj4bZeJ9SDWeaH+C7MLw= with instant logout
+SCRIPT       : [Logout]: Player d5o4DaGfl15Sbl2H3alV8NGUj4bZeJ9SDWeaH+C7MLw= finished
+SCRIPT       : 52.291: <7350.917969, 100.000000, 8354.042969>, -36.9333
+SCRIPT       : 52.3939: <7350.038574, 100.000000, 8353.888672>, -38.944
+SCRIPT       : 52.4949: <7349.176758, 100.000000, 8353.738281>, -40.9155
+SCRIPT       : 52.5958: <7348.314453, 100.000000, 8353.586914>, -42.8871
+SCRIPT       : string msg =  '[]: No Identity in Server Player List'
+SCRIPT    (E):    -- Stack trace --
+SCRIPT    (E):    LogMessage() scripts/3_Game/tools\debugprint.c : 226
+SCRIPT    (E):    LogErrorAndTrace() scripts/3_Game/tools\debugprint.c : 126
+SCRIPT    (E):    CreatePlayerList() scripts/3_Game/client\syncplayerlist.c : 28
+SCRIPT    (E):    SendPlayerList() scripts/3_Game/syncevents.c : 45
+SCRIPT    (E):    OnUpdate() scripts/3_Game/dayzgame.c : 1647
+SCRIPT    (E):    -----------------
+SCRIPT       : 52.6968: <7347.452637, 100.000000, 8353.436523>, -44.8587
+SCRIPT       : 52.7977: <7346.590332, 100.000000, 8353.286133>, -46.8303
+SCRIPT       : 52.8987: <7345.728516, 100.000000, 8353.134766>, -48.8019
+SCRIPT       : 52.9996: <7344.866211, 100.000000, 8352.984375>, -50.7735
+SCRIPT       : 53.1006: <7344.003906, 100.000000, 8352.833008>, -52.7451
+SCRIPT       : 53.2015: <7343.142090, 100.000000, 8352.682617>, -54.7167
+SCRIPT       : ~DayZGame()

@@ -1,0 +1,37 @@
+
+
+=====================================================================
+== C:\Program Files (x86)\Steam\steamapps\common\DayZServer\DayZServer_x64.exe
+== DayZServer_x64.exe  -mod=ModdedScripts -config=TestMod\serverDZ.cfg -profiles=TestMod -name=GR-eSports
+=====================================================================
+Exe timestamp: 2018/11/17 12:12:14
+Current time:  2018/11/17 18:42:28
+
+Version 0.63.149464
+18:42:28 [Inputs] Loading inputs cfg "TestMod\Users\GR-eSports\Server.core.xml"
+18:42:28 !!! [Inputs] Cannot read inputs cfg "TestMod\Users\GR-eSports\Server.core.xml", parser error
+18:42:28 [Inputs] Loading inputs cfg "dz/data/inputsdefault/core.xml"
+18:42:28 !!! [Inputs] Cannot read preset "user" file"TestMod\Users\GR-eSports\Server.dayz_preset_User.xml", parser error
+18:42:28 [Inputs] Exporting inputs cfg "TestMod\Users\GR-eSports\Server.core.xml"
+18:42:44 Player connect enabled
+18:44:03 [Login]: Adding player Survivor (18310730) to login queue at position 1
+18:44:03 [LoginMachine]: Add player Survivor (18310730)
+18:44:03 [StateMachine]: Player Survivor (dpnid 18310730 uid ) Entering PreCreatePlayerLoginState
+18:44:03 [StateMachine]: Player Survivor (dpnid 18310730 uid ) Entering WaitPreCreatePlayerLoginState
+18:44:04 [StateMachine]: Player Survivor (dpnid 18310730 uid d5o4DaGfl15Sbl2H3alV8NGUj4bZeJ9SDWeaH+C7MLw=) Entering GetCharacterLoginState
+18:44:04 [StateMachine]: Player Survivor (dpnid 18310730 uid d5o4DaGfl15Sbl2H3alV8NGUj4bZeJ9SDWeaH+C7MLw=) Entering CreateNetObjectsLoginState
+18:44:04 [StateMachine]: Player Survivor (dpnid 18310730 uid d5o4DaGfl15Sbl2H3alV8NGUj4bZeJ9SDWeaH+C7MLw=) Entering PreloadCamLoginState
+18:44:04 [StateMachine]: Player Survivor (dpnid 18310730 uid d5o4DaGfl15Sbl2H3alV8NGUj4bZeJ9SDWeaH+C7MLw=) Entering WaitPreloadCamLoginState
+18:44:09 [StateMachine]: Player Survivor (dpnid 18310730 uid d5o4DaGfl15Sbl2H3alV8NGUj4bZeJ9SDWeaH+C7MLw=) Entering GetNewCharLoginState
+18:44:12 <CREATE NEW CHAR>:
+    charID 0
+    playerID 0
+    dpnid 18310730
+    uid d5o4DaGfl15Sbl2H3alV8NGUj4bZeJ9SDWeaH+C7MLw=
+18:45:03 [Disconnect]: Client 18310730 normal disconnect
+18:45:04 [Disconnect]: Start script disconnect 18310730 (dbCharacterId 0 dbPlayerId 0) logoutTime 0
+18:45:04 [Disconnect]: Finish script disconnect 18310730
+18:45:04 [Disconnect]: DisconnectPlayerFinish 18310730
+18:45:04 [Disconnect]: Remove player info 18310730
+18:45:05 [Disconnect]: Remove player info 18310730
+18:45:11  --- Termination successfully completed --- 

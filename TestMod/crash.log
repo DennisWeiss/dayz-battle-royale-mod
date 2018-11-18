@@ -1,0 +1,210 @@
+---------------------------------------------
+Log C:\Program Files (x86)\Steam\steamapps\common\DayZServer\TestMod\crash.log started at 18.11. 12:49:19
+
+
+
+------------------------------------
+DESKTOP-AFKQ6CV, 18.11 2018 12:49:19
+NULL pointer to instance
+Class:      'DayZSurvival'
+Function: 'StartingEquipSetup'
+Stack trace:
+$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//ServerMission//DayZSurvival.c:246
+scripts/5_Mission/mission\missionserver.c:316
+scripts/5_Mission/mission\missionserver.c:351
+scripts/5_Mission/mission\missionserver.c:149
+$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//ServerMission//DayZSurvival.c:207
+scripts/3_Game/dayzgame.c:872
+
+Runtime mode
+CLI params: mod ModdedScripts config TestMod\serverDZ.cfg profiles TestMod name GR-eSports 
+
+
+------------------------------------
+DESKTOP-AFKQ6CV, 18.11 2018 12:49:29
+NULL pointer to instance
+Class:      'DayZSurvival'
+Function: 'StartRound'
+Stack trace:
+$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//ServerMission//DayZSurvival.c:501
+$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//ServerMission//DayZSurvival.c:408
+scripts/5_Mission/mission\missionserver.c:72
+scripts/3_Game/dayzgame.c:1643
+
+Runtime mode
+CLI params: mod ModdedScripts config TestMod\serverDZ.cfg profiles TestMod name GR-eSports 
+---------------------------------------------
+Log C:\Program Files (x86)\Steam\steamapps\common\DayZServer\TestMod\crash.log started at 18.11. 13:00:04
+
+
+
+------------------------------------
+DESKTOP-AFKQ6CV, 18.11 2018 13:00:04
+NULL pointer to instance
+Class:      'DayZSurvival'
+Function: 'StartingEquipSetup'
+Stack trace:
+$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//ServerMission//DayZSurvival.c:246
+scripts/5_Mission/mission\missionserver.c:316
+scripts/5_Mission/mission\missionserver.c:351
+scripts/5_Mission/mission\missionserver.c:149
+$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//ServerMission//DayZSurvival.c:207
+scripts/3_Game/dayzgame.c:872
+
+Runtime mode
+CLI params: mod ModdedScripts config TestMod\serverDZ.cfg profiles TestMod name GR-eSports 
+
+
+------------------------------------
+DESKTOP-AFKQ6CV, 18.11 2018 13:00:14
+NULL pointer to instance
+Class:      'DayZSurvival'
+Function: 'StartRound'
+Stack trace:
+$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//ServerMission//DayZSurvival.c:498
+$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//ServerMission//DayZSurvival.c:404
+scripts/5_Mission/mission\missionserver.c:72
+scripts/3_Game/dayzgame.c:1643
+
+Runtime mode
+CLI params: mod ModdedScripts config TestMod\serverDZ.cfg profiles TestMod name GR-eSports 
+---------------------------------------------
+Log C:\Program Files (x86)\Steam\steamapps\common\DayZServer\TestMod\crash.log started at 18.11. 13:11:02
+
+
+
+------------------------------------
+DESKTOP-AFKQ6CV, 18.11 2018 13:11:02
+NULL pointer to instance
+Class:      'DayZSurvival'
+Function: 'StartingEquipSetup'
+Stack trace:
+$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//ServerMission//DayZSurvival.c:246
+scripts/5_Mission/mission\missionserver.c:316
+scripts/5_Mission/mission\missionserver.c:351
+scripts/5_Mission/mission\missionserver.c:149
+$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//ServerMission//DayZSurvival.c:207
+scripts/3_Game/dayzgame.c:872
+
+Runtime mode
+CLI params: mod ModdedScripts config TestMod\serverDZ.cfg profiles TestMod name GR-eSports 
+
+
+------------------------------------
+DESKTOP-AFKQ6CV, 18.11 2018 13:11:12
+NULL pointer to instance
+Class:      'DayZSurvival'
+Function: 'StartRound'
+Stack trace:
+$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//ServerMission//DayZSurvival.c:498
+$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//ServerMission//DayZSurvival.c:404
+scripts/5_Mission/mission\missionserver.c:72
+scripts/3_Game/dayzgame.c:1643
+
+Runtime mode
+CLI params: mod ModdedScripts config TestMod\serverDZ.cfg profiles TestMod name GR-eSports 
+---------------------------------------------
+Log C:\Program Files (x86)\Steam\steamapps\common\DayZServer\TestMod\crash.log started at 18.11. 13:19:33
+
+
+
+------------------------------------
+DESKTOP-AFKQ6CV, 18.11 2018 13:19:33
+NULL pointer to instance
+Class:      'DayZSurvival'
+Function: 'StartingEquipSetup'
+Stack trace:
+$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//ServerMission//DayZSurvival.c:246
+scripts/5_Mission/mission\missionserver.c:316
+scripts/5_Mission/mission\missionserver.c:351
+scripts/5_Mission/mission\missionserver.c:149
+$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//ServerMission//DayZSurvival.c:207
+scripts/3_Game/dayzgame.c:872
+
+Runtime mode
+CLI params: mod ModdedScripts config TestMod\serverDZ.cfg profiles TestMod name GR-eSports 
+
+
+------------------------------------
+DESKTOP-AFKQ6CV, 18.11 2018 13:19:42
+NULL pointer to instance
+Class:      'DayZSurvival'
+Function: 'StartRound'
+Stack trace:
+$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//ServerMission//DayZSurvival.c:499
+$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//ServerMission//DayZSurvival.c:404
+scripts/5_Mission/mission\missionserver.c:72
+scripts/3_Game/dayzgame.c:1643
+
+Runtime mode
+CLI params: mod ModdedScripts config TestMod\serverDZ.cfg profiles TestMod name GR-eSports 
+---------------------------------------------
+Log C:\Program Files (x86)\Steam\steamapps\common\DayZServer\TestMod\crash.log started at 18.11. 13:24:46
+
+
+
+------------------------------------
+DESKTOP-AFKQ6CV, 18.11 2018 13:24:46
+NULL pointer to instance
+Class:      'DayZSurvival'
+Function: 'StartingEquipSetup'
+Stack trace:
+$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//ServerMission//DayZSurvival.c:246
+scripts/5_Mission/mission\missionserver.c:316
+scripts/5_Mission/mission\missionserver.c:351
+scripts/5_Mission/mission\missionserver.c:149
+$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//ServerMission//DayZSurvival.c:207
+scripts/3_Game/dayzgame.c:872
+
+Runtime mode
+CLI params: mod ModdedScripts config TestMod\serverDZ.cfg profiles TestMod name GR-eSports 
+
+
+------------------------------------
+DESKTOP-AFKQ6CV, 18.11 2018 13:24:56
+NULL pointer to instance
+Class:      'DayZSurvival'
+Function: 'StartRound'
+Stack trace:
+$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//ServerMission//DayZSurvival.c:498
+$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//ServerMission//DayZSurvival.c:404
+scripts/5_Mission/mission\missionserver.c:72
+scripts/3_Game/dayzgame.c:1643
+
+Runtime mode
+CLI params: mod ModdedScripts config TestMod\serverDZ.cfg profiles TestMod name GR-eSports 
+---------------------------------------------
+Log C:\Program Files (x86)\Steam\steamapps\common\DayZServer\TestMod\crash.log started at 18.11. 13:28:50
+
+
+
+------------------------------------
+DESKTOP-AFKQ6CV, 18.11 2018 13:28:50
+NULL pointer to instance
+Class:      'DayZSurvival'
+Function: 'StartingEquipSetup'
+Stack trace:
+$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//ServerMission//DayZSurvival.c:246
+scripts/5_Mission/mission\missionserver.c:316
+scripts/5_Mission/mission\missionserver.c:351
+scripts/5_Mission/mission\missionserver.c:149
+$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//ServerMission//DayZSurvival.c:207
+scripts/3_Game/dayzgame.c:872
+
+Runtime mode
+CLI params: mod ModdedScripts config TestMod\serverDZ.cfg profiles TestMod name GR-eSports 
+
+
+------------------------------------
+DESKTOP-AFKQ6CV, 18.11 2018 13:28:59
+NULL pointer to instance
+Class:      'DayZSurvival'
+Function: 'StartRound'
+Stack trace:
+$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//ServerMission//DayZSurvival.c:499
+$CurrentDir://mpmissions//DayZSurvival.chernarusplus//ScriptedMods//Modules//ServerMission//DayZSurvival.c:404
+scripts/5_Mission/mission\missionserver.c:72
+scripts/3_Game/dayzgame.c:1643
+
+Runtime mode
+CLI params: mod ModdedScripts config TestMod\serverDZ.cfg profiles TestMod name GR-eSports 

@@ -1,0 +1,382 @@
+
+
+=====================================================================
+== C:\DayZServer\DayZServer_x64.exe
+== DayZServer_x64.exe  -mod=ModdedScripts -config=TestMod\serverDZ.cfg -profiles=TestMod -name=GR-eSports
+=====================================================================
+Exe timestamp: 2018/11/14 17:24:52
+Current time:  2018/11/15 20:08:03
+
+Version 0.63.149442
+20:08:03 [Inputs] Loading inputs cfg "TestMod\Users\GR-eSports\Server.core.xml"
+20:08:03 !!! [Inputs] Cannot read inputs cfg "TestMod\Users\GR-eSports\Server.core.xml", parser error
+20:08:03 [Inputs] Loading inputs cfg "dz/data/inputsdefault/core.xml"
+20:08:03 !!! [Inputs] Cannot read preset "user" file"TestMod\Users\GR-eSports\Server.dayz_preset_User.xml", parser error
+20:08:03 [Inputs] Exporting inputs cfg "TestMod\Users\GR-eSports\Server.core.xml"
+20:08:11 [CE][Hive] :: Initializing OFFLINE
+20:08:11 [CE][Hive] :: Loading core data ... 
+20:08:11 [CE][CoreData] :: 7 root classes, 0 defaults, 0 updaters...
+20:08:11 [CE][Hive] :: Loading map data ... 
+20:08:11 !!! File "$CurrentDir:mpmissions\DayZSurvival.chernarusplus\cfgignorelist.xml" does not exist...
+20:08:11 [CE][LoadPrototype] :: loaded 227 prototypes
+20:08:11   488 containers, 7137 points
+20:08:11   0 dispatches, 0 proxies
+20:08:11 !!! [CE][LoadPrototype] 5 groups have no points...
+20:08:11 [CE][LoadPrototype] :: last group name: Land_Wreck_Volha_Police...
+20:08:11 [CE][LoadPrototype] :: loaded 0 prototypes
+20:08:11   0 containers, 0 points
+20:08:11   0 dispatches, 0 proxies
+20:08:11 [CE][LoadPrototype] :: last group name: Rail9...
+20:08:11 [CE][LoadMap] "Group" :: loaded 11602 groups, largest group range: 34.2
+20:08:11 !!! File "$CurrentDir:mpmissions\DayZSurvival.chernarusplus\mapgroupdirt.xml" does not exist...
+20:08:11 !!! [CE][LoadMap] "Dirt" :: Failed to read group instances ($CurrentDir:mpmissions\DayZSurvival.chernarusplus\mapgroupdirt.xml)
+20:08:11 [CE][Links] found 1852 total links between groups, of 11602
+20:08:11 [CE][LoadClusters] "Cluster" :: Loading files...
+20:08:12 [CE][LoadClusters] :: file: "mapgroupcluster.xml", 9 types, 50000 instances
+20:08:12 [CE][LoadClusters] :: file: "mapgroupcluster01", 9 types, 50000 instances
+20:08:12 [CE][LoadClusters] :: file: "mapgroupcluster02", 9 types, 50000 instances
+20:08:12 [CE][LoadClusters] :: file: "mapgroupcluster03", 9 types, 50000 instances
+20:08:12 [CE][LoadClusters] :: file: "mapgroupcluster04", 9 types, 17207 instances
+20:08:13 [CE] :: WARNING :: Preset (cargo) with name 'food' was not found.
+20:08:13 [CE] :: WARNING :: Preset (cargo) with name 'tools' was not found.
+20:08:13 [CE][TypeSetup] :: 368 classes setuped...
+20:08:13 [CE][RegisterBind] :: 0 classes binded...
+20:08:13 [CE][RegisterConfig] :: 2579 config classes registered, 1 sub-counters...
+20:08:13 [CE][offlineDB] :: Loaded 33 dynamic events 205 total types 0 total positions.
+20:08:13 !!! File "$CurrentDir:mpmissions\DayZSurvival.chernarusplus\db\messages.xml" does not exist...
+20:08:13 [CE][offlineDB] :: File 'db/messages.xml' not found.
+20:08:13 [CE][DynamicEvent] Load  Events:[33] Primary spawners: 33 Secondary spawners: 0
+20:08:13   Restoring [Storage] file "mpmissions\DayZSurvival.chernarusplus\storage_1\data\vehicles.bin" 62 items.
+20:08:13   62 items loaded.
+20:08:13   Restoring [Storage] file "mpmissions\DayZSurvival.chernarusplus\storage_1\data\dynamic_000.bin" 1471 items.
+20:08:14   1471 items loaded.
+20:08:14   Restoring [Storage] file "mpmissions\DayZSurvival.chernarusplus\storage_1\data\dynamic_001.bin" 2984 items.
+20:08:15   2984 items loaded.
+20:08:15   Restoring [Storage] file "mpmissions\DayZSurvival.chernarusplus\storage_1\data\dynamic_002.bin" 5702 items.
+20:08:16   5702 items loaded.
+20:08:16   Restoring [Storage] file "mpmissions\DayZSurvival.chernarusplus\storage_1\data\dynamic_003.bin" 3838 items.
+20:08:17   3838 items loaded.
+20:08:17   Restoring [Storage] file "mpmissions\DayZSurvival.chernarusplus\storage_1\data\dynamic_004.bin" 4314 items.
+20:08:19   4314 items loaded.
+20:08:19   Restoring [Storage] file "mpmissions\DayZSurvival.chernarusplus\storage_1\data\dynamic_005.bin" 5024 items.
+20:08:20   5024 items loaded.
+20:08:20   Restoring [Storage] file "mpmissions\DayZSurvival.chernarusplus\storage_1\data\dynamic_006.bin" 3476 items.
+20:08:21   3476 items loaded.
+20:08:21   Restoring [Storage] file "mpmissions\DayZSurvival.chernarusplus\storage_1\data\dynamic_007.bin" 3437 items.
+20:08:23   3437 items loaded.
+20:08:23   Restoring [Storage] file "mpmissions\DayZSurvival.chernarusplus\storage_1\data\dynamic_008.bin" 5067 items.
+20:08:25   5067 items loaded.
+20:08:25   Restoring [Storage] file "mpmissions\DayZSurvival.chernarusplus\storage_1\data\dynamic_009.bin" 6343 items.
+20:08:27   6343 items loaded.
+20:08:27   Restoring [Storage] file "mpmissions\DayZSurvival.chernarusplus\storage_1\data\dynamic_010.bin" 4002 items.
+20:08:28   4002 items loaded.
+20:08:28   Restoring [Storage] file "mpmissions\DayZSurvival.chernarusplus\storage_1\data\dynamic_011.bin" 509 items.
+20:08:28   509 items loaded.
+20:08:29 [CE][Hive] :: Storage load took 15.27 seconds
+20:08:29   entity: 69454, building: 0
+20:08:29   no lifetime: 38
+20:08:29 [CE][Hive] :: Initializing ... 
+20:08:29 [CE][Hive] :: Initializing spawners ... 
+20:08:29 [CE][LootRespawner] (PRIDummy) :: Item [0] causing search overtime: "HuntingBag"
+20:08:29 [CE][LootRespawner] (PRIDummy) :: Item [1] causing search overtime: "HuntingBag"
+20:08:29 [CE][LootRespawner] (PRIDummy) :: Item [2] causing search overtime: "HuntingBag"
+20:08:29 [CE][LootRespawner] (PRIDummy) :: Item [3] causing search overtime: "HuntingBag"
+20:08:29 [CE][LootRespawner] (PRIDummy) :: Item [4] causing search overtime: "HuntingBag"
+20:08:29 [CE][LootRespawner] (PRIDummy) :: Item [5] causing search overtime: "HuntingBag"
+20:08:29 [CE][LootRespawner] (PRIDummy) :: Item [6] causing search overtime: "HuntingBag"
+20:08:29 [CE][LootRespawner] (PRIDummy) :: Item [7] causing search overtime: "HuntingBag"
+20:08:29 [CE][LootRespawner] (PRIDummy) :: Item [8] causing search overtime: "HuntingBag"
+20:08:29 [CE][LootRespawner] (PRIDummy) :: Item [9] causing search overtime: "HuntingBag"
+20:08:29 [CE][LootRespawner] (PRIDummy) :: Item [10] causing search overtime: "HuntingBag"
+20:08:29 [CE][LootRespawner] (PRIDummy) :: Item [11] causing search overtime: "HuntingBag"
+20:08:29 [CE][LootRespawner] (PRIDummy) :: Item [12] causing search overtime: "HuntingBag"
+20:08:29 [CE][LootRespawner] (PRIDummy) :: Item [13] causing search overtime: "HuntingBag"
+20:08:29 [CE][LootRespawner] (PRIDummy) :: Item [14] causing search overtime: "HuntingBag"
+20:08:29 [CE][LootRespawner] (PRIDummy) :: Item [15] causing search overtime: "AssaultBag_Black"
+20:08:29 [CE][LootRespawner] (PRIDummy) :: Item [16] causing search overtime: "AssaultBag_Black"
+20:08:29 [CE][LootRespawner] (PRIDummy) :: Item [17] causing search overtime: "AssaultBag_Black"
+20:08:29 [CE][LootRespawner] (PRIDummy) :: Item [18] causing search overtime: "AssaultBag_Black"
+20:08:29 [CE][LootRespawner] (PRIDummy) :: Item [19] causing search overtime: "AssaultBag_Black"
+20:08:30 [CE][LootRespawner] (PRIDummy) :: Initially (re)spawned:0, Nominal:55579, Total in Map: 46343 at 1 (sec)
+20:08:30   tests:0, repeats:0 fails:0, overtime:9446
+20:08:30 [CE][DynEvent] :: 33 types
+20:08:30 [00] AmbientHen
+20:08:30   Primary Spawner: "Ambient", active: yes, repeat: 1
+20:08:30 [01] AnimalCow
+20:08:30   Primary Spawner: "Animal", active: yes, repeat: 1
+20:08:30 [02] AnimalDeer
+20:08:30   Primary Spawner: "Animal", active: yes, repeat: 1
+20:08:30 [03] AnimalGoat
+20:08:30   Primary Spawner: "Animal", active: yes, repeat: 1
+20:08:30 [04] AnimalPig
+20:08:30   Primary Spawner: "Animal", active: yes, repeat: 1
+20:08:30 [05] AnimalRoeDeer
+20:08:30   Primary Spawner: "Animal", active: yes, repeat: 1
+20:08:30 [06] AnimalSheep
+20:08:30   Primary Spawner: "Animal", active: yes, repeat: 1
+20:08:30 [07] AnimalWildBoar
+20:08:30   Primary Spawner: "Animal", active: yes, repeat: 1
+20:08:30 [08] AnimalWolf
+20:08:30   Primary Spawner: "Animal", active: yes, repeat: 1
+20:08:30 [09] InfectedArmy
+20:08:30   Primary Spawner: "Infected", active: yes, repeat: 1
+20:08:30 [10] InfectedCity
+20:08:30   Primary Spawner: "Infected", active: yes, repeat: 1
+20:08:30 [11] InfectedFirefighter
+20:08:30   Primary Spawner: "Infected", active: yes, repeat: 1
+20:08:30 [12] InfectedIndustrial
+20:08:30   Primary Spawner: "Infected", active: yes, repeat: 1
+20:08:30 [13] InfectedMedic
+20:08:30   Primary Spawner: "Infected", active: yes, repeat: 1
+20:08:30 [14] InfectedPolice
+20:08:30   Primary Spawner: "Infected", active: yes, repeat: 1
+20:08:30 [15] InfectedPrisoner
+20:08:30   Primary Spawner: "Infected", active: yes, repeat: 1
+20:08:30 [16] InfectedReligious
+20:08:30   Primary Spawner: "Infected", active: yes, repeat: 1
+20:08:30 [17] InfectedSolitude
+20:08:30   Primary Spawner: "Infected", active: yes, repeat: 1
+20:08:30 [18] InfectedVillage
+20:08:30   Primary Spawner: "Infected", active: yes, repeat: 1
+20:08:30 [19] ItemPlanks
+20:08:30   Primary Spawner: "Item", active: yes, repeat: 1
+20:08:30 [20] Loot
+20:08:30   Primary Spawner: "Loot", active: yes, repeat: 2
+20:08:30 [21] StaticHeliCrash
+20:08:30   Primary Spawner: "Vehicle", active: yes, repeat: 1
+20:08:30 [22] StaticPoliceCar
+20:08:30   Primary Spawner: "Vehicle", active: yes, repeat: 1
+20:08:30 [23] TrajectoryApple
+20:08:30   Primary Spawner: "Trajectory", active: yes, repeat: 1
+20:08:30 [24] TrajectoryCanina
+20:08:30   Primary Spawner: "Trajectory", active: yes, repeat: 1
+20:08:30 [25] TrajectoryConiferous
+20:08:30   Primary Spawner: "Trajectory", active: yes, repeat: 1
+20:08:30 [26] TrajectoryDeciduous
+20:08:30   Primary Spawner: "Trajectory", active: yes, repeat: 1
+20:08:30 [27] TrajectoryHumus
+20:08:30   Primary Spawner: "Trajectory", active: yes, repeat: 1
+20:08:30 [28] TrajectoryPear
+20:08:30   Primary Spawner: "Trajectory", active: yes, repeat: 1
+20:08:30 [29] TrajectoryPlum
+20:08:30   Primary Spawner: "Trajectory", active: yes, repeat: 1
+20:08:30 [30] TrajectorySambucus
+20:08:30   Primary Spawner: "Trajectory", active: yes, repeat: 1
+20:08:30 [31] TrajectoryStones
+20:08:30   Primary Spawner: "Trajectory", active: yes, repeat: 1
+20:08:30 [32] VehicleCivilianVan
+20:08:30   Primary Spawner: "Vehicle", active: yes, repeat: 1
+20:08:30 [CE][Hive] :: Initializing of spawners done.
+20:08:30 [CE][Hive] :: Init sequence finished.
+20:08:30 Player connect enabled
+20:09:08 [Login]: Adding player Survivor (640645337) to login queue at position 1
+20:09:09 [LoginMachine]: Add player Survivor (640645337)
+20:09:09 [StateMachine]: Player Survivor (dpnid 640645337 uid ) Entering PreCreatePlayerLoginState
+20:09:09 [StateMachine]: Player Survivor (dpnid 640645337 uid ) Entering WaitPreCreatePlayerLoginState
+20:09:11 [StateMachine]: Player Survivor (dpnid 640645337 uid d5o4DaGfl15Sbl2H3alV8NGUj4bZeJ9SDWeaH+C7MLw=) Entering GetCharacterLoginState
+20:09:11 [StateMachine]: Player Survivor (dpnid 640645337 uid d5o4DaGfl15Sbl2H3alV8NGUj4bZeJ9SDWeaH+C7MLw=) Entering CreateNetObjectsLoginState
+20:09:11 [StateMachine]: Player Survivor (dpnid 640645337 uid d5o4DaGfl15Sbl2H3alV8NGUj4bZeJ9SDWeaH+C7MLw=) Entering PreloadCamLoginState
+20:09:11 [StateMachine]: Player Survivor (dpnid 640645337 uid d5o4DaGfl15Sbl2H3alV8NGUj4bZeJ9SDWeaH+C7MLw=) Entering WaitPreloadCamLoginState
+20:09:18 [StateMachine]: Player Survivor (dpnid 640645337 uid d5o4DaGfl15Sbl2H3alV8NGUj4bZeJ9SDWeaH+C7MLw=) Entering GetLoadedCharLoginState
+20:09:20 <LOAD EXISTING CHAR>:
+    charID 1
+    playerID 1
+    dpnid 640645337
+    uid d5o4DaGfl15Sbl2H3alV8NGUj4bZeJ9SDWeaH+C7MLw=
+20:09:21 [CE][Links] found 0 total links between groups, of 1
+20:09:21 [CE][SpawnRandomLoot] (StaticHeliCrash) :: ChildType: Wreck_UH1Y, lootmin: 10, lootmax: 20, wanted: 13
+20:09:24 !!! [CE][Point] Removing 2683.679688, 9918.027344 from PearTree1
+20:09:24 !!! [CE][Point] Removing 2682.457031, 9917.193359 from PearTree1
+20:10:21 !!! [CE][Point] Removing 2682.457031, 9917.193359 from PearTree1
+20:10:21 !!! [CE][Point] Removing 2683.679688, 9918.027344 from PearTree1
+20:10:21 !!! [CE][Point] Removing 2722.550049, 10003.480469 from PearTree1
+20:11:42 !!! [CE][Point] Removing 2683.679688, 9918.027344 from PearTree1
+20:11:42 !!! [CE][Point] Removing 2683.137207, 9919.407227 from PearTree1
+20:12:39 !!! [CE][Point] Removing 2683.679688, 9918.027344 from PearTree1
+20:12:39 !!! [CE][Point] Removing 2682.457031, 9917.193359 from PearTree1
+20:13:36 !!! [CE][Point] Removing 2683.137207, 9919.407227 from PearTree1
+20:13:36 !!! [CE][Point] Removing 2682.457031, 9917.193359 from PearTree1
+20:14:33 !!! [CE][Point] Removing 2682.457031, 9917.193359 from PearTree1
+20:14:33 !!! [CE][Point] Removing 2683.679688, 9918.027344 from PearTree1
+20:15:31 !!! [CE][Point] Removing 2681.517822, 9918.610352 from PearTree1
+20:15:31 !!! [CE][Point] Removing 2683.137207, 9919.407227 from PearTree1
+20:16:51 !!! [CE][Point] Removing 2682.457031, 9917.193359 from PearTree1
+20:16:51 !!! [CE][Point] Removing 2683.679688, 9918.027344 from PearTree1
+20:17:48 !!! [CE][Point] Removing 2683.137207, 9919.407227 from PearTree1
+20:17:48 !!! [CE][Point] Removing 2681.517822, 9918.610352 from PearTree1
+20:18:45 !!! [CE][Point] Removing 2683.137207, 9919.407227 from PearTree1
+20:18:45 !!! [CE][Point] Removing 2681.517822, 9918.610352 from PearTree1
+20:19:43 !!! [CE][Point] Removing 2683.679688, 9918.027344 from PearTree1
+20:19:43 !!! [CE][Point] Removing 2682.457031, 9917.193359 from PearTree1
+20:20:40 !!! [CE][Point] Removing 2681.517822, 9918.610352 from PearTree1
+20:20:40 !!! [CE][Point] Removing 2682.457031, 9917.193359 from PearTree1
+20:22:00 !!! [CE][Point] Removing 2681.517822, 9918.610352 from PearTree1
+20:22:00 !!! [CE][Point] Removing 2682.457031, 9917.193359 from PearTree1
+20:22:57 !!! [CE][Point] Removing 2682.457031, 9917.193359 from PearTree1
+20:22:57 !!! [CE][Point] Removing 2683.137207, 9919.407227 from PearTree1
+20:23:54 !!! [CE][Point] Removing 2683.137207, 9919.407227 from PearTree1
+20:23:54 !!! [CE][Point] Removing 2682.457031, 9917.193359 from PearTree1
+20:24:52 !!! [CE][Point] Removing 2682.457031, 9917.193359 from PearTree1
+20:24:52 !!! [CE][Point] Removing 2683.679688, 9918.027344 from PearTree1
+20:25:49 !!! [CE][Point] Removing 2683.137207, 9919.407227 from PearTree1
+20:25:49 !!! [CE][Point] Removing 2683.679688, 9918.027344 from PearTree1
+20:27:09 !!! [CE][Point] Removing 2682.457031, 9917.193359 from PearTree1
+20:27:09 !!! [CE][Point] Removing 2683.679688, 9918.027344 from PearTree1
+20:28:06 !!! [CE][Point] Removing 2683.679688, 9918.027344 from PearTree1
+20:28:06 !!! [CE][Point] Removing 2681.517822, 9918.610352 from PearTree1
+20:29:04 !!! [CE][Point] Removing 2683.679688, 9918.027344 from PearTree1
+20:29:04 !!! [CE][Point] Removing 2681.517822, 9918.610352 from PearTree1
+20:30:01 !!! [CE][Point] Removing 2682.457031, 9917.193359 from PearTree1
+20:30:01 !!! [CE][Point] Removing 2683.679688, 9918.027344 from PearTree1
+20:30:58 !!! [CE][Point] Removing 2681.517822, 9918.610352 from PearTree1
+20:30:58 !!! [CE][Point] Removing 2682.457031, 9917.193359 from PearTree1
+20:32:18 !!! [CE][Point] Removing 2682.457031, 9917.193359 from PearTree1
+20:32:18 !!! [CE][Point] Removing 2681.517822, 9918.610352 from PearTree1
+20:33:15 !!! [CE][Point] Removing 2681.517822, 9918.610352 from PearTree1
+20:33:15 !!! [CE][Point] Removing 2682.457031, 9917.193359 from PearTree1
+20:34:13 !!! [CE][Point] Removing 2682.457031, 9917.193359 from PearTree1
+20:34:13 !!! [CE][Point] Removing 2683.137207, 9919.407227 from PearTree1
+20:35:10 !!! [CE][Point] Removing 2681.517822, 9918.610352 from PearTree1
+20:35:10 !!! [CE][Point] Removing 2682.457031, 9917.193359 from PearTree1
+20:36:07 !!! [CE][Point] Removing 2681.517822, 9918.610352 from PearTree1
+20:36:07 !!! [CE][Point] Removing 2683.679688, 9918.027344 from PearTree1
+20:37:27 !!! [CE][Point] Removing 2681.517822, 9918.610352 from PearTree1
+20:37:27 !!! [CE][Point] Removing 2682.457031, 9917.193359 from PearTree1
+20:38:25 !!! [CE][Point] Removing 2683.137207, 9919.407227 from PearTree1
+20:38:25 !!! [CE][Point] Removing 2681.517822, 9918.610352 from PearTree1
+20:39:22 !!! [CE][Point] Removing 2682.457031, 9917.193359 from PearTree1
+20:39:22 !!! [CE][Point] Removing 2683.679688, 9918.027344 from PearTree1
+20:40:15 [CE][LootRespawner] (PRIDummy) :: Item [0] is hard to place, performance drops: "JungleBoots_Beige"
+20:40:19 !!! [CE][Point] Removing 2682.457031, 9917.193359 from PearTree1
+20:40:19 !!! [CE][Point] Removing 2681.517822, 9918.610352 from PearTree1
+20:40:43 [CE][LootRespawner] (PRIDummy) :: Item [1] is hard to place, performance drops: "DirtBikeHelmet_Blue"
+20:40:43 [CE][LootRespawner] (PRIDummy) :: Item [2] is hard to place, performance drops: "DirtBikeHelmet_Blue"
+20:40:43 [CE][LootRespawner] (PRIDummy) :: Item [3] is hard to place, performance drops: "TankerHelmet"
+20:40:43 [CE][LootRespawner] (PRIDummy) :: Item [4] is hard to place, performance drops: "NBCPantsGray"
+20:41:16 !!! [CE][Point] Removing 2682.457031, 9917.193359 from PearTree1
+20:41:16 !!! [CE][Point] Removing 2683.679688, 9918.027344 from PearTree1
+20:42:37 !!! [CE][Point] Removing 2683.679688, 9918.027344 from PearTree1
+20:42:37 !!! [CE][Point] Removing 2683.137207, 9919.407227 from PearTree1
+20:43:34 !!! [CE][Point] Removing 2683.679688, 9918.027344 from PearTree1
+20:43:34 !!! [CE][Point] Removing 2683.137207, 9919.407227 from PearTree1
+20:43:34 !!! [CE][Point] Removing 2723.442139, 10002.296875 from PearTree1
+20:44:00 [CE][LootRespawner] (PRIDummy) :: Item [5] is hard to place, performance drops: "Hoodie_Grey"
+20:44:00 [CE][LootRespawner] (PRIDummy) :: Item [6] is hard to place, performance drops: "Hoodie_Brown"
+20:44:00 [CE][LootRespawner] (PRIDummy) :: Item [7] is hard to place, performance drops: "Raincoat_Red"
+20:44:31 !!! [CE][Point] Removing 2681.517822, 9918.610352 from PearTree1
+20:44:31 !!! [CE][Point] Removing 2682.457031, 9917.193359 from PearTree1
+20:44:56 [CE][LootRespawner] (PRIDummy) :: Item [8] is hard to place, performance drops: "WorkingBoots_Beige"
+20:45:28 !!! [CE][Point] Removing 2683.679688, 9918.027344 from PearTree1
+20:45:28 !!! [CE][Point] Removing 2683.137207, 9919.407227 from PearTree1
+20:45:53 [CE][LootRespawner] (PRIDummy) :: Item [9] is hard to place, performance drops: "MotoHelmet_White"
+20:45:53 [CE][LootRespawner] (PRIDummy) :: Item [10] is hard to place, performance drops: "MotoHelmet_White"
+20:45:53 [CE][LootRespawner] (PRIDummy) :: Item [11] is hard to place, performance drops: "BDUJacket"
+20:46:25 !!! [CE][Point] Removing 2682.457031, 9917.193359 from PearTree1
+20:46:25 !!! [CE][Point] Removing 2683.137207, 9919.407227 from PearTree1
+20:46:49 [CE][LootRespawner] (PRIDummy) :: Item [12] is hard to place, performance drops: "CanvasPantsMidi_Red"
+20:46:49 [CE][LootRespawner] (PRIDummy) :: Item [13] is hard to place, performance drops: "CanvasPantsMidi_Red"
+20:46:49 [CE][LootRespawner] (PRIDummy) :: Item [14] is hard to place, performance drops: "CanvasPantsMidi_Red"
+20:46:49 [CE][LootRespawner] (PRIDummy) :: Item [15] is hard to place, performance drops: "CanvasPantsMidi_Red"
+20:46:49 [CE][LootRespawner] (PRIDummy) :: Item [16] is hard to place, performance drops: "CanvasPantsMidi_Red"
+20:46:49 [CE][LootRespawner] (PRIDummy) :: Item [17] is hard to place, performance drops: "ShortJeans_Red"
+20:47:45 [CE][LootRespawner] (PRIDummy) :: Item [18] is hard to place, performance drops: "DryBag_Yellow"
+20:47:45 [CE][LootRespawner] (PRIDummy) :: Item [19] is hard to place, performance drops: "DryBag_Yellow"
+20:47:46 !!! [CE][Point] Removing 2681.517822, 9918.610352 from PearTree1
+20:47:46 !!! [CE][Point] Removing 2682.457031, 9917.193359 from PearTree1
+20:48:13 !!! [CE][Point] Removing 2268.010498, 5188.190430 from Land_Container_1Aoh
+20:48:41 !!! [CE][Point] Removing 2267.569092, 5189.471191 from Land_Container_1Aoh
+20:48:43 !!! [CE][Point] Removing 2682.457031, 9917.193359 from PearTree1
+20:48:43 !!! [CE][Point] Removing 2683.137207, 9919.407227 from PearTree1
+20:49:40 !!! [CE][Point] Removing 2683.679688, 9918.027344 from PearTree1
+20:49:40 !!! [CE][Point] Removing 2683.137207, 9919.407227 from PearTree1
+20:50:34 [CE][Links] found 0 total links between groups, of 2
+20:50:34 [CE][SpawnRandomLoot] (StaticHeliCrash) :: ChildType: Wreck_Mi8, lootmin: 10, lootmax: 20, wanted: 10
+20:50:34 [CE][Links] found 0 total links between groups, of 3
+20:50:34 [CE][SpawnRandomLoot] (StaticHeliCrash) :: ChildType: Wreck_Mi8, lootmin: 10, lootmax: 20, wanted: 10
+20:50:34 [CE][Links] found 0 total links between groups, of 4
+20:50:34 [CE][SpawnRandomLoot] (StaticPoliceCar) :: ChildType: Land_Wreck_Volha_Police, lootmin: 3, lootmax: 5, wanted: 4
+20:50:34 [CE][Links] found 0 total links between groups, of 5
+20:50:34 [CE][SpawnRandomLoot] (StaticPoliceCar) :: ChildType: Land_Wreck_Volha_Police, lootmin: 3, lootmax: 5, wanted: 4
+20:50:34 [CE][Links] found 0 total links between groups, of 6
+20:50:34 [CE][SpawnRandomLoot] (StaticPoliceCar) :: ChildType: Land_Wreck_Volha_Police, lootmin: 3, lootmax: 5, wanted: 4
+20:50:34 [CE][Links] found 0 total links between groups, of 7
+20:50:34 [CE][SpawnRandomLoot] (StaticPoliceCar) :: ChildType: Land_Wreck_Volha_Police, lootmin: 3, lootmax: 5, wanted: 4
+20:50:34 [CE][Links] found 0 total links between groups, of 8
+20:50:34 [CE][SpawnRandomLoot] (StaticPoliceCar) :: ChildType: Land_Wreck_Volha_Police, lootmin: 3, lootmax: 5, wanted: 4
+20:50:34 [CE][Links] found 0 total links between groups, of 9
+20:50:34 [CE][SpawnRandomLoot] (StaticPoliceCar) :: ChildType: Land_Wreck_Volha_Police, lootmin: 3, lootmax: 5, wanted: 4
+20:50:34 [CE][Links] found 0 total links between groups, of 10
+20:50:34 [CE][SpawnRandomLoot] (StaticPoliceCar) :: ChildType: Land_Wreck_Volha_Police, lootmin: 3, lootmax: 5, wanted: 3
+20:50:34 [CE][Links] found 0 total links between groups, of 11
+20:50:34 [CE][SpawnRandomLoot] (StaticPoliceCar) :: ChildType: Land_Wreck_Volha_Police, lootmin: 3, lootmax: 5, wanted: 3
+20:50:34 [CE][Links] found 0 total links between groups, of 12
+20:50:34 [CE][SpawnRandomLoot] (StaticPoliceCar) :: ChildType: Land_Wreck_Volha_Police, lootmin: 3, lootmax: 5, wanted: 3
+20:50:34 [CE][Links] found 0 total links between groups, of 13
+20:50:34 [CE][SpawnRandomLoot] (StaticPoliceCar) :: ChildType: Land_Wreck_Volha_Police, lootmin: 3, lootmax: 5, wanted: 4
+20:50:37 !!! [CE][Point] Removing 2681.517822, 9918.610352 from PearTree1
+20:50:37 !!! [CE][Point] Removing 2683.679688, 9918.027344 from PearTree1
+20:51:31 [CE][Links] found 0 total links between groups, of 14
+20:51:31 [CE][SpawnRandomLoot] (StaticHeliCrash) :: ChildType: Wreck_Mi8, lootmin: 10, lootmax: 20, wanted: 13
+20:51:34 !!! [CE][Point] Removing 2682.457031, 9917.193359 from PearTree1
+20:51:34 !!! [CE][Point] Removing 2683.679688, 9918.027344 from PearTree1
+20:52:55 !!! [CE][Point] Removing 2681.517822, 9918.610352 from PearTree1
+20:52:55 !!! [CE][Point] Removing 2682.457031, 9917.193359 from PearTree1
+20:53:52 !!! [CE][Point] Removing 2682.457031, 9917.193359 from PearTree1
+20:53:52 !!! [CE][Point] Removing 2683.679688, 9918.027344 from PearTree1
+20:54:49 !!! [CE][Point] Removing 2683.679688, 9918.027344 from PearTree1
+20:54:49 !!! [CE][Point] Removing 2682.457031, 9917.193359 from PearTree1
+20:55:46 !!! [CE][Point] Removing 2682.457031, 9917.193359 from PearTree1
+20:55:46 !!! [CE][Point] Removing 2683.679688, 9918.027344 from PearTree1
+20:56:44 !!! [CE][Point] Removing 2682.457031, 9917.193359 from PearTree1
+20:56:44 !!! [CE][Point] Removing 2681.517822, 9918.610352 from PearTree1
+20:58:04 !!! [CE][Point] Removing 2683.137207, 9919.407227 from PearTree1
+20:58:04 !!! [CE][Point] Removing 2681.517822, 9918.610352 from PearTree1
+20:59:01 !!! [CE][Point] Removing 2683.137207, 9919.407227 from PearTree1
+20:59:01 !!! [CE][Point] Removing 2682.457031, 9917.193359 from PearTree1
+20:59:58 !!! [CE][Point] Removing 2683.679688, 9918.027344 from PearTree1
+20:59:58 !!! [CE][Point] Removing 2682.457031, 9917.193359 from PearTree1
+21:00:55 !!! [CE][Point] Removing 2682.457031, 9917.193359 from PearTree1
+21:00:55 !!! [CE][Point] Removing 2681.517822, 9918.610352 from PearTree1
+21:01:53 !!! [CE][Point] Removing 2682.457031, 9917.193359 from PearTree1
+21:01:53 !!! [CE][Point] Removing 2683.679688, 9918.027344 from PearTree1
+21:01:54 [Disconnect]: Start script disconnect 640645337 (dbCharacterId 1 dbPlayerId 1) logoutTime 0
+21:01:54 [Disconnect]: Finish script disconnect 640645337
+21:01:54 [Disconnect]: DisconnectPlayerFinish 640645337
+21:01:54 [Disconnect]: Remove player info 640645337
+21:01:54 Player Survivor (640645337) kicked from server: 2 (Auth error: AUTH CANCELED)
+21:01:54 [Disconnect]: Remove player info 640645337
+21:03:44 [Login]: Adding player Survivor (18227108) to login queue at position 1
+21:03:45 [LoginMachine]: Add player Survivor (18227108)
+21:03:45 [StateMachine]: Player Survivor (dpnid 18227108 uid ) Entering PreCreatePlayerLoginState
+21:03:45 [StateMachine]: Player Survivor (dpnid 18227108 uid ) Entering WaitPreCreatePlayerLoginState
+21:03:46 Player Survivor (18227108) kicked from server: 9 (C:\Program Files (x86)\Steam\steamapps\common\DayZ\!Workshop\@StatusIndicatorsMod\addons\statusindicatorsmod.pbo)
+21:03:46 [Disconnect]: Client 18227108 normal disconnect
+21:03:46 [Disconnect]: No player -> remove player info 18227108 
+21:03:46 [Disconnect]: DisconnectPlayerFinish 18227108
+21:03:46 [Disconnect]: Remove player info 18227108
+21:03:46 [Disconnect]: Remove player info 18227108
+21:03:46 [LoginMachine]: Force remove player Survivor (18227108)
+21:05:09 [Login]: Adding player Survivor (17044048) to login queue at position 1
+21:05:09 [LoginMachine]: Add player Survivor (17044048)
+21:05:09 [StateMachine]: Player Survivor (dpnid 17044048 uid ) Entering PreCreatePlayerLoginState
+21:05:09 [StateMachine]: Player Survivor (dpnid 17044048 uid ) Entering WaitPreCreatePlayerLoginState
+21:05:10 Player Survivor (17044048) kicked from server: 9 (C:\Users\weiss\Documents\Mod\@StatusIndicatorsMod\addons\statusindicatorsmod.pbo)
+21:05:10 [Disconnect]: Client 17044048 normal disconnect
+21:05:10 [Disconnect]: No player -> remove player info 17044048 
+21:05:10 [Disconnect]: DisconnectPlayerFinish 17044048
+21:05:10 [Disconnect]: Remove player info 17044048
+21:05:10 [Disconnect]: Remove player info 17044048
+21:05:10 [LoginMachine]: Force remove player Survivor (17044048)
+21:08:21 [Login]: Adding player Survivor (26476916) to login queue at position 1
+21:08:22 [LoginMachine]: Add player Survivor (26476916)
+21:08:22 [StateMachine]: Player Survivor (dpnid 26476916 uid ) Entering PreCreatePlayerLoginState
+21:08:22 [StateMachine]: Player Survivor (dpnid 26476916 uid ) Entering WaitPreCreatePlayerLoginState
+21:08:23 Player Survivor (26476916) kicked from server: 9 (C:\Users\weiss\Documents\Mod\@StatusIndicatorsMod\addons\statusindicatorsmod.pbo)
+21:08:23 [Disconnect]: Client 26476916 normal disconnect
+21:08:23 [Disconnect]: No player -> remove player info 26476916 
+21:08:23 [Disconnect]: DisconnectPlayerFinish 26476916
+21:08:23 [Disconnect]: Remove player info 26476916
+21:08:23 Player Survivor (26476916) kicked from server: 2 (Auth error: AUTH CANCELED)
+21:08:23 [Disconnect]: Remove player info 26476916
+21:08:23 [LoginMachine]: Force remove player Survivor (26476916)
+21:09:46  --- Termination successfully completed --- 

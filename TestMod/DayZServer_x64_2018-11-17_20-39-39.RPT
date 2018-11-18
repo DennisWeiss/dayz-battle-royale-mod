@@ -1,0 +1,227 @@
+
+
+=====================================================================
+== C:\Program Files (x86)\Steam\steamapps\common\DayZServer\DayZServer_x64.exe
+== DayZServer_x64.exe  -mod=ModdedScripts -config=TestMod\serverDZ.cfg -profiles=TestMod -name=GR-eSports
+=====================================================================
+Exe timestamp: 2018/11/17 12:12:14
+Current time:  2018/11/17 20:39:43
+
+Version 0.63.149464
+20:39:43 [Inputs] Loading inputs cfg "TestMod\Users\GR-eSports\Server.core.xml"
+20:39:43 !!! [Inputs] Cannot read inputs cfg "TestMod\Users\GR-eSports\Server.core.xml", parser error
+20:39:43 [Inputs] Loading inputs cfg "dz/data/inputsdefault/core.xml"
+20:39:43 !!! [Inputs] Cannot read preset "user" file"TestMod\Users\GR-eSports\Server.dayz_preset_User.xml", parser error
+20:39:43 [Inputs] Exporting inputs cfg "TestMod\Users\GR-eSports\Server.core.xml"
+20:40:00 [CE][Hive] :: Initializing OFFLINE
+20:40:00 [CE][Hive] :: Loading core data ... 
+20:40:00 [CE][CoreData] :: 7 root classes, 0 defaults, 0 updaters...
+20:40:00 [CE][Hive] :: Loading map data ... 
+20:40:00 !!! File "$CurrentDir:mpmissions\DayZSurvival.chernarusplus\cfgignorelist.xml" does not exist...
+20:40:00 [CE][LoadPrototype] :: loaded 227 prototypes
+20:40:00   488 containers, 7137 points
+20:40:00   0 dispatches, 0 proxies
+20:40:00 !!! [CE][LoadPrototype] 5 groups have no points...
+20:40:00 [CE][LoadPrototype] :: last group name: Land_Wreck_Volha_Police...
+20:40:00 [CE][LoadPrototype] :: loaded 0 prototypes
+20:40:00   0 containers, 0 points
+20:40:00   0 dispatches, 0 proxies
+20:40:00 [CE][LoadPrototype] :: last group name: Rail9...
+20:40:00 [CE][LoadMap] "Group" :: loaded 11602 groups, largest group range: 34.2
+20:40:00 !!! File "$CurrentDir:mpmissions\DayZSurvival.chernarusplus\mapgroupdirt.xml" does not exist...
+20:40:00 !!! [CE][LoadMap] "Dirt" :: Failed to read group instances ($CurrentDir:mpmissions\DayZSurvival.chernarusplus\mapgroupdirt.xml)
+20:40:01 [CE][Links] found 1852 total links between groups, of 11602
+20:40:01 [CE][LoadClusters] "Cluster" :: Loading files...
+20:40:01 [CE][LoadClusters] :: file: "mapgroupcluster.xml", 9 types, 50000 instances
+20:40:02 [CE][LoadClusters] :: file: "mapgroupcluster01", 9 types, 50000 instances
+20:40:03 [CE][LoadClusters] :: file: "mapgroupcluster02", 9 types, 50000 instances
+20:40:04 [CE][LoadClusters] :: file: "mapgroupcluster03", 9 types, 50000 instances
+20:40:05 [CE][LoadClusters] :: file: "mapgroupcluster04", 9 types, 17207 instances
+20:40:08 [CE] :: WARNING :: Preset (cargo) with name 'food' was not found.
+20:40:08 [CE] :: WARNING :: Preset (cargo) with name 'tools' was not found.
+20:40:08 [CE][TypeSetup] :: 368 classes setuped...
+20:40:08 [CE][RegisterBind] :: 0 classes binded...
+20:40:08 [CE][RegisterConfig] :: 2580 config classes registered, 1 sub-counters...
+20:40:08 [CE][offlineDB] :: Loaded 33 dynamic events 205 total types 0 total positions.
+20:40:08 !!! File "$CurrentDir:mpmissions\DayZSurvival.chernarusplus\db\messages.xml" does not exist...
+20:40:08 [CE][offlineDB] :: File 'db/messages.xml' not found.
+20:40:08 [CE][DynamicEvent] Load  Events:[33] Primary spawners: 33 Secondary spawners: 0
+20:40:08   Restoring [Storage] file "mpmissions\DayZSurvival.chernarusplus\storage_1\data\vehicles.bin" 63 items.
+20:40:08   63 items loaded.
+20:40:08   Restoring [Storage] file "mpmissions\DayZSurvival.chernarusplus\storage_1\data\dynamic_000.bin" 1473 items.
+20:40:10   1473 items loaded.
+20:40:10   Restoring [Storage] file "mpmissions\DayZSurvival.chernarusplus\storage_1\data\dynamic_001.bin" 2990 items.
+20:40:11   2990 items loaded.
+20:40:11   Restoring [Storage] file "mpmissions\DayZSurvival.chernarusplus\storage_1\data\dynamic_002.bin" 5714 items.
+20:40:13   5714 items loaded.
+20:40:13   Restoring [Storage] file "mpmissions\DayZSurvival.chernarusplus\storage_1\data\dynamic_003.bin" 3846 items.
+20:40:15   3846 items loaded.
+20:40:15   Restoring [Storage] file "mpmissions\DayZSurvival.chernarusplus\storage_1\data\dynamic_004.bin" 4311 items.
+20:40:17   4311 items loaded.
+20:40:17   Restoring [Storage] file "mpmissions\DayZSurvival.chernarusplus\storage_1\data\dynamic_005.bin" 5033 items.
+20:40:19   5033 items loaded.
+20:40:19   Restoring [Storage] file "mpmissions\DayZSurvival.chernarusplus\storage_1\data\dynamic_006.bin" 3470 items.
+20:40:21   3470 items loaded.
+20:40:21   Restoring [Storage] file "mpmissions\DayZSurvival.chernarusplus\storage_1\data\dynamic_007.bin" 3431 items.
+20:40:22   3431 items loaded.
+20:40:22   Restoring [Storage] file "mpmissions\DayZSurvival.chernarusplus\storage_1\data\dynamic_008.bin" 5069 items.
+20:40:25   5069 items loaded.
+20:40:25   Restoring [Storage] file "mpmissions\DayZSurvival.chernarusplus\storage_1\data\dynamic_009.bin" 6348 items.
+20:40:28   6348 items loaded.
+20:40:28   Restoring [Storage] file "mpmissions\DayZSurvival.chernarusplus\storage_1\data\dynamic_010.bin" 4003 items.
+20:40:30   4003 items loaded.
+20:40:30   Restoring [Storage] file "mpmissions\DayZSurvival.chernarusplus\storage_1\data\dynamic_011.bin" 504 items.
+20:40:30   504 items loaded.
+20:40:30 [CE][Hive] :: Storage load took 21.83 seconds
+20:40:30   entity: 69442, building: 0
+20:40:30   no lifetime: 38
+20:40:30 [CE][Hive] :: Initializing ... 
+20:40:30 [CE][Hive] :: Initializing spawners ... 
+20:40:31 [CE][LootRespawner] (PRIDummy) :: Item [0] causing search overtime: "WoolCoat_Beige"
+20:40:31 [CE][LootRespawner] (PRIDummy) :: Item [1] causing search overtime: "WoolCoat_Beige"
+20:40:31 [CE][LootRespawner] (PRIDummy) :: Item [2] causing search overtime: "WoolCoat_Beige"
+20:40:31 [CE][LootRespawner] (PRIDummy) :: Item [3] causing search overtime: "WoolCoat_Beige"
+20:40:31 [CE][LootRespawner] (PRIDummy) :: Item [4] causing search overtime: "WoolCoat_Beige"
+20:40:31 [CE][LootRespawner] (PRIDummy) :: Item [5] causing search overtime: "WoolCoat_Beige"
+20:40:31 [CE][LootRespawner] (PRIDummy) :: Item [6] causing search overtime: "WoolCoat_Beige"
+20:40:31 [CE][LootRespawner] (PRIDummy) :: Item [7] causing search overtime: "WoolCoat_Beige"
+20:40:31 [CE][LootRespawner] (PRIDummy) :: Item [8] causing search overtime: "WoolCoat_Beige"
+20:40:31 [CE][LootRespawner] (PRIDummy) :: Item [9] causing search overtime: "WoolCoat_Beige"
+20:40:31 [CE][LootRespawner] (PRIDummy) :: Item [10] causing search overtime: "WoolCoat_Beige"
+20:40:31 [CE][LootRespawner] (PRIDummy) :: Item [11] causing search overtime: "WoolCoat_Beige"
+20:40:31 [CE][LootRespawner] (PRIDummy) :: Item [12] causing search overtime: "WoolCoat_Beige"
+20:40:31 [CE][LootRespawner] (PRIDummy) :: Item [13] causing search overtime: "WoolCoat_Beige"
+20:40:31 [CE][LootRespawner] (PRIDummy) :: Item [14] causing search overtime: "WoolCoat_Beige"
+20:40:31 [CE][LootRespawner] (PRIDummy) :: Item [15] causing search overtime: "WoolCoat_Beige"
+20:40:31 [CE][LootRespawner] (PRIDummy) :: Item [16] causing search overtime: "WoolCoat_Beige"
+20:40:31 [CE][LootRespawner] (PRIDummy) :: Item [17] causing search overtime: "WoolCoat_Beige"
+20:40:31 [CE][LootRespawner] (PRIDummy) :: Item [18] causing search overtime: "WoolCoat_Beige"
+20:40:31 [CE][LootRespawner] (PRIDummy) :: Item [19] causing search overtime: "WoolCoat_Beige"
+20:40:31 [CE][LootRespawner] (PRIDummy) :: Item [0] is hard to place, performance drops: "SlacksPants_DarkGrey"
+20:40:31 [CE][LootRespawner] (PRIDummy) :: Item [1] is hard to place, performance drops: "SlacksPants_DarkGrey"
+20:40:31 [CE][LootRespawner] (PRIDummy) :: Item [2] is hard to place, performance drops: "SlacksPants_DarkGrey"
+20:40:31 [CE][LootRespawner] (PRIDummy) :: Item [3] is hard to place, performance drops: "SlacksPants_DarkGrey"
+20:40:31 [CE][LootRespawner] (PRIDummy) :: Item [4] is hard to place, performance drops: "SlacksPants_DarkGrey"
+20:40:31 [CE][LootRespawner] (PRIDummy) :: Item [5] is hard to place, performance drops: "SlacksPants_DarkGrey"
+20:40:31 [CE][LootRespawner] (PRIDummy) :: Item [6] is hard to place, performance drops: "SlacksPants_DarkGrey"
+20:40:31 [CE][LootRespawner] (PRIDummy) :: Item [7] is hard to place, performance drops: "SlacksPants_DarkGrey"
+20:40:31 [CE][LootRespawner] (PRIDummy) :: Item [8] is hard to place, performance drops: "SlacksPants_DarkGrey"
+20:40:31 [CE][LootRespawner] (PRIDummy) :: Item [9] is hard to place, performance drops: "SlacksPants_DarkGrey"
+20:40:31 [CE][LootRespawner] (PRIDummy) :: Item [10] is hard to place, performance drops: "SlacksPants_DarkGrey"
+20:40:31 [CE][LootRespawner] (PRIDummy) :: Item [11] is hard to place, performance drops: "SlacksPants_DarkGrey"
+20:40:31 [CE][LootRespawner] (PRIDummy) :: Item [12] is hard to place, performance drops: "SlacksPants_DarkGrey"
+20:40:31 [CE][LootRespawner] (PRIDummy) :: Item [13] is hard to place, performance drops: "SlacksPants_DarkGrey"
+20:40:31 [CE][LootRespawner] (PRIDummy) :: Item [14] is hard to place, performance drops: "SlacksPants_DarkGrey"
+20:40:31 [CE][LootRespawner] (PRIDummy) :: Item [15] is hard to place, performance drops: "SlacksPants_DarkGrey"
+20:40:31 [CE][LootRespawner] (PRIDummy) :: Item [16] is hard to place, performance drops: "SlacksPants_DarkGrey"
+20:40:31 [CE][LootRespawner] (PRIDummy) :: Item [17] is hard to place, performance drops: "SlacksPants_DarkGrey"
+20:40:31 [CE][LootRespawner] (PRIDummy) :: Item [18] is hard to place, performance drops: "SlacksPants_DarkGrey"
+20:40:31 [CE][LootRespawner] (PRIDummy) :: Item [19] is hard to place, performance drops: "SlacksPants_DarkGrey"
+20:40:32 [CE][LootRespawner] (PRIDummy) :: Initially (re)spawned:1, Nominal:55579, Total in Map: 46363 at 1 (sec)
+20:40:32   tests:51, repeats:0 fails:50, overtime:9450
+20:40:32 [CE][DynEvent] :: 33 types
+20:40:32 [00] AmbientHen
+20:40:32   Primary Spawner: "Ambient", active: yes, repeat: 1
+20:40:32 [01] AnimalCow
+20:40:32   Primary Spawner: "Animal", active: yes, repeat: 1
+20:40:32 [02] AnimalDeer
+20:40:32   Primary Spawner: "Animal", active: yes, repeat: 1
+20:40:32 [03] AnimalGoat
+20:40:32   Primary Spawner: "Animal", active: yes, repeat: 1
+20:40:32 [04] AnimalPig
+20:40:32   Primary Spawner: "Animal", active: yes, repeat: 1
+20:40:32 [05] AnimalRoeDeer
+20:40:32   Primary Spawner: "Animal", active: yes, repeat: 1
+20:40:32 [06] AnimalSheep
+20:40:32   Primary Spawner: "Animal", active: yes, repeat: 1
+20:40:32 [07] AnimalWildBoar
+20:40:32   Primary Spawner: "Animal", active: yes, repeat: 1
+20:40:32 [08] AnimalWolf
+20:40:32   Primary Spawner: "Animal", active: yes, repeat: 1
+20:40:32 [09] InfectedArmy
+20:40:32   Primary Spawner: "Infected", active: yes, repeat: 1
+20:40:32 [10] InfectedCity
+20:40:32   Primary Spawner: "Infected", active: yes, repeat: 1
+20:40:32 [11] InfectedFirefighter
+20:40:32   Primary Spawner: "Infected", active: yes, repeat: 1
+20:40:32 [12] InfectedIndustrial
+20:40:32   Primary Spawner: "Infected", active: yes, repeat: 1
+20:40:32 [13] InfectedMedic
+20:40:32   Primary Spawner: "Infected", active: yes, repeat: 1
+20:40:32 [14] InfectedPolice
+20:40:32   Primary Spawner: "Infected", active: yes, repeat: 1
+20:40:32 [15] InfectedPrisoner
+20:40:32   Primary Spawner: "Infected", active: yes, repeat: 1
+20:40:32 [16] InfectedReligious
+20:40:32   Primary Spawner: "Infected", active: yes, repeat: 1
+20:40:32 [17] InfectedSolitude
+20:40:32   Primary Spawner: "Infected", active: yes, repeat: 1
+20:40:32 [18] InfectedVillage
+20:40:32   Primary Spawner: "Infected", active: yes, repeat: 1
+20:40:32 [19] ItemPlanks
+20:40:32   Primary Spawner: "Item", active: yes, repeat: 1
+20:40:32 [20] Loot
+20:40:32   Primary Spawner: "Loot", active: yes, repeat: 2
+20:40:32 [21] StaticHeliCrash
+20:40:32   Primary Spawner: "Vehicle", active: yes, repeat: 1
+20:40:32 [22] StaticPoliceCar
+20:40:32   Primary Spawner: "Vehicle", active: yes, repeat: 1
+20:40:32 [23] TrajectoryApple
+20:40:32   Primary Spawner: "Trajectory", active: yes, repeat: 1
+20:40:32 [24] TrajectoryCanina
+20:40:32   Primary Spawner: "Trajectory", active: yes, repeat: 1
+20:40:32 [25] TrajectoryConiferous
+20:40:32   Primary Spawner: "Trajectory", active: yes, repeat: 1
+20:40:32 [26] TrajectoryDeciduous
+20:40:32   Primary Spawner: "Trajectory", active: yes, repeat: 1
+20:40:32 [27] TrajectoryHumus
+20:40:32   Primary Spawner: "Trajectory", active: yes, repeat: 1
+20:40:32 [28] TrajectoryPear
+20:40:32   Primary Spawner: "Trajectory", active: yes, repeat: 1
+20:40:32 [29] TrajectoryPlum
+20:40:32   Primary Spawner: "Trajectory", active: yes, repeat: 1
+20:40:32 [30] TrajectorySambucus
+20:40:32   Primary Spawner: "Trajectory", active: yes, repeat: 1
+20:40:32 [31] TrajectoryStones
+20:40:32   Primary Spawner: "Trajectory", active: yes, repeat: 1
+20:40:32 [32] VehicleCivilianVan
+20:40:32   Primary Spawner: "Vehicle", active: yes, repeat: 1
+20:40:32 [CE][Hive] :: Initializing of spawners done.
+20:40:32 [CE][Hive] :: Init sequence finished.
+20:40:32 Player connect enabled
+20:41:08 [Login]: Adding player Survivor (1641815981) to login queue at position 1
+20:41:09 [LoginMachine]: Add player Survivor (1641815981)
+20:41:09 [StateMachine]: Player Survivor (dpnid 1641815981 uid ) Entering PreCreatePlayerLoginState
+20:41:09 [StateMachine]: Player Survivor (dpnid 1641815981 uid ) Entering WaitPreCreatePlayerLoginState
+20:41:10 [StateMachine]: Player Survivor (dpnid 1641815981 uid d5o4DaGfl15Sbl2H3alV8NGUj4bZeJ9SDWeaH+C7MLw=) Entering GetCharacterLoginState
+20:41:10 [StateMachine]: Player Survivor (dpnid 1641815981 uid d5o4DaGfl15Sbl2H3alV8NGUj4bZeJ9SDWeaH+C7MLw=) Entering CreateNetObjectsLoginState
+20:41:10 [StateMachine]: Player Survivor (dpnid 1641815981 uid d5o4DaGfl15Sbl2H3alV8NGUj4bZeJ9SDWeaH+C7MLw=) Entering PreloadCamLoginState
+20:41:10 [StateMachine]: Player Survivor (dpnid 1641815981 uid d5o4DaGfl15Sbl2H3alV8NGUj4bZeJ9SDWeaH+C7MLw=) Entering WaitPreloadCamLoginState
+20:41:16 [StateMachine]: Player Survivor (dpnid 1641815981 uid d5o4DaGfl15Sbl2H3alV8NGUj4bZeJ9SDWeaH+C7MLw=) Entering GetLoadedCharLoginState
+20:41:19 <LOAD EXISTING CHAR>:
+    charID 1
+    playerID 1
+    dpnid 1641815981
+    uid d5o4DaGfl15Sbl2H3alV8NGUj4bZeJ9SDWeaH+C7MLw=
+20:42:26 !!! [CE][Point] Removing 2681.517822, 9918.610352 from PearTree1
+20:42:26 !!! [CE][Point] Removing 2682.457031, 9917.193359 from PearTree1
+20:42:26 !!! [CE][Point] Removing 2723.442139, 10002.296875 from PearTree1
+20:43:14 [Disconnect]: Client 1641815981 normal disconnect
+20:43:15 [Disconnect]: Start script disconnect 1641815981 (dbCharacterId 1 dbPlayerId 1) logoutTime 0
+20:43:15 [Disconnect]: Finish script disconnect 1641815981
+20:43:15 [Disconnect]: DisconnectPlayerFinish 1641815981
+20:43:15 [Disconnect]: Remove player info 1641815981
+20:43:15 Player Survivor (1641815981) kicked from server: 2 (Auth error: AUTH CANCELED)
+20:43:15 [Disconnect]: Remove player info 1641815981
+=======================================================
+-------------------------------------------------------
+Time: 20:43:41
+Exception code: C0000005 ACCESS_VIOLATION at 1BAA3748
+Version 0.63.149464
+Fault address:  1BAA3748 00:1BAA3748 Unknown module
+file:     DayZSurvival
+world:    chernarusplus
+Prev. code bytes: 39 5F 44 76 2F 0F 1F 00 48 8B 47 38 48 8B 0C D8
+Fault code bytes: 0F B7 41 12 A8 14 0F 95 C2 66 44 0F A3 F0 0F 92
+=======================================================
+note: Minidump has been generated into the file TestMod\DayZServer_x64_2018-11-17_20-39-39_2018-11-17_20-43-41.mdmp
