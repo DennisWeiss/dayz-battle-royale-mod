@@ -4,8 +4,7 @@
 /docs/
 /dta/
 /keys/
-/TestMod/
-/dayz.gropj
+/dayz.gproj
 /DayZServer_x64.exe
 /dayzsetting.xml
 /serverDZ.cfg
@@ -14,4 +13,7 @@
 /tier0_s64.dll
 /vstdlib_s64.dll
 
-!/TestMod/serverDZ.cfg
+*.RPT
+/TestMod/BattlEye/
+/TestMod/Users/
+/TestMod/*.log
