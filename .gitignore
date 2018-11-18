@@ -14,6 +14,7 @@
 /vstdlib_s64.dll
 
 *.RPT
+*.mdmp
 /TestMod/BattlEye/
 /TestMod/Users/
 /TestMod/*.log
