@@ -35,7 +35,7 @@ class DayZSurvival : MissionServer
 	ref array<Man> m_PlayersInRound;
 	ref set<Man> playersOutOfZone;
 
-	const float PRINT_PLAYERS_ALIVE_INTERVAL = 0.1;
+	const float PRINT_PLAYERS_ALIVE_INTERVAL = 30.0;
 	float lastTimePlayersAlivePrinted = 0.0;
 
 	void DayZSurvival()
@@ -66,10 +66,22 @@ class DayZSurvival : MissionServer
                       {42.0, 42.5},
                       {44, 44.5},
                       {50, 50.2}};
+					  
+		// ONLY FOR DEBUG PURPOSES
+		for (int i = 0; i < circleConf.Count(); i++)
+		{
+			ref array<float> subArr = circleConf.Get(i);
+			for (int j = 0; j < circleConf.Get(i).Count(); j++)
+			{
+				subArr.Set(j, 5 * circleConf.Get(i).Get(j));
+				
+			}
+			circleConf.Set(i, subArr);
+		}
 
-		for (int i = 0; i < 11; i++)
+		for (int k = 0; k < 11; k++)
         {
-		    Print("Zone " + (i + 1) + ": " + circleConf.Get(i).Get(0) + ", " + circleConf.Get(i).Get(1));
+		    Print("Zone " + (k + 1) + ": " + circleConf.Get(k).Get(0) + ", " + circleConf.Get(k).Get(1));
         }
 
 		m_Modules = new set<ref ModuleManager>;
@@ -465,7 +477,7 @@ class DayZSurvival : MissionServer
 	    player.SetPosition(GenerateRandomVectorBasedOnZone());
 	    player.SetHealth("GlobalHealth", "Blood", 5000);
 	    player.SetHealth("GlobalHealth", "Health", 5000);
-	    player.SetHealth("GlobalHealth", "Shock", 0);
+	    player.SetHealth("GlobalHealth", "Shock", 5000);
     }
 
     private vector GenerateRandomVectorBasedOnZone()
