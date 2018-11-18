@@ -13,6 +13,9 @@
 /tier0_s64.dll
 /vstdlib_s64.dll
 
+.idea/
+storage_1/
+
 *.RPT
 *.mdmp
 /TestMod/BattlEye/
