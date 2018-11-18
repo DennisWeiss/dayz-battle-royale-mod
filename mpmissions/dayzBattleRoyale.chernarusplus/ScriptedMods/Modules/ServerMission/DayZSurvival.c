@@ -420,6 +420,7 @@ class DayZSurvival : MissionServer
 	void PrintPlayersAlive()
 	{
 		GlobalMessage("Players Alive: " + m_PlayersInRound.Count() + "/" + m_PlayersStartedRound);
+		lastTimePlayersAlivePrinted = m_RoundTime;
 	}
 
 	private vector GenerateNextCenter(int circlePhase)
