@@ -1,9 +1,10 @@
 /addons/
-/battleeye/
+/battleye/
 /dll/
 /docs/
 /dta/
 /keys/
+/TestMod/
 /dayz.gropj
 /DayZServer_x64.exe
 /dayzsetting.xml
@@ -12,3 +13,5 @@
 /steamclient64.dll
 /tier0_s64.dll
 /vstdlib_s64.dll
+
+!TestMod/serverDZ.cfg
