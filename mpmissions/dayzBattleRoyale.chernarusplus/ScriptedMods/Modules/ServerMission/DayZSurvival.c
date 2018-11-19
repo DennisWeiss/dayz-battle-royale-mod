@@ -378,6 +378,7 @@ class DayZSurvival : MissionServer
 					players.Get(i).DecreaseHealth("GlobalHealth", "Blood", deltaTime * GetBloodDamagePerSec());
 					Print("Blood per sec: " + GetBloodDamagePerSec().ToString());
 					Print("deltaTime: " + deltaTime.ToString());
+					Print("Player Health: " + players.Get(i).GetHealth("GlobalHealth", "Blood"));
 					Print("Deal Damage to " + players.Get(i).GetIdentity().GetName() + " " + (deltaTime * GetBloodDamagePerSec()).ToString());
 					if (!PlayerAlreadyOutOfZone(players.Get(i)))
 					{
