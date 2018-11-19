@@ -25,6 +25,9 @@ class DayZSurvival : MissionServer
 
     float m_LastRoundTimeShown = 0.0;
 
+	const vector SPAWN_ISLAND_CENTER = "2725 100 1275";
+	const float SPAWN_ISLAND_MAX_DISTANCE = 200.0;
+
 	vector center = "2700 100 10000";
 	vector nextCenter = "2700 100 10000";
 	int m_Phase = 1;
@@ -42,7 +45,7 @@ class DayZSurvival : MissionServer
 	{
 		Print("BATTLE ROYALE IS ALIVE!!");
 
-		/*circleConf = {{480.0, 720.0},
+		circleConf = {{480.0, 720.0},
                       {960.0, 1080.0},
                       {1320.0, 1500.0},
                       {1680.0, 1800.0},
@@ -52,10 +55,10 @@ class DayZSurvival : MissionServer
                       {2400.0, 2430.0},
                       {2520.0, 2550.0},
                       {2640.0, 2670.0},
-                      {3000.0, 3012.0}};*/
+                      {3000.0, 3012.0}};
 
 		// DEBUG ZONES
-        circleConf = {{8.0, 12.0},
+        /*circleConf = {{8.0, 12.0},
                       {16.0, 18.0},
                       {22.0, 24.0},
                       {28.0, 30.0},
@@ -65,15 +68,15 @@ class DayZSurvival : MissionServer
                       {40.0, 40.5},
                       {42.0, 42.5},
                       {44, 44.5},
-                      {50, 50.2}};
+                      {50, 50.2}};*/
 					  
-		// ONLY FOR DEBUG PURPOSES
+		// ONLY FOR DEBUG PURPOSES, NEEDS TO BE REMOVED FOR PRODUCTION
 		for (int i = 0; i < circleConf.Count(); i++)
 		{
 			ref array<float> subArr = circleConf.Get(i);
 			for (int j = 0; j < circleConf.Get(i).Count(); j++)
 			{
-				subArr.Set(j, 5 * circleConf.Get(i).Get(j));
+				subArr.Set(j, circleConf.Get(i).Get(j) / 12.0);
 				
 			}
 			circleConf.Set(i, subArr);
@@ -246,6 +249,19 @@ class DayZSurvival : MissionServer
 	    int numbOfplayers = players.Count();
 	    GlobalMessage("Online Players: "+ numbOfplayers.ToString());
 	}
+	
+	bool PlayerIsInRound(PlayerBase player)
+	{
+		for (int i = 0; i < m_PlayersInRound.Count(); i++)
+		{
+			PlayerBase playerInList = m_PlayersInRound.Get(i);
+			if (playerInList.GetIdentity().GetId() == player.GetIdentity().GetId())
+			{
+				return true;
+			}
+		}
+		return false;
+	}
 
 	override void StartingEquipSetup(PlayerBase player, bool clothesChosen)
 	{
@@ -347,22 +363,35 @@ class DayZSurvival : MissionServer
 	{
 		for (int i = 0; i < players.Count(); i++)
 		{
-		    float radius = GetRadius();
-			if (Get2dDistance(GetCenter(), players.Get(i).GetPosition()) > radius * radius)
+			PlayerBase player = players.Get(i);
+			
+			if (PlayerIsInRound(player))
 			{
-				players.Get(i).DecreaseHealth("GlobalHealth", "Blood", deltaTime * GetBloodDamagePerSec());
-				if (!PlayerAlreadyOutOfZone(players.Get(i)))
+				float radius = GetRadius();
+				if (Get2dDistance(GetCenter(), players.Get(i).GetPosition()) > radius * radius)
 				{
-					Send(players.Get(i), "You are leaving the safe zone!")
-					playersOutOfZone.Insert(players.Get(i));
+					players.Get(i).DecreaseHealth("GlobalHealth", "Blood", deltaTime * GetBloodDamagePerSec());
+					if (!PlayerAlreadyOutOfZone(players.Get(i)))
+					{
+						Send(players.Get(i), "You are leaving the safe zone!")
+						playersOutOfZone.Insert(players.Get(i));
+					}
+				}
+				else
+				{
+					if (PlayerAlreadyOutOfZone(players.Get(i)))
+					{
+						Send(players.Get(i), "You have entered the safe zone again!")
+						RemovePlayerFromOutOfZone(players.Get(i));
+					}
 				}
 			}
-			else
+		    else 
 			{
-				if (PlayerAlreadyOutOfZone(players.Get(i)))
+				if (Get2dDistance(SPAWN_ISLAND_CENTER, players.Get(i).GetPosition()) > SPAWN_ISLAND_MAX_DISTANCE)
 				{
-					Send(players.Get(i), "You have entered the safe zone again!")
-					RemovePlayerFromOutOfZone(players.Get(i));
+					Send(players.Get(i), "Don't leave spawn island!");
+					players.Get(i).SetHealth("GlobalHealth", "Health", 0);
 				}
 			}
 		}
