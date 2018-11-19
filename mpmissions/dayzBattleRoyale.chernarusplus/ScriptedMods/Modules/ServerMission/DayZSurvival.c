@@ -19,7 +19,7 @@ class DayZSurvival : MissionServer
 	bool m_StaminaStatus = false;
 	ref CustomWidgetEventHandler widgetEventHandler;
 
-	const float LOBBY_TIME = 300.0;
+	const float LOBBY_TIME = 25.0;
     const float INITIAL_RADIUS = 8000.0;
     ref array<ref array<float>> circleConf;
 
@@ -35,7 +35,7 @@ class DayZSurvival : MissionServer
 	float m_RoundTime = 0.0;
 	int m_PlayersStartedRound;
 
-	ref array<Man> m_PlayersInRound;
+	ref array<PlayerBase> m_PlayersInRound;
 	ref set<Man> playersOutOfZone;
 
 	const float PRINT_PLAYERS_ALIVE_INTERVAL = 30.0;
@@ -90,6 +90,7 @@ class DayZSurvival : MissionServer
 		m_Modules = new set<ref ModuleManager>;
 		widgetEventHandler = new CustomWidgetEventHandler;
 		playersOutOfZone = new set<Man>;
+		m_PlayersInRound = new array<PlayerBase>;
 		RegisterModules();
 	}
 
@@ -252,10 +253,14 @@ class DayZSurvival : MissionServer
 	
 	bool PlayerIsInRound(PlayerBase player)
 	{
+		PlayerIdentity playerIdentity = player.GetIdentity();
+		Print("Player ID: " + playerIdentity.GetId());
+		Print("Players In Round Count: " + m_PlayersInRound.Count());
 		for (int i = 0; i < m_PlayersInRound.Count(); i++)
 		{
-			PlayerBase playerInList = m_PlayersInRound.Get(i);
-			if (playerInList.GetIdentity().GetId() == player.GetIdentity().GetId())
+			PlayerIdentity playerInListIdentity = m_PlayersInRound.Get(i).GetIdentity();
+			Print("IDs: " + playerInListIdentity.GetId() + " " + playerIdentity.GetId());
+			if (playerInListIdentity.GetId() == playerIdentity.GetId())
 			{
 				return true;
 			}
@@ -371,6 +376,9 @@ class DayZSurvival : MissionServer
 				if (Get2dDistanceSquared(GetCenter(), players.Get(i).GetPosition()) > radius * radius)
 				{
 					players.Get(i).DecreaseHealth("GlobalHealth", "Blood", deltaTime * GetBloodDamagePerSec());
+					Print("Blood per sec: " + GetBloodDamagePerSec().ToString());
+					Print("deltaTime: " + deltaTime.ToString());
+					Print("Deal Damage to " + players.Get(i).GetIdentity().GetName() + " " + (deltaTime * GetBloodDamagePerSec()).ToString());
 					if (!PlayerAlreadyOutOfZone(players.Get(i)))
 					{
 						Send(players.Get(i), "You are leaving the safe zone!")
@@ -416,35 +424,35 @@ class DayZSurvival : MissionServer
         GlobalMessage("Round starts in " + FormatTime(Math.Round(time)));
         m_LastRoundTimeShown = m_RoundTime;
     }
-
+	
+	private void UpdatePlayersInRound()
+	{
+		for (int i = 0; i < m_PlayersInRound.Count(); i++)
+		{
+			PlayerBase player = m_PlayersInRound.Get(i);
+			if (!player.IsStillInRound())
+			{
+				m_PlayersInRound.RemoveOrdered(i);
+				i--;
+			}
+		}
+	}
+	
 	override void TickScheduler(float timeslice)
     {
-
         GetGame().GetWorld().GetPlayerList(m_Players);
         if( m_Players.Count() == 0 )
         {
             m_RoundTime = 0.0;
             return;
         }
-
+		
         m_RoundTime += timeslice;
 
-        for(int i = 0; i < SCHEDULER_PLAYERS_PER_TICK; i++)
+        for(int i = 0; i < m_Players.Count(); i++)
         {
-            if(m_currentPlayer >= m_Players.Count() )
-            {
-                m_currentPlayer = 0;
-            }
-
-            PlayerBase currentPlayer = PlayerBase.Cast(m_Players.Get(m_currentPlayer));
-            currentPlayer.OnTick();
-
-            if (m_StaminaStatus) {
-                currentPlayer.GetStaminaHandler().SyncStamina(1000,1000);
-                currentPlayer.GetStatStamina().Set(currentPlayer.GetStaminaHandler().GetStaminaCap());
-            }
-            if (GetModule(SafeZone)) { SafeZone.Cast(GetModule(SafeZone)).SafeZoneHandle(currentPlayer); }
-            m_currentPlayer++;
+            PlayerBase currentPlayer = PlayerBase.Cast(m_Players.Get(i));
+			currentPlayer.SetGameStatus(m_GameStatus == GameStatus.IN_ROUND);
         }
 
 
@@ -465,6 +473,7 @@ class DayZSurvival : MissionServer
         {
             DealDamageToPlayerOutsideOfZone(m_Players, timeslice);
             ManageCirclePhases();
+			UpdatePlayersInRound();
 			
 			if (m_RoundTime - lastTimePlayersAlivePrinted > PRINT_PLAYERS_ALIVE_INTERVAL)
 			{
@@ -515,7 +524,8 @@ class DayZSurvival : MissionServer
             }
         }
     }
-
+	
+	// TODO: do proper respawning
 	private void SpawnRandomly(PlayerBase player)
     {
 	    player.SetPosition(GenerateRandomVectorBasedOnZone());
@@ -544,7 +554,7 @@ class DayZSurvival : MissionServer
 
 	void StartRound()
     {
-        m_GameStatus = GameStatus.IN_ROUND;
+		m_GameStatus = GameStatus.IN_ROUND;
 	    m_RoundTime = 0.0;
 	    m_LastRoundTimeShown = 0.0;
 	    m_PlayersStartedRound = m_Players.Count();
@@ -553,10 +563,10 @@ class DayZSurvival : MissionServer
         nextCenter = center;
         GlobalMessage("Round has started. Center: <" + center[0].ToString() + ", " + center[2].ToString() + "> , Radius: " + GetRadius().ToString() + "m");
         for (int i = 0; i < m_PlayersStartedRound; i++)
-        {
-            PlayerBase player = m_Players.Get(i);
+		{
+			PlayerBase player = PlayerBase.Cast(m_Players.Get(i))
+			m_PlayersInRound.Insert(player);
             SpawnRandomly(player);
-            m_PlayersInRound.Insert(player);
         }
     }
 
