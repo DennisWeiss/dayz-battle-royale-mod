@@ -19,17 +19,17 @@ class DayZSurvival : MissionServer
 	bool m_StaminaStatus = false;
 	ref CustomWidgetEventHandler widgetEventHandler;
 
-	const float LOBBY_TIME = 10.0;
+	const float LOBBY_TIME = 300.0;
     const float INITIAL_RADIUS = 8000.0;
     ref array<ref array<float>> circleConf;
 
     float m_LastRoundTimeShown = 0.0;
 
-	const vector SPAWN_ISLAND_CENTER = "2725 100 1275";
+	const vector SPAWN_ISLAND_CENTER = "2725 0 1275";
 	const float SPAWN_ISLAND_MAX_DISTANCE = 200.0;
 
-	vector center = "2700 100 10000";
-	vector nextCenter = "2700 100 10000";
+	vector center = "2700 0 10000";
+	vector nextCenter = "2700 0 10000";
 	int m_Phase = 1;
 	GameStatus m_GameStatus = GameStatus.IN_LOBBY;
 	float m_RoundTime = 0.0;
@@ -284,11 +284,11 @@ class DayZSurvival : MissionServer
         return a;
     }
 
-	private string FormatTime(float timeInSec)
+	private string FormatTime(int timeInSec)
     {
 	    if (timeInSec < 60)
         {
-            return Math.Round(timeInSec).ToString() + "s";
+            return timeInSec.ToString() + "s";
         }
         return Math.Floor(timeInSec / 60).ToString() + "m" + FormatTime(Mod(timeInSec, 60.0));
     }
@@ -324,7 +324,7 @@ class DayZSurvival : MissionServer
 	            (m_RoundTime - circleConf.Get(m_Phase - 1).Get(0)) / (circleConf.Get(m_Phase - 1).Get(1) - circleConf.Get(m_Phase - 1).Get(0)));
     }
 
-	private float Get2dDistance(vector a, vector b)
+	private float Get2dDistanceSquared(vector a, vector b)
 	{
 		return (a[0] - b[0]) * (a[0] - b[0]) + (a[2] - b[2]) * (a[2] - b[2]);
 	}
@@ -368,7 +368,7 @@ class DayZSurvival : MissionServer
 			if (PlayerIsInRound(player))
 			{
 				float radius = GetRadius();
-				if (Get2dDistance(GetCenter(), players.Get(i).GetPosition()) > radius * radius)
+				if (Get2dDistanceSquared(GetCenter(), players.Get(i).GetPosition()) > radius * radius)
 				{
 					players.Get(i).DecreaseHealth("GlobalHealth", "Blood", deltaTime * GetBloodDamagePerSec());
 					if (!PlayerAlreadyOutOfZone(players.Get(i)))
@@ -386,20 +386,34 @@ class DayZSurvival : MissionServer
 					}
 				}
 			}
-		    else 
+		}
+	}
+	
+	private bool IsOutOfSpawnZone(PlayerBase player)
+	{
+		return Get2dDistanceSquared(SPAWN_ISLAND_CENTER, player.GetPosition()) > SPAWN_ISLAND_MAX_DISTANCE * SPAWN_ISLAND_MAX_DISTANCE;
+	}
+	
+	private bool ShouldBeKilledBecauseOutOfSpawnZone(PlayerBase player)
+	{
+		return IsOutOfSpawnZone(player) && (m_GameStatus == GameStatus.IN_LOBBY || m_GameStatus == GameStatus.IN_ROUND && !PlayerIsInRound(player)) && player.GetHealth("GlobalHealth", "Health") > 0;
+	}
+	
+	private void KillPlayersOutOfSpawnZone(array<Man> players)
+	{
+		for (int i = 0; i < players.Count(); i++)
+		{
+			if (ShouldBeKilledBecauseOutOfSpawnZone(players.Get(i)))
 			{
-				if (Get2dDistance(SPAWN_ISLAND_CENTER, players.Get(i).GetPosition()) > SPAWN_ISLAND_MAX_DISTANCE)
-				{
-					Send(players.Get(i), "Don't leave spawn island!");
-					players.Get(i).SetHealth("GlobalHealth", "Health", 0);
-				}
+				Send(players.Get(i), "Don't leave spawn island!");
+				players.Get(i).SetHealth("GlobalHealth", "Health", 0);
 			}
 		}
 	}
 
 	private void ShowLobbyStartsInMessage(float time)
     {
-        GlobalMessage("Round starts in " + FormatTime(time));
+        GlobalMessage("Round starts in " + FormatTime(Math.Round(time)));
         m_LastRoundTimeShown = m_RoundTime;
     }
 
@@ -444,6 +458,7 @@ class DayZSurvival : MissionServer
             {
                 StartRound();
             }
+			KillPlayersOutOfSpawnZone(m_Players);
         }
 
         if (m_GameStatus == GameStatus.IN_ROUND)
