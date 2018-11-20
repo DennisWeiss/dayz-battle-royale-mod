@@ -40,6 +40,7 @@ class DayZSurvival : MissionServer
 
 	const float PRINT_PLAYERS_ALIVE_INTERVAL = 30.0;
 	float lastTimePlayersAlivePrinted = 0.0;
+	bool m_WinnerMessageShown = false;
 
 	void DayZSurvival()
 	{
@@ -440,6 +441,14 @@ class DayZSurvival : MissionServer
 			currentPlayer.SetGameStatus(m_GameStatus == GameStatus.IN_ROUND);
 		}
 	}
+	
+	void CheckIfWon() {
+		if (m_PlayersInRound.Count() == 1 && !m_WinnerMessageShown)
+		{
+			Send(m_PlayersInRound.Get(0), "WINNER, WINNER, CHICKEN DINNER!!!");
+			m_WinnerMessageShown = true;
+		}
+	}
 
 	override void TickScheduler(float timeslice)
     {
@@ -495,6 +504,8 @@ class DayZSurvival : MissionServer
 			{
 				PrintPlayersAlive();
 			}
+			
+			CheckIfWon();
         }
 	}
 	
@@ -576,7 +587,7 @@ class DayZSurvival : MissionServer
         center[0] = Math.RandomFloat(2000, 9000);
 		center[2] = Math.RandomFloat(6000, 13000);
         nextCenter = center;
-        GlobalMessage("Round has started. Center: <" + center[0].ToString() + ", " + center[2].ToString() + "> , Radius: " + GetRadius().ToString() + "m");
+        GlobalMessage("Round has started.");
         for (int i = 0; i < m_PlayersStartedRound; i++)
         {
             PlayerBase player = m_Players.Get(i);
