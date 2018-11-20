@@ -19,7 +19,7 @@ class DayZSurvival : MissionServer
 	bool m_StaminaStatus = false;
 	ref CustomWidgetEventHandler widgetEventHandler;
 
-	const float LOBBY_TIME = 300.0;
+	const float LOBBY_TIME = 25.0;
     const float INITIAL_RADIUS = 8000.0;
     ref array<ref array<float>> circleConf;
 
@@ -90,6 +90,7 @@ class DayZSurvival : MissionServer
 		m_Modules = new set<ref ModuleManager>;
 		widgetEventHandler = new CustomWidgetEventHandler;
 		playersOutOfZone = new set<Man>;
+		m_PlayersInRound = new array<Man>;
 		RegisterModules();
 	}
 
@@ -262,6 +263,20 @@ class DayZSurvival : MissionServer
 		}
 		return false;
 	}
+	
+	private void UpdatePlayersInRound()
+	{
+		for (int i = 0; i < m_PlayersInRound.Count(); i++)
+		{
+			PlayerBase player = m_PlayersInRound.Get(i);
+			if (!player.IsStillInRound())
+			{
+				// THIS STILL NEEDS TO BE TESTED!!!
+				m_PlayersInRound.RemoveOrdered(i);
+				i--;
+			}
+		}
+	}
 
 	override void StartingEquipSetup(PlayerBase player, bool clothesChosen)
 	{
@@ -416,6 +431,15 @@ class DayZSurvival : MissionServer
         GlobalMessage("Round starts in " + FormatTime(Math.Round(time)));
         m_LastRoundTimeShown = m_RoundTime;
     }
+	
+	private void SetGameStatusOfPlayers()
+	{
+		for (int i = 0; i < m_PlayersInRound; i++)
+		{
+			PlayerBase currentPlayer = PlayerBase.Cast(m_Players.Get(i));
+			currentPlayer.SetGameStatus(m_GameStatus == GameStatus.IN_ROUND);
+		}
+	}
 
 	override void TickScheduler(float timeslice)
     {
@@ -447,6 +471,7 @@ class DayZSurvival : MissionServer
             m_currentPlayer++;
         }
 
+		SetGameStatusOfPlayers();
 
 	    if (m_GameStatus == GameStatus.IN_LOBBY)
         {
