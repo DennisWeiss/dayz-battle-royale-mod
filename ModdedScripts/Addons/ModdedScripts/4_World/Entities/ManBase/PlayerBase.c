@@ -3,6 +3,15 @@ modded class PlayerBase
 	
 	bool m_InRoundGameStatus = false;
 	bool m_StillInRound = true;
+	int m_Kills = 0;
+	func m_OnKilledInRound;
+	
+	private void Send(string message)
+	{
+		ScriptRPC rpc = new ScriptRPC();
+		rpc.Write(message);
+		rpc.Send(this, 1337133710, true, GetIdentity());
+	}
 	
 	void SetGameStatus(bool inRound)
 	{
@@ -14,14 +23,20 @@ modded class PlayerBase
 		return m_StillInRound;
 	}
 	
+	void KilledPlayer(string killedName)
+	{
+		m_Kills++;
+		Send("You killed " + killedName + " - " + m_Kills.ToString() + " " + (m_Kills == 1 ? "kill" : "kills"));
+	}
+	
+	void SetOnKilledInRound(func OnKilledInRound)
+	{
+		m_OnKilledInRound = OnKilledInRound;
+	}
+	
     override void EEKilled( Object killer )
     {
 		super.EEKilled(killer);
-		
-		if (m_InRoundGameStatus)
-		{
-			m_StillInRound = false;
-		}
 		
         ref Man KillerDude = killer;
 		ref PlayerBase KillerPlayerBase = killer;
@@ -30,6 +45,12 @@ modded class PlayerBase
 		
 		string KillerName = killerIdentity.GetName();
 		string KilledName = killedIdentity.GetName();
+		
+		if (m_InRoundGameStatus)
+		{
+			m_StillInRound = false;
+			m_OnKilledInRound(killer, this);
+		}
 		
 		float distance;
 		int Rounded;

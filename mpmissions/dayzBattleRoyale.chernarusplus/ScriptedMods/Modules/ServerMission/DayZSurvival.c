@@ -41,7 +41,11 @@ class DayZSurvival : MissionServer
 	const float PRINT_PLAYERS_ALIVE_INTERVAL = 30.0;
 	float lastTimePlayersAlivePrinted = 0.0;
 	bool m_WinnerMessageShown = false;
-
+	/*
+	ref TStringArray topsArray = {"TShirt_Beige", "TShirt_Black", "TShirt_Blue", "TShirt_Green", "TShirt_Grey", "TShirt_OrangeWhiteStripes", "TShirt_Red", "TShirt_RedBlackStripes", "TShirt_White"};
+	ref TStringArray pantsArray = {"Jeans_Black", "Jeans_Blue", "Jeans_BlueDark", "Jeans_Brown", "Jeans_Green", "Jeans_Grey"};
+	ref TStringArray shoesArray = {"Sneakers_Black", "Sneakers_Gray", "Sneakers_Green", "Sneakers_Red", "Sneakers_White"};
+	*/
 	void DayZSurvival()
 	{
 		Print("BATTLE ROYALE IS ALIVE!!");
@@ -217,6 +221,29 @@ class DayZSurvival : MissionServer
 
 		GetGame().SelectPlayer(identity, m_player);
 		return m_player;
+	}
+	
+	private void SetRandomHealth(EntityAI itemEnt)
+	{
+		int rndHlt = Math.RandomInt(40,100);
+		itemEnt.SetHealth("","",rndHlt);
+	}
+	
+	void EquipForRound(PlayerBase player)
+	{
+		player.RemoveAllItems();
+		
+		EntityAI item = player.CreateInInventory(topsArray.GetRandomElement());
+		EntityAI item2 = player.CreateInInventory(pantsArray.GetRandomElement());
+		EntityAI item3 = player.CreateInInventory(shoesArray.GetRandomElement());
+		
+		EntityAI itemEnt;
+		ItemBase itemBs;
+		
+		itemEnt = player.CreateInInventory("Rag");
+		itemBs = ItemBase.Cast(itemEnt);
+		itemBs.SetQuantity(4);
+		SetRandomHealth(itemEnt);
 	}
 
 	override void OnEvent(EventType eventTypeId, Param params)
@@ -433,12 +460,19 @@ class DayZSurvival : MissionServer
         m_LastRoundTimeShown = m_RoundTime;
     }
 	
+	void OnKilledInRound(Object killer, PlayerBase victim)
+	{
+		PlayerBase killerDude = PlayerBase.Cast(killer);
+		killerDude.KilledPlayer(victim.GetIdentity().GetName());
+	}
+	
 	private void SetGameStatusOfPlayers()
 	{
 		for (int i = 0; i < m_PlayersInRound; i++)
 		{
 			PlayerBase currentPlayer = PlayerBase.Cast(m_Players.Get(i));
 			currentPlayer.SetGameStatus(m_GameStatus == GameStatus.IN_ROUND);
+			currentPlayer.SetOnKilledInRound();
 		}
 	}
 	
@@ -452,7 +486,6 @@ class DayZSurvival : MissionServer
 
 	override void TickScheduler(float timeslice)
     {
-
         GetGame().GetWorld().GetPlayerList(m_Players);
         if( m_Players.Count() == 0 )
         {
@@ -545,7 +578,8 @@ class DayZSurvival : MissionServer
         }
         else if (m_RoundTime < circleConf.Get(m_Phase - 1).Get(0))
         {
-            if (m_RoundTime - m_LastRoundTimeShown > 30) {
+            if (m_RoundTime - m_LastRoundTimeShown > 30) 
+			{
                 GlobalMessage("Zone starts to shrink in " + FormatTime(Math.Round(circleConf.Get(m_Phase - 1).Get(0) - m_RoundTime)));
                 m_LastRoundTimeShown = m_RoundTime;
             }
@@ -554,10 +588,11 @@ class DayZSurvival : MissionServer
 
 	private void SpawnRandomly(PlayerBase player)
     {
-	    player.SetPosition(GenerateRandomVectorBasedOnZone());
+		player.SetPosition(GenerateRandomVectorBasedOnZone());
 	    player.SetHealth("GlobalHealth", "Blood", 5000);
 	    player.SetHealth("GlobalHealth", "Health", 5000);
 	    player.SetHealth("GlobalHealth", "Shock", 5000);
+		EquipForRound(player);
     }
 
     private vector GenerateRandomVectorBasedOnZone()
