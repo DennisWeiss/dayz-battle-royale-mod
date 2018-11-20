@@ -26,7 +26,15 @@ modded class PlayerBase
 	void KilledPlayer(string killedName)
 	{
 		m_Kills++;
-		Send("You killed " + killedName + " - " + m_Kills.ToString() + " " + (m_Kills == 1 ? "kill" : "kills"));
+		string killString;
+		if (m_Kills = 1)
+		{
+			killString = " kill";
+		}
+		else {
+			killString = " kills";
+		}
+		Send("You killed " + killedName + " - " + m_Kills.ToString() + killString);
 	}
 	
 	void SetOnKilledInRound(func OnKilledInRound)
