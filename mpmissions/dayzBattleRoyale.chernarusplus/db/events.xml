@@ -847,7 +847,7 @@
             <child lootmax="0" lootmin="0" max="8" min="8" type="CivilianSedan"/>
         </children>
     </event>
-    <event name="VehicleCivilianVan">
+    <event name="VehicleOffroadHatchback">
         <waves>0</waves>
         <nominal>40</nominal>
         <min>18</min>
@@ -862,7 +862,7 @@
         <limit>mixed</limit>
         <active>1</active>
         <children>
-            <child lootmax="0" lootmin="0" max="40" min="30" type="CivilianVan"/>
+            <child lootmax="0" lootmin="0" max="40" min="30" type="OffroadHatchback"/>
         </children>
     </event>
     <event name="VehicleTransitBus">
