@@ -6,11 +6,13 @@ modded class PlayerBase
 	
 	void SetGameStatus(bool inRound)
 	{
+		Print("Game status set to " + inRound.ToString());
 		m_InRoundGameStatus = inRound;
 	}
 	
 	bool IsStillInRound()
 	{
+		Print("Querying whether still in round");
 		return m_StillInRound;
 	}
 	
@@ -20,6 +22,7 @@ modded class PlayerBase
 		
 		if (m_InRoundGameStatus)
 		{
+			Print("Player is no longer in round");
 			m_StillInRound = false;
 		}
 		

@@ -35,7 +35,7 @@ class DayZSurvival : MissionServer
 	float m_RoundTime = 0.0;
 	int m_PlayersStartedRound;
 
-	ref array<Man> m_PlayersInRound;
+	ref array<string> m_PlayersInRound;
 	ref set<Man> playersOutOfZone;
 
 	const float PRINT_PLAYERS_ALIVE_INTERVAL = 30.0;
@@ -91,7 +91,7 @@ class DayZSurvival : MissionServer
 		m_Modules = new set<ref ModuleManager>;
 		widgetEventHandler = new CustomWidgetEventHandler;
 		playersOutOfZone = new set<Man>;
-		m_PlayersInRound = new array<Man>;
+		m_PlayersInRound = new array<string>;
 		RegisterModules();
 	}
 
@@ -256,20 +256,33 @@ class DayZSurvival : MissionServer
 	{
 		for (int i = 0; i < m_PlayersInRound.Count(); i++)
 		{
-			PlayerBase playerInList = m_PlayersInRound.Get(i);
-			if (playerInList.GetIdentity().GetId() == player.GetIdentity().GetId())
+			if (m_PlayersInRound.Get(i) == player.GetIdentity().GetId())
 			{
 				return true;
 			}
 		}
 		return false;
 	}
+
+	PlayerBase GetPlayerById(string id)
+    {
+	    for (int i = 0; i < m_Players.Count(); i++)
+        {
+	        PlayerBase player = PlayerBase.Cast(m_Players.Get(i));
+	        PlayerIdentity playerIdentity = player.GetIdentity();
+	        if (id == playerIdentity.GetId())
+            {
+	            return player;
+            }
+        }
+        return NULL;
+    }
 	
 	private void UpdatePlayersInRound()
 	{
 		for (int i = 0; i < m_PlayersInRound.Count(); i++)
 		{
-			PlayerBase player = m_PlayersInRound.Get(i);
+			PlayerBase player = GetPlayerById(m_PlayersInRound.Get(i));
 			if (!player.IsStillInRound())
 			{
 				// THIS STILL NEEDS TO BE TESTED!!!
@@ -435,9 +448,10 @@ class DayZSurvival : MissionServer
 	
 	private void SetGameStatusOfPlayers()
 	{
-		for (int i = 0; i < m_PlayersInRound; i++)
+		for (int i = 0; i < m_Players.Count(); i++)
 		{
 			PlayerBase currentPlayer = PlayerBase.Cast(m_Players.Get(i));
+			Print("Setting game status of " + currentPlayer.GetIdentity().GetId());
 			currentPlayer.SetGameStatus(m_GameStatus == GameStatus.IN_ROUND);
 		}
 	}
@@ -445,7 +459,7 @@ class DayZSurvival : MissionServer
 	void CheckIfWon() {
 		if (m_PlayersInRound.Count() == 1 && !m_WinnerMessageShown)
 		{
-			Send(m_PlayersInRound.Get(0), "WINNER, WINNER, CHICKEN DINNER!!!");
+			Send(GetPlayerById(m_PlayersInRound.Get(0)), "WINNER, WINNER, CHICKEN DINNER!!!");
 			m_WinnerMessageShown = true;
 		}
 	}
@@ -497,6 +511,7 @@ class DayZSurvival : MissionServer
 
         if (m_GameStatus == GameStatus.IN_ROUND)
         {
+            UpdatePlayersInRound();
             DealDamageToPlayerOutsideOfZone(m_Players, timeslice);
             ManageCirclePhases();
 			
@@ -592,7 +607,7 @@ class DayZSurvival : MissionServer
         {
             PlayerBase player = m_Players.Get(i);
             SpawnRandomly(player);
-            m_PlayersInRound.Insert(player);
+            m_PlayersInRound.Insert(player.GetIdentity().GetId());
         }
     }
 
