@@ -484,10 +484,11 @@ class DayZSurvival : MissionServer
 
 	private void SendZoneToAllPlayersInRound()
 	{
-		for (int i = 0; i < m_PlayersInRound.Count(); i++)
+		for (int i = 0; i < m_Players.Count(); i++)
 		{
-			PlayerBase player = GetPlayerById(m_PlayersInRound.Get(i));
+			PlayerBase player = m_Players.Get(i));
 			SendZone(player);
+			SendNextZone(player);
 		}
 	}
 
@@ -659,5 +660,13 @@ class DayZSurvival : MissionServer
 		rpc.Write(GetCenter());
 		rpc.Write(GetRadius());
 		rpc.Send(player, 1337133712, true, player.GetIdentity());
+	}
+
+	void SendNextZone(PlayerBase player)
+	{
+		ScriptRPC rpc = new ScriptRPC();
+		rpc.Write(nextCenter);
+		rpc.Write(Math.Pow(0.5, m_Phase) * INITIAL_RADIUS);
+		rpc.Send(player, 1337133713, true, player.GetIdentity());
 	}
 }
