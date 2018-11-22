@@ -297,11 +297,13 @@ class DayZSurvival : MissionServer
 		ItemBase itemBs;
 		EntityAI itemEnt;
 
-		if (m_GameStatus == GameStatus.IN_LOBBY)
+		player.GetInventory().CreateInInventory("ChernarusMap");
+
+		/*if (m_GameStatus == GameStatus.IN_LOBBY)
         {
             AdvancedLoadouts.Cast(GetModule(AdvancedLoadouts)).SpawnGunIn(player, "M4A1", true, {"M68Optic"},
                     {"Mag_STANAG_30Rnd", "Mag_STANAG_30Rnd"});
-        }
+        }*/
 	}
 
 	float Mod(float a, float b)
@@ -480,6 +482,15 @@ class DayZSurvival : MissionServer
 		}
 	}
 
+	private void SendZoneToAllPlayersInRound()
+	{
+		for (int i = 0; i < m_PlayersInRound.Count(); i++)
+		{
+			PlayerBase player = GetPlayerById(m_PlayersInRound.Get(i));
+			SendZone(player);
+		}
+	}
+
 	override void TickScheduler(float timeslice)
     {
 
@@ -538,6 +549,7 @@ class DayZSurvival : MissionServer
 
 			CheckIfKilled();
 			CheckIfWon();
+			SendZoneToAllPlayersInRound();
         }
 	}
 	
@@ -639,5 +651,13 @@ class DayZSurvival : MissionServer
 	{
 		ScriptRPC rpc = new ScriptRPC();
 		rpc.Send(player, 1337133711, true, player.GetIdentity());
+	}
+
+	void SendZone(PlayerBase player)
+	{
+		ScriptRPC rpc = new ScriptRPC();
+		rpc.Write(GetCenter());
+		rpc.Write(GetRadius());
+		rpc.Send(player, 1337133712, true, player.GetIdentity());
 	}
 }
