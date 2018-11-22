@@ -456,11 +456,27 @@ class DayZSurvival : MissionServer
 		}
 	}
 	
-	void CheckIfWon() {
+	void CheckIfWon()
+	{
 		if (m_PlayersInRound.Count() == 1 && !m_WinnerMessageShown)
 		{
 			Send(GetPlayerById(m_PlayersInRound.Get(0)), "WINNER, WINNER, CHICKEN DINNER!!!");
 			m_WinnerMessageShown = true;
+		}
+	}
+
+	private void CheckIfKilled()
+	{
+		for (int i = 0; i < m_PlayersInRound.Count(); i++)
+		{
+			PlayerBase player = GetPlayerById(m_PlayersInRound.Get(i));
+			PlayerBase killedBy = player.GetKilledBy();
+			if (killedBy != NULL)
+			{
+				SendKillMessage(killedBy);
+				m_PlayersInRound.RemoveOrdered(i);
+				i--;
+			}
 		}
 	}
 
@@ -519,7 +535,8 @@ class DayZSurvival : MissionServer
 			{
 				PrintPlayersAlive();
 			}
-			
+
+			CheckIfKilled();
 			CheckIfWon();
         }
 	}
@@ -616,5 +633,11 @@ class DayZSurvival : MissionServer
 		ScriptRPC rpc = new ScriptRPC();
 		rpc.Write(message);
 		rpc.Send(player, 1337133710, true, player.GetIdentity());
+	}
+
+	void SendKillMessage(PlayerBase player)
+	{
+		ScriptRPC rpc = new ScriptRPC();
+		rpc.Send(player, 1337133711, true, player.GetIdentity());
 	}
 }

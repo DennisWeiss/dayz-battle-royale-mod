@@ -3,17 +3,21 @@ modded class PlayerBase
 	
 	bool m_InRoundGameStatus = false;
 	bool m_StillInRound = true;
+	PlayerBase m_KilledBy;
 	
 	void SetGameStatus(bool inRound)
 	{
-		Print("Game status set to " + inRound.ToString());
 		m_InRoundGameStatus = inRound;
 	}
 	
 	bool IsStillInRound()
 	{
-		Print("Querying whether still in round");
 		return m_StillInRound;
+	}
+
+	PlayerBase GetKilledBy()
+	{
+		return m_KilledBy;
 	}
 	
     override void EEKilled( Object killer )
@@ -22,7 +26,6 @@ modded class PlayerBase
 		
 		if (m_InRoundGameStatus)
 		{
-			Print("Player is no longer in round");
 			m_StillInRound = false;
 		}
 		
@@ -45,6 +48,10 @@ modded class PlayerBase
 				Rounded = Math.Round(distance);
 				Message = KillerName + " killed " + KilledName + " with " + "["+ KillerDude.GetHumanInventory().GetEntityInHands().GetDisplayName() +"]" + " ("+ Rounded.ToString() + "m" +")";
 				GetGame().ChatPlayer(0, Message); //Global Chat
+				if (m_InRoundGameStatus)
+				{
+					m_KilledBy = KillerPlayerBase;
+				}
 		    }
 			else if (KillerDude.IsMan() && killerIdentity.GetId() == killedIdentity.GetId())  //SUICIDE
 		    {
