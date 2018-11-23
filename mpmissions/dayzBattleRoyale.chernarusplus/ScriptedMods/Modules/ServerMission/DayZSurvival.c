@@ -30,7 +30,7 @@ class DayZSurvival : MissionServer
 
 	vector center = "2700 0 10000";
 	vector nextCenter = "2700 0 10000";
-	int m_Phase = 4;
+	int m_Phase = 1;
 	GameStatus m_GameStatus = GameStatus.IN_LOBBY;
 	float m_RoundTime = 0.0;
 	int m_PlayersStartedRound;
@@ -48,9 +48,9 @@ class DayZSurvival : MissionServer
 
 		circleConf = {{480.0, 720.0},
                       {960.0, 1080.0},
-                      {1320.0, 1500.0},
-                      {1680.0, 1800.0},
-                      {1920.0, 1980.0},
+                      {1320.0, 1410.0},
+                      {1680.0, 1740.0},
+                      {1920.0, 1965.0},
                       {2100.0, 2130.0},
                       {2220.0, 2250.0},
                       {2310.0, 2325.0},
@@ -621,7 +621,7 @@ class DayZSurvival : MissionServer
 	void StartRound()
     {
         m_GameStatus = GameStatus.IN_ROUND;
-	    m_RoundTime = 1510.0;
+	    m_RoundTime = 0.0;
 	    m_LastRoundTimeShown = 0.0;
 	    m_PlayersStartedRound = m_Players.Count();
         center[0] = Math.RandomFloat(4000, 9000);
