@@ -299,6 +299,10 @@ class DayZSurvival : MissionServer
 
 	private string FormatTime(int timeInSec)
     {
+	    if (timeInSec < 10)
+        {
+	        return "0" + timeInSec.ToString() + "s";
+        }
 	    if (timeInSec < 60)
         {
             return timeInSec.ToString() + "s";
