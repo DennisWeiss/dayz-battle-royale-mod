@@ -450,7 +450,7 @@ class DayZSurvival : MissionServer
 	{
 		if (m_PlayersInRound.Count() == 1 && !m_WinnerMessageShown)
 		{
-			Send(GetPlayerById(m_PlayersInRound.Get(0)), "WINNER, WINNER, CHICKEN DINNER!!!");
+		    GlobalMessage(GetPlayerById(m_PlayersInRound.Get(0)).GetIdentity().GetName() + " - WINNER, WINNER, CHICKEN DINNER!!!")
 			m_WinnerMessageShown = true;
 		}
 	}
