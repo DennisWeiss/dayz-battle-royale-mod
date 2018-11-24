@@ -24,13 +24,7 @@
     </generator_params>
 
     <generator_posbubbles>
-		<pos x="2495" z="1217" />
-		<pos x="2514" z="1324" />
 		<pos x="2592" z="1350" />
-		<pos x="2670" z="1324" />
-		<pos x="2732" z="1299" />
-		<pos x="2751" z="1251" />
-		<pos x="2895" z="1200" />
     </generator_posbubbles>
 </playerspawnpoints>
 

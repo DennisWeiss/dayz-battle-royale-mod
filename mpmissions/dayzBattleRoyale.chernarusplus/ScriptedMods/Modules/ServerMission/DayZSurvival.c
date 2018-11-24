@@ -30,7 +30,7 @@ class DayZSurvival : MissionServer
 
 	vector center = "2700 0 10000";
 	vector nextCenter = "2700 0 10000";
-	int m_Phase = 3;
+	int m_Phase = 1;
 	GameStatus m_GameStatus = GameStatus.IN_LOBBY;
 	float m_RoundTime = 0.0;
 	int m_PlayersStartedRound;
@@ -59,7 +59,7 @@ class DayZSurvival : MissionServer
                       {2800.0, 2808.0}};
 					  
 		// ONLY FOR DEBUG PURPOSES, NEEDS TO BE REMOVED FOR PRODUCTION
-		for (int i = 0; i < circleConf.Count(); i++)
+		/*for (int i = 0; i < circleConf.Count(); i++)
 		{
 			ref array<float> subArr = circleConf.Get(i);
 			for (int j = 0; j < circleConf.Get(i).Count(); j++)
@@ -68,7 +68,7 @@ class DayZSurvival : MissionServer
 				
 			}
 			circleConf.Set(i, subArr);
-		}
+		}*/
 
 		m_Modules = new set<ref ModuleManager>;
 		widgetEventHandler = new CustomWidgetEventHandler;
@@ -288,9 +288,9 @@ class DayZSurvival : MissionServer
         }*/
 	}
 
-	float Mod(float a, float b)
+	int Mod(int a, int b)
     {
-	    while (a > b)
+	    while (a >= b)
         {
 	        a -= b;
         }
@@ -303,7 +303,7 @@ class DayZSurvival : MissionServer
         {
             return timeInSec.ToString() + "s";
         }
-        return Math.Floor(timeInSec / 60).ToString() + "m" + FormatTime(Mod(timeInSec, 60.0));
+        return Math.Floor(timeInSec / 60).ToString() + "m" + FormatTime(Mod(timeInSec, 60));
     }
 
     private vector LerpVector(vector a, vector b, float time)
@@ -575,7 +575,8 @@ class DayZSurvival : MissionServer
         }
         else if (m_RoundTime < circleConf.Get(m_Phase - 1).Get(0))
         {
-            if (m_RoundTime - m_LastRoundTimeShown > 30) {
+            if (m_RoundTime - m_LastRoundTimeShown > 30)
+            {
                 GlobalMessage("Zone starts to shrink in " + FormatTime(Math.Round(circleConf.Get(m_Phase - 1).Get(0) - m_RoundTime)));
                 m_LastRoundTimeShown = m_RoundTime;
             }
@@ -611,7 +612,7 @@ class DayZSurvival : MissionServer
 	void StartRound()
     {
         m_GameStatus = GameStatus.IN_ROUND;
-	    m_RoundTime = 1100.0;
+	    m_RoundTime = 0.0;
 	    m_LastRoundTimeShown = 0.0;
 	    m_PlayersStartedRound = m_Players.Count();
         center[0] = Math.RandomFloat(4000, 9000);
@@ -622,6 +623,7 @@ class DayZSurvival : MissionServer
         {
             PlayerBase player = m_Players.Get(i);
             SpawnRandomly(player);
+            SendStartParticles(player);
             m_PlayersInRound.Insert(player.GetIdentity().GetId());
         }
     }
@@ -661,4 +663,12 @@ class DayZSurvival : MissionServer
 		rpc.Write(outOfZone);
 		rpc.Send(player, 1337133714, true, player.GetIdentity());
 	}
+
+	// ONLY FOR TESTING PURPOSES
+	void SendStartParticles(PlayerBase player)
+    {
+	    ScriptRPC rpc = new ScriptRPC();
+	    rpc.Send(player, 1337133715, true, player.GetIdentity());
+    }
+
 }
