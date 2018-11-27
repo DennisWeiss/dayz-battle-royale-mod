@@ -78,6 +78,6 @@ modded class PlayerBase
 		super.OnScheduledTick(deltaTime);
 		
 		// Let max stamina always be 100 => weight carrying has no effect
-		GetPlayerStats().GetStatObject(EPlayerStats.STAMINA).Set(100);
+		GetPlayerStats().GetStatObject(EPlayerStats.STAMINA).SetByFloat(100);
 	}
 }
