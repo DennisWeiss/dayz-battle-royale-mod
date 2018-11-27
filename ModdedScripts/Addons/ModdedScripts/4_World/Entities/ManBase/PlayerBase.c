@@ -73,11 +73,11 @@ modded class PlayerBase
         }
     }
 	
-	override void OnScheduledTick(float deltaTime)
+	/*override void OnScheduledTick(float deltaTime)
 	{
 		super.OnScheduledTick(deltaTime);
 		
 		// Let stamina always be 100
 		GetStatStamina().SetMax(100);
-	}
+	}*/
 }
