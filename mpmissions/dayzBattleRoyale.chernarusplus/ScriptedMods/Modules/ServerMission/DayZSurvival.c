@@ -627,7 +627,6 @@ class DayZSurvival : MissionServer
         {
             PlayerBase player = m_Players.Get(i);
             SpawnRandomly(player);
-            SendStartParticles(player);
             m_PlayersInRound.Insert(player.GetIdentity().GetId());
         }
     }
