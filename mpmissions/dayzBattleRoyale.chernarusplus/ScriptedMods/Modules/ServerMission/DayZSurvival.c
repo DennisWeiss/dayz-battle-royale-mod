@@ -84,7 +84,7 @@ class DayZSurvival : MissionServer
 
 	void RegisterModules()
 	{
-		m_Modules.Insert(new ModTunables(this));
+		/*m_Modules.Insert(new ModTunables(this));
 
 		if (ModTunables.Cast(GetModule(ModTunables)).IsActive("AdminTools"))
 		{
@@ -99,7 +99,7 @@ class DayZSurvival : MissionServer
 		if (ModTunables.Cast(GetModule(ModTunables)).IsActive("SafeZone"))
 		{
 			m_Modules.Insert(new SafeZone(this));
-		}
+		}*/
 	}
 
 	void InitModules()
