@@ -445,12 +445,22 @@ class DayZSurvival : MissionServer
 			currentPlayer.SetGameStatus(m_GameStatus == GameStatus.IN_ROUND);
 		}
 	}
+
+	void GivePlayerChickenDinner(PlayerBase player)
+	{
+	    for (int i = 0; i < 5; i++)
+        {
+            player.GetInventory().CreateInInventory("ChickenBreastMeat");
+        }
+	}
 	
 	void CheckIfWon()
 	{
 		if (m_PlayersInRound.Count() == 1 && !m_WinnerMessageShown)
 		{
-		    GlobalMessage(GetPlayerById(m_PlayersInRound.Get(0)).GetIdentity().GetName() + " - WINNER, WINNER, CHICKEN DINNER!!!")
+			PlayerBase player = GetPlayerById(m_PlayersInRound.Get(0));
+		    GlobalMessage(player.GetIdentity().GetName() + " - WINNER, WINNER, CHICKEN DINNER!!!");
+		    GivePlayerChickenDinner(player);
 			m_WinnerMessageShown = true;
 		}
 	}
