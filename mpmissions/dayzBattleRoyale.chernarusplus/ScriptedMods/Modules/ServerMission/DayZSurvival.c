@@ -618,7 +618,6 @@ class DayZSurvival : MissionServer
 		pos[0] = Math.Clamp(GetCenter()[0] + offset[0], 100, 12800);
 		pos[2] = Math.Clamp(GetCenter()[2] + offset[2], 3000, 15000);
 		pos[1] = GetGame().SurfaceY(pos[0], pos[2]);
-		GlobalMessage(pos.ToString());
         return pos;
     }
 
