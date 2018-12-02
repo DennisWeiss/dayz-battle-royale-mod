@@ -373,7 +373,7 @@ class DayZSurvival : MissionServer
 
 	private float GetBloodDamagePerSec()
 	{
-		return (float) 2 * m_Phase * m_Phase;
+		return (float) m_Phase * m_Phase;
 	}
 
 	private void DealDamageToPlayerOutsideOfZone(array<Man> players, float deltaTime)
