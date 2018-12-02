@@ -41,13 +41,14 @@ modded class PlayerBase
             ref Man KillerDude = killer;
             Print("6");
 
-            string KillerName = SurvivorKiller.GetPlayerName();
-            Print("7");
-            string KilledName = GetIdentity().GetName();
-            Print("8");
+			Print("Killer is man: " + killer.IsMan().ToString());
 
-            if (GetGame().IsServer())
+            if (killer.IsMan() && GetGame().IsServer())
             {
+				Print("7");
+				string KillerName = KillerDude.GetIdentity().GetName();
+				Print("8");
+				string KilledName = GetIdentity().GetName();
                 Print("9");
                 if (SurvivorKiller.GetPlayerID() != SurvivorKilled.GetPlayerID())
                 {
