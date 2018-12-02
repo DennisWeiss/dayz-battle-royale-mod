@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <types>
     <type name="ACOGOptic">
-        <nominal>100</nominal>
+        <nominal>200</nominal>
         <lifetime>7200</lifetime>
         <restock>1800</restock>
         <min>75</min>
@@ -29,7 +29,7 @@
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
     </type>
     <type name="AKM">
-        <nominal>200</nominal>
+        <nominal>400</nominal>
         <lifetime>10800</lifetime>
         <restock>1800</restock>
         <min>100</min>
@@ -117,7 +117,7 @@
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
     </type>
     <type name="AK_Suppressor">
-        <nominal>100</nominal>
+        <nominal>400</nominal>
         <lifetime>7200</lifetime>
         <restock>14400</restock>
         <min>20</min>
@@ -305,7 +305,7 @@
         <usage name="Prison"/>
     </type>
     <type name="AmmoBox_00buck_10rnd">
-        <nominal>600</nominal>
+        <nominal>1200</nominal>
         <lifetime>10800</lifetime>
         <restock>0</restock>
         <min>500</min>
@@ -329,7 +329,7 @@
         <usage name="Prison"/>
     </type>
     <type name="AmmoBox_12gaSlug_10Rnd">
-        <nominal>500</nominal>
+        <nominal>1000</nominal>
         <lifetime>10800</lifetime>
         <restock>0</restock>
         <min>400</min>
@@ -353,7 +353,7 @@
         <usage name="Prison"/>
     </type>
     <type name="AmmoBox_380_35rnd">
-        <nominal>300</nominal>
+        <nominal>600</nominal>
         <lifetime>10800</lifetime>
         <restock>0</restock>
         <min>200</min>
@@ -377,7 +377,7 @@
         <usage name="Prison"/>
     </type>
     <type name="AmmoBox_45ACP_25rnd">
-        <nominal>150</nominal>
+        <nominal>300</nominal>
         <lifetime>10800</lifetime>
         <restock>1800</restock>
         <min>100</min>
@@ -401,7 +401,7 @@
         <usage name="Prison"/>
     </type>
     <type name="AmmoBox_556x45_20Rnd">
-        <nominal>150</nominal>
+        <nominal>600</nominal>
         <lifetime>10800</lifetime>
         <restock>0</restock>
         <min>100</min>
@@ -425,7 +425,7 @@
         <usage name="Prison"/>
     </type>
     <type name="AmmoBox_762x39_20Rnd">
-        <nominal>150</nominal>
+        <nominal>600</nominal>
         <lifetime>10800</lifetime>
         <restock>0</restock>
         <min>100</min>
@@ -449,7 +449,7 @@
         <usage name="Prison"/>
     </type>
     <type name="AmmoBox_762x54_20Rnd">
-        <nominal>150</nominal>
+        <nominal>600</nominal>
         <lifetime>10800</lifetime>
         <restock>0</restock>
         <min>100</min>
@@ -477,7 +477,7 @@
         <value name="Tier4"/>
     </type>
     <type name="AmmoBox_9x19_25rnd">
-        <nominal>150</nominal>
+        <nominal>300</nominal>
         <lifetime>10800</lifetime>
         <restock>0</restock>
         <min>100</min>
@@ -501,7 +501,7 @@
         <usage name="Prison"/>
     </type>
     <type name="Ammo_12gaPellets">
-        <nominal>500</nominal>
+        <nominal>1000</nominal>
         <lifetime>7200</lifetime>
         <restock>0</restock>
         <min>400</min>
@@ -525,7 +525,7 @@
         <usage name="Prison"/>
     </type>
     <type name="Ammo_12gaSlug">
-        <nominal>300</nominal>
+        <nominal>600</nominal>
         <lifetime>7200</lifetime>
         <restock>0</restock>
         <min>250</min>
@@ -553,7 +553,7 @@
         <value name="Tier4"/>
     </type>
     <type name="Ammo_380">
-        <nominal>500</nominal>
+        <nominal>1000</nominal>
         <lifetime>7200</lifetime>
         <restock>0</restock>
         <min>400</min>
@@ -577,7 +577,7 @@
         <usage name="Prison"/>
     </type>
     <type name="Ammo_45ACP">
-        <nominal>400</nominal>
+        <nominal>800</nominal>
         <lifetime>7200</lifetime>
         <restock>300</restock>
         <min>300</min>
@@ -601,7 +601,7 @@
         <usage name="Prison"/>
     </type>
     <type name="Ammo_556x45">
-        <nominal>300</nominal>
+        <nominal>1200</nominal>
         <lifetime>7200</lifetime>
         <restock>0</restock>
         <min>200</min>
@@ -625,7 +625,7 @@
         <usage name="Prison"/>
     </type>
     <type name="Ammo_762x39">
-        <nominal>300</nominal>
+        <nominal>1200</nominal>
         <lifetime>7200</lifetime>
         <restock>0</restock>
         <min>200</min>
@@ -649,7 +649,7 @@
         <usage name="Prison"/>
     </type>
     <type name="Ammo_762x54">
-        <nominal>300</nominal>
+        <nominal>1200</nominal>
         <lifetime>7200</lifetime>
         <restock>0</restock>
         <min>200</min>
@@ -677,7 +677,7 @@
         <value name="Tier4"/>
     </type>
     <type name="Ammo_9x19">
-        <nominal>750</nominal>
+        <nominal>1500</nominal>
         <lifetime>7200</lifetime>
         <restock>0</restock>
         <min>500</min>
@@ -8770,7 +8770,7 @@
         <usage name="Prison"/>
     </type>
     <type name="M4A1">
-        <nominal>200</nominal>
+        <nominal>400</nominal>
         <lifetime>10800</lifetime>
         <restock>1800</restock>
         <min>150</min>
@@ -8874,7 +8874,7 @@
         <usage name="Prison"/>
     </type>
     <type name="M4_RISHndgrd">
-        <nominal>150</nominal>
+        <nominal>300</nominal>
         <lifetime>7200</lifetime>
         <restock>0</restock>
         <min>75</min>
@@ -8906,7 +8906,7 @@
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
     </type>
     <type name="M4_Suppressor">
-        <nominal>100</nominal>
+        <nominal>200</nominal>
         <lifetime>7200</lifetime>
         <restock>14400</restock>
         <min>20</min>
@@ -9047,7 +9047,7 @@
         <value name="Tier4"/>
     </type>
     <type name="M68Optic">
-        <nominal>200</nominal>
+        <nominal>400</nominal>
         <lifetime>7200</lifetime>
         <restock>1800</restock>
         <min>150</min>
@@ -9099,7 +9099,7 @@
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
     </type>
     <type name="Mag_AKM_30Rnd">
-        <nominal>250</nominal>
+        <nominal>1000</nominal>
         <lifetime>10800</lifetime>
         <restock>1800</restock>
         <min>150</min>
@@ -9123,7 +9123,7 @@
         <usage name="Prison"/>
     </type>
     <type name="Mag_CZ61_20Rnd">
-        <nominal>75</nominal>
+        <nominal>300</nominal>
         <lifetime>10800</lifetime>
         <restock>1800</restock>
         <min>50</min>
@@ -9147,7 +9147,7 @@
         <usage name="Prison"/>
     </type>
     <type name="Mag_CZ75_15Rnd">
-        <nominal>600</nominal>
+        <nominal>1200</nominal>
         <lifetime>10800</lifetime>
         <restock>1800</restock>
         <min>500</min>
@@ -9172,7 +9172,7 @@
         <usage name="Prison"/>
     </type>
     <type name="Mag_FNX45_15Rnd">
-        <nominal>200</nominal>
+        <nominal>800</nominal>
         <lifetime>10800</lifetime>
         <restock>1800</restock>
         <min>150</min>
@@ -9200,7 +9200,7 @@
         <value name="Tier4"/>
     </type>
     <type name="Mag_IJ70_8Rnd">
-        <nominal>750</nominal>
+        <nominal>1500</nominal>
         <lifetime>10800</lifetime>
         <restock>1800</restock>
         <min>500</min>
@@ -9225,7 +9225,7 @@
         <usage name="Prison"/>
     </type>
     <type name="Mag_MP5_30Rnd">
-        <nominal>50</nominal>
+        <nominal>400</nominal>
         <lifetime>10800</lifetime>
         <restock>1800</restock>
         <min>25</min>
@@ -9253,7 +9253,7 @@
         <value name="Tier4"/>
     </type>
     <type name="Mag_STANAG_30Rnd">
-        <nominal>200</nominal>
+        <nominal>800</nominal>
         <lifetime>10800</lifetime>
         <restock>1800</restock>
         <min>150</min>
@@ -9305,7 +9305,7 @@
         <value name="Tier4"/>
     </type>
     <type name="Mag_UMP_25Rnd">
-        <nominal>200</nominal>
+        <nominal>800</nominal>
         <lifetime>10800</lifetime>
         <restock>1800</restock>
         <min>150</min>

@@ -26,8 +26,10 @@ modded class PlayerBase
 
 		Print("1");
 
-        if (m_InRoundGameStatus)
+		// || true for debug purposes
+        if (m_InRoundGameStatus || true)
         {
+		
             Print("2");
             m_StillInRound = false;
             Print("3");
@@ -41,18 +43,18 @@ modded class PlayerBase
 
             string KillerName = SurvivorKiller.GetPlayerName();
             Print("7");
-            string KilledName = SurvivorKilled.GetPlayerName();
+            string KilledName = GetIdentity().GetName();
             Print("8");
 
             if (GetGame().IsServer())
             {
                 Print("9");
-                if (KillerDude.IsMan() && SurvivorKiller.GetPlayerID() != SurvivorKilled.GetPlayerID())
+                if (SurvivorKiller.GetPlayerID() != SurvivorKilled.GetPlayerID())
                 {
                     Print("10");
                     float distance = vector.Distance(SurvivorKilled.GetPosition(),SurvivorKiller.GetPosition());
                     Print("11");
-                    string Message = KillerName + " killed " + KilledName + " with " + SurvivorKiller.GetHumanInventory().GetEntityInHands().GetDisplayName() + " [" + Math.Round(distance).ToString() + "m]";
+                    string Message = KillerName + " killed " + KilledName + " [" + Math.Round(distance).ToString() + "m]";
                     Print("12");
                     GetGame().ChatPlayer(0, Message);
                     Print("13");
@@ -65,7 +67,7 @@ modded class PlayerBase
                         Print("16");
                     }
                 }
-                else if (KillerDude.IsMan() && SurvivorKiller.GetPlayerID() == SurvivorKilled.GetPlayerID())
+                else if (SurvivorKiller.GetPlayerID() == SurvivorKilled.GetPlayerID())
                 {
                     GetGame().ChatPlayer(0, KilledName + " managed to kill himself"); //Global Chat
                 }

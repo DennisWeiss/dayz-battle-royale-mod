@@ -19,7 +19,7 @@ class DayZSurvival : MissionServer
 	bool m_StaminaStatus = false;
 	ref CustomWidgetEventHandler widgetEventHandler;
 
-	const float LOBBY_TIME = 25.0;
+	const float LOBBY_TIME = 60.0;
     const float INITIAL_RADIUS = 8000.0;
     ref array<ref array<float>> circleConf;
 
@@ -441,7 +441,6 @@ class DayZSurvival : MissionServer
 		for (int i = 0; i < m_Players.Count(); i++)
 		{
 			PlayerBase currentPlayer = PlayerBase.Cast(m_Players.Get(i));
-			Print("Setting game status of " + currentPlayer.GetIdentity().GetId());
 			currentPlayer.SetGameStatus(m_GameStatus == GameStatus.IN_ROUND);
 		}
 	}
