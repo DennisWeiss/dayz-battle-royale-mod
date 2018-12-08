@@ -30,7 +30,7 @@ class DayZSurvival : MissionServer
 
 	vector center = "2700 0 10000";
 	vector nextCenter = "2700 0 10000";
-	int m_Phase = 1;
+	int m_Phase = 10;
 	GameStatus m_GameStatus = GameStatus.IN_LOBBY;
 	float m_RoundTime = 0.0;
 	int m_PlayersStartedRound;
@@ -42,7 +42,7 @@ class DayZSurvival : MissionServer
 	float lastTimePlayersAlivePrinted = 0.0;
 	bool m_WinnerMessageShown = false;
 	
-	const int m_PhysicalZoneObjectNumber = 600;
+	const int m_PhysicalZoneObjectNumber = 300;
 	ref array<Object> m_PhysicalZone;
 
 	void DayZSurvival()
@@ -59,7 +59,7 @@ class DayZSurvival : MissionServer
                       {2310.0, 2325.0},
                       {2370.0, 2380.0},
                       {2425.0, 2435.0},
-                      {2800.0, 2808.0}};
+                      {2500.0, 2508.0}};
 					  
 		// ONLY FOR DEBUG PURPOSES, NEEDS TO BE REMOVED FOR PRODUCTION
 		/*for (int i = 0; i < circleConf.Count(); i++)
@@ -335,13 +335,21 @@ class DayZSurvival : MissionServer
         return center;
     }
 
-	// TODO: Zone should have 0 radius after last zone.
 	private float GetRadius()
     {
 	    if (m_RoundTime < circleConf.Get(m_Phase - 1).Get(0))
         {
             return Math.Pow(0.5, m_Phase - 1) * INITIAL_RADIUS;
         }
+		if (m_Phase == circleConf.Count())
+		{
+			if (m_RoundTime > circleCong.Get(m_Phase - 1).Get(1))
+			{
+				return 0;
+			}
+			return Math.Lerp(Math.Pow(0.5, m_Phase - 1) * INITIAL_RADIUS, 0,
+				(m_RoundTime - circleConf.Get(m_Phase - 1).Get(0)) / (circleConf.Get(m_Phase - 1).Get(1) - circleConf.Get(m_Phase - 1).Get(0)));
+		}
 	    return Math.Lerp(Math.Pow(0.5, m_Phase - 1) * INITIAL_RADIUS, Math.Pow(0.5, m_Phase) * INITIAL_RADIUS,
 	            (m_RoundTime - circleConf.Get(m_Phase - 1).Get(0)) / (circleConf.Get(m_Phase - 1).Get(1) - circleConf.Get(m_Phase - 1).Get(0)));
     }
@@ -658,7 +666,7 @@ class DayZSurvival : MissionServer
 	void StartRound()
     {
         m_GameStatus = GameStatus.IN_ROUND;
-	    m_RoundTime = 0.0;
+	    m_RoundTime = 2400.0;
 	    m_LastRoundTimeShown = 0.0;
 	    m_PlayersStartedRound = m_Players.Count();
         center[0] = Math.RandomFloat(4000, 9000);
