@@ -30,7 +30,7 @@ class DayZSurvival : MissionServer
 
 	vector center = "2700 0 10000";
 	vector nextCenter = "2700 0 10000";
-	int m_Phase = 1;
+	int m_Phase = 8;
 	GameStatus m_GameStatus = GameStatus.IN_LOBBY;
 	float m_RoundTime = 0.0;
 	int m_PlayersStartedRound;
@@ -630,11 +630,11 @@ class DayZSurvival : MissionServer
 	{
 		vector offset = "0 0 0";
 		float alpha = (float) index / totalObjects * 2 * Math.PI
-		offsst[0] = Math.Sin(alpha);
-		offset[2] = Math.Cos(alpha);
+		offset[0] = radius * Math.Sin(alpha);
+		offset[2] = radius * Math.Cos(alpha);
 		vector pos = "0 0 0";
 		pos = center + offset;
-		pos[1] = GetGame().SurfaceY(pos[0], pos[2]);
+		pos[1] = GetGame().SurfaceY(pos[0], pos[2]) + 5;
 		return pos;
 	}
 	
@@ -658,7 +658,7 @@ class DayZSurvival : MissionServer
 	void StartRound()
     {
         m_GameStatus = GameStatus.IN_ROUND;
-	    m_RoundTime = 0.0;
+	    m_RoundTime = 2230.0;
 	    m_LastRoundTimeShown = 0.0;
 	    m_PlayersStartedRound = m_Players.Count();
         center[0] = Math.RandomFloat(4000, 9000);
