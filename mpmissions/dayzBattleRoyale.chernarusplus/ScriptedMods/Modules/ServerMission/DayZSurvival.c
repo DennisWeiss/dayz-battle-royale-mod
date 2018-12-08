@@ -30,7 +30,7 @@ class DayZSurvival : MissionServer
 
 	vector center = "2700 0 10000";
 	vector nextCenter = "2700 0 10000";
-	int m_Phase = 8;
+	int m_Phase = 1;
 	GameStatus m_GameStatus = GameStatus.IN_LOBBY;
 	float m_RoundTime = 0.0;
 	int m_PlayersStartedRound;
@@ -42,7 +42,7 @@ class DayZSurvival : MissionServer
 	float lastTimePlayersAlivePrinted = 0.0;
 	bool m_WinnerMessageShown = false;
 	
-	const int m_PhysicalZoneObjectNumber = 300;
+	const int m_PhysicalZoneObjectNumber = 600;
 	ref array<Object> m_PhysicalZone;
 
 	void DayZSurvival()
@@ -658,7 +658,7 @@ class DayZSurvival : MissionServer
 	void StartRound()
     {
         m_GameStatus = GameStatus.IN_ROUND;
-	    m_RoundTime = 2230.0;
+	    m_RoundTime = 0.0;
 	    m_LastRoundTimeShown = 0.0;
 	    m_PlayersStartedRound = m_Players.Count();
         center[0] = Math.RandomFloat(4000, 9000);
