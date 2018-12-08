@@ -41,6 +41,9 @@ class DayZSurvival : MissionServer
 	const float PRINT_PLAYERS_ALIVE_INTERVAL = 30.0;
 	float lastTimePlayersAlivePrinted = 0.0;
 	bool m_WinnerMessageShown = false;
+	
+	const int m_PhysicalZoneObjectNumber = 300;
+	ref array<Object> m_PhysicalZone;
 
 	void DayZSurvival()
 	{
@@ -75,6 +78,8 @@ class DayZSurvival : MissionServer
 		playersOutOfZone = new set<Man>;
 		m_PlayersInRound = new array<string>;
 		RegisterModules();
+		
+		m_PhysicalZone = new array<Object>;
 	}
 
 	void ~DayZSurvival()
@@ -549,6 +554,7 @@ class DayZSurvival : MissionServer
 			CheckIfKilled();
 			CheckIfWon();
 			SendZoneToAllPlayersInRound();
+			UpdatePhysicalZone();
         }
 	}
 	
@@ -619,7 +625,35 @@ class DayZSurvival : MissionServer
 		pos[1] = GetGame().SurfaceY(pos[0], pos[2]);
         return pos;
     }
-
+	
+	private vector GetPhysicalZoneObjectPosition(vector center, float radius, int index, int totalObjects)
+	{
+		vector offset = "0 0 0";
+		float alpha = (float) index / totalObjects * 2 * Math.PI
+		offsst[0] = Math.Sin(alpha);
+		offset[2] = Math.Cos(alpha);
+		vector pos = "0 0 0";
+		pos = center + offset;
+		pos[1] = GetGame().SurfaceY(pos[0], pos[2]);
+		return pos;
+	}
+	
+	void PlacePhysicalZone()
+	{
+		for (int i = 0; i < m_PhysicalZoneObjectNumber; i++)
+		{
+			vector pos = GetPhysicalZoneObjectPosition(GetCenter(), GetRadius(), i, m_PhysicalZoneObjectNumber);
+			m_PhysicalZone.Insert(GetGame().CreateObject("LargeTent", pos));
+		}
+	}
+	
+	void UpdatePhysicalZone()
+	{
+		for (int i = 0; i < m_PhysicalZoneObjectNumber; i++)
+		{
+			m_PhysicalZone.Get(i).SetPosition(GetPhysicalZoneObjectPosition(GetCenter(), GetRadius(), i, m_PhysicalZoneObjectNumber));
+		}
+	}
 
 	void StartRound()
     {
@@ -637,6 +671,7 @@ class DayZSurvival : MissionServer
             SpawnRandomly(player);
             m_PlayersInRound.Insert(player.GetIdentity().GetId());
         }
+		PlacePhysicalZone();
     }
 
 	void Send(PlayerBase player, string message)
