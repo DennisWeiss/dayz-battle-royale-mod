@@ -677,16 +677,16 @@ class DayZSurvival : MissionServer
 		} 
 		else if (numberOfObjects > m_PhysicalZone.Count())
 		{
-			for (int i = m_PhysicalZone.Count(); i < numberOfObjects; i++)
+			for (int j = m_PhysicalZone.Count(); j < numberOfObjects; j++)
 			{
-				vector pos = GetPhysicalZoneObjectPosition(GetCenter(), radius, i, numberOfObjects);
+				vector pos = GetPhysicalZoneObjectPosition(GetCenter(), radius, j, numberOfObjects);
 				m_PhysicalZone.Insert(GetGame().CreateObject("LargeTent", pos));
 			}
 		}
 		
-		for (int i = 0; i < m_PhysicalZone.Count(); i++)
+		for (int k = 0; k < m_PhysicalZone.Count(); k++)
 		{
-			m_PhysicalZone.Get(i).SetPosition(GetPhysicalZoneObjectPosition(GetCenter(), radius, i, m_PhysicalZone.Count()));
+			m_PhysicalZone.Get(k).SetPosition(GetPhysicalZoneObjectPosition(GetCenter(), radius, k, m_PhysicalZone.Count()));
 		}
 		
 	}
