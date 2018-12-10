@@ -30,7 +30,7 @@ class DayZSurvival : MissionServer
 
 	vector center = "2700 0 10000";
 	vector nextCenter = "2700 0 10000";
-	int m_Phase = 1;
+	int m_Phase = 8;
 	GameStatus m_GameStatus = GameStatus.IN_LOBBY;
 	float m_RoundTime = 0.0;
 	int m_PlayersStartedRound;
@@ -42,7 +42,7 @@ class DayZSurvival : MissionServer
 	float lastTimePlayersAlivePrinted = 0.0;
 	bool m_WinnerMessageShown = false;
 	
-	const int m_PhysicalZoneObjectNumber = 300;
+	const float m_PhysicalZoneObjectDistance = 15.0;
 	ref array<Object> m_PhysicalZone;
 
 	void DayZSurvival()
@@ -646,27 +646,55 @@ class DayZSurvival : MissionServer
 		return pos;
 	}
 	
+	int GetNumberOfPhysicalZoneObjects(float radius)
+	{
+		return (int) Math.Round(radius / m_PhysicalZoneObjectDistance);
+	}
+	
 	void PlacePhysicalZone()
 	{
-		for (int i = 0; i < m_PhysicalZoneObjectNumber; i++)
+		float radius = GetRadius();
+		int numberOfObjects = GetNumberOfPhysicalZoneObjects(radius);
+		for (int i = 0; i < numberOfObjects; i++)
 		{
-			vector pos = GetPhysicalZoneObjectPosition(GetCenter(), GetRadius(), i, m_PhysicalZoneObjectNumber);
+			vector pos = GetPhysicalZoneObjectPosition(GetCenter(), radius, i, numberOfObjects);
 			m_PhysicalZone.Insert(GetGame().CreateObject("LargeTent", pos));
 		}
 	}
 	
 	void UpdatePhysicalZone()
 	{
-		for (int i = 0; i < m_PhysicalZoneObjectNumber; i++)
+		float radius = GetRadius();
+		int numberOfObjects = GetNumberOfPhysicalZoneObjects(radius);
+		
+		if (numberOfObjects < m_PhysicalZone.Count())
 		{
-			m_PhysicalZone.Get(i).SetPosition(GetPhysicalZoneObjectPosition(GetCenter(), GetRadius(), i, m_PhysicalZoneObjectNumber));
+			for (int i = m_PhysicalZone.Count() - 1; i >= numberOfObjects; i--)
+			{
+				GetGame().ObjectDelete(m_PhysicalZone.Get(i));
+				m_PhysicalZone.Remove(i);
+			}
+		} 
+		else if (numberOfObjects > m_PhysicalZone.Count())
+		{
+			for (int i = m_PhysicalZone.Count(); i < numberOfObjects; i++)
+			{
+				vector pos = GetPhysicalZoneObjectPosition(GetCenter(), radius, i, numberOfObjects);
+				m_PhysicalZone.Insert(GetGame().CreateObject("LargeTent", pos));
+			}
 		}
+		
+		for (int i = 0; i < m_PhysicalZone.Count(); i++)
+		{
+			m_PhysicalZone.Get(i).SetPosition(GetPhysicalZoneObjectPosition(GetCenter(), radius, i, m_PhysicalZone.Count()));
+		}
+		
 	}
 
 	void StartRound()
     {
         m_GameStatus = GameStatus.IN_ROUND;
-	    m_RoundTime = 0.0;
+	    m_RoundTime = 2330.0;
 	    m_LastRoundTimeShown = 0.0;
 	    m_PlayersStartedRound = m_Players.Count();
         center[0] = Math.RandomFloat(4000, 9000);
@@ -717,12 +745,5 @@ class DayZSurvival : MissionServer
 		rpc.Write(outOfZone);
 		rpc.Send(player, 1337133714, true, player.GetIdentity());
 	}
-
-	// ONLY FOR TESTING PURPOSES
-	void SendStartParticles(PlayerBase player)
-    {
-	    ScriptRPC rpc = new ScriptRPC();
-	    rpc.Send(player, 1337133715, true, player.GetIdentity());
-    }
 
 }
