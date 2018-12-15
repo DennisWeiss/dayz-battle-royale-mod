@@ -42,7 +42,7 @@ class DayZSurvival : MissionServer
 	float lastTimePlayersAlivePrinted = 0.0;
 	bool m_WinnerMessageShown = false;
 	
-	const float m_PhysicalZoneObjectDistance = 15.0;
+	const float m_PhysicalZoneObjectDistance = 2.0;
 	ref array<Object> m_PhysicalZone;
 
 	void DayZSurvival()
@@ -648,7 +648,7 @@ class DayZSurvival : MissionServer
 	
 	int GetNumberOfPhysicalZoneObjects(float radius)
 	{
-		return (int) Math.Round(radius / m_PhysicalZoneObjectDistance);
+		return (int) (2 * Math.PI * Math.Round(radius / m_PhysicalZoneObjectDistance));
 	}
 	
 	void PlacePhysicalZone()
@@ -663,6 +663,59 @@ class DayZSurvival : MissionServer
 	}
 	
 	void UpdatePhysicalZone()
+	{
+		if (m_RoundTime > circleConf.Get(m_Phase - 1).Get(0) && m_RoundTime < circleConf.Get(m_Phase - 1).Get(1)) {
+			UpdateMovingPhysicalZone();
+		} else {
+			UpdateStaticPhysicalZone();
+		}
+	}
+	
+	private float GetInitialRadiusOfPhase(int phase)
+	{
+		return INITIAL_RADIUS * Math.Pow(0.5, m_Phase - 1);
+	}
+	
+	private int GetInitialNumberOfObjectsOfPhase(int phase)
+	{
+		return 2 * Math.PI * GetInitialRadiusOfPhase(phase) / m_PhysicalZoneObjectDistance;
+	}
+	
+	private void UpdateMovingPhysicalZone()
+	{
+		float initialRadius = GetInitialRadiusOfPhase(m_Phase);
+		float initialNumberOfObjects = GetInitialNumberOfObjectsOfPhase(m_Phase);
+		
+		float currentRadius = GetRadius();
+		int currentNumberOfObjects = GetNumberOfPhysicalZoneObjects(radius);
+		
+		if (currentNumberOfObjects < m_PhysicalZone.Count())
+		{
+			for (int i = m_PhysicalZone.Count() - 1; i >= numberOfObjects; i--)
+			{
+				GetGame().ObjectDelete(m_PhysicalZone.Get(i));
+				m_PhysicalZone.Remove(i);
+			}
+		}
+		else if (currentNumberOfObjects > m_PhysicalZone.Count())
+		{
+			for (int j = m_PhysicalZone.Count(); j < currentNumberOfObjects; j++)
+			{
+				vector pos = GetPhysicalZoneObjectPosition(GetCenter(), radius, j, currentNumberOfObjects);
+				m_PhysicalZone.Insert(GetGame().CreateObject("LargeTent", pos));
+			}
+		}
+		
+		for (int k = 0; k < m_PhysicalZone.Count(); k++) 
+		{
+			vector initialPos = GetPhysicalZoneObjectPosition(GetCenter(), initialRadius, k, initialNumberOfObjects);
+			vector finalPos = GetPhysicalZoneObjectPosition(nextCenter, GetInitialRadiusOfPhase(m_Phase + 1), k, GetInitialNumberOfObjectsOfPhase(m_Phase + 1));
+			float zoneProgress = (m_RoundTime - circleConf.Get(m_Phase - 1).Get(0)) / (circleConf.Get(m_Phase - 1).Get(1) - circleConf.Get(m_Phase - 1).Get(0));
+			m_PhysicalZone.Get(k).SetPosition(LerpVector(initialPos, finalPos, zoneProgress);
+		}
+	}
+	
+	private void UpdateStaticPhysicalZone()
 	{
 		float radius = GetRadius();
 		int numberOfObjects = GetNumberOfPhysicalZoneObjects(radius);
