@@ -711,7 +711,7 @@ class DayZSurvival : MissionServer
 			vector initialPos = GetPhysicalZoneObjectPosition(GetCenter(), initialRadius, k, initialNumberOfObjects);
 			vector finalPos = GetPhysicalZoneObjectPosition(nextCenter, GetInitialRadiusOfPhase(m_Phase + 1), k, GetInitialNumberOfObjectsOfPhase(m_Phase + 1));
 			float zoneProgress = (m_RoundTime - circleConf.Get(m_Phase - 1).Get(0)) / (circleConf.Get(m_Phase - 1).Get(1) - circleConf.Get(m_Phase - 1).Get(0));
-			m_PhysicalZone.Get(k).SetPosition(LerpVector(initialPos, finalPos, zoneProgress);
+			m_PhysicalZone.Get(k).SetPosition(LerpVector(initialPos, finalPos, zoneProgress));
 		}
 	}
 	
