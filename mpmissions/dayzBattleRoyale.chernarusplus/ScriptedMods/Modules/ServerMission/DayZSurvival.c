@@ -42,7 +42,7 @@ class DayZSurvival : MissionServer
 	float lastTimePlayersAlivePrinted = 0.0;
 	bool m_WinnerMessageShown = false;
 	
-	const float m_PhysicalZoneObjectDistance = 15.0;
+	const float m_PhysicalZoneObjectDistance = 2.0;
 	ref array<Object> m_PhysicalZone;
 
 	void DayZSurvival()
@@ -630,14 +630,14 @@ class DayZSurvival : MissionServer
 		vector pos;
 		pos[0] = Math.Clamp(GetCenter()[0] + offset[0], 100, 12800);
 		pos[2] = Math.Clamp(GetCenter()[2] + offset[2], 3000, 15000);
-		pos[1] = GetGame().SurfaceY(pos[0], pos[2]);
+		pos[1] = GetGame().SurfaceY(pos[0], pos[2]) + 0.3;
         return pos;
     }
 	
-	private vector GetPhysicalZoneObjectPosition(vector center, float radius, int index, int totalObjects)
+	private vector GetPhysicalZoneObjectPosition(vector center, float radius, int index, float numericalTotalObjects)
 	{
 		vector offset = "0 0 0";
-		float alpha = (float) index / totalObjects * 2 * Math.PI
+		float alpha = (float) index / numericalTotalObjects * 2 * Math.PI
 		offset[0] = radius * Math.Sin(alpha);
 		offset[2] = radius * Math.Cos(alpha);
 		vector pos = "0 0 0";
@@ -648,16 +648,22 @@ class DayZSurvival : MissionServer
 	
 	int GetNumberOfPhysicalZoneObjects(float radius)
 	{
-		return (int) Math.Round(radius / m_PhysicalZoneObjectDistance);
+		return (int) Math.Round(2 * Math.PI * radius / m_PhysicalZoneObjectDistance);
+	}
+	
+	float GetNumerialcNumberOfPhysicalObjects(float radius)
+	{
+		return 2 * Math.PI * radius / m_PhysicalZoneObjectDistance;
 	}
 	
 	void PlacePhysicalZone()
 	{
 		float radius = GetRadius();
 		int numberOfObjects = GetNumberOfPhysicalZoneObjects(radius);
+		float numericalNumberOfObjects = GetNumerialcNumberOfPhysicalObjects(radius);
 		for (int i = 0; i < numberOfObjects; i++)
 		{
-			vector pos = GetPhysicalZoneObjectPosition(GetCenter(), radius, i, numberOfObjects);
+			vector pos = GetPhysicalZoneObjectPosition(GetCenter(), radius, i, numericalNumberOfObjects);
 			m_PhysicalZone.Insert(GetGame().CreateObject("LargeTent", pos));
 		}
 	}
@@ -666,6 +672,7 @@ class DayZSurvival : MissionServer
 	{
 		float radius = GetRadius();
 		int numberOfObjects = GetNumberOfPhysicalZoneObjects(radius);
+		float numericalNumberOfObjects = GetNumerialcNumberOfPhysicalObjects(radius);
 		
 		if (numberOfObjects < m_PhysicalZone.Count())
 		{
@@ -679,16 +686,15 @@ class DayZSurvival : MissionServer
 		{
 			for (int j = m_PhysicalZone.Count(); j < numberOfObjects; j++)
 			{
-				vector pos = GetPhysicalZoneObjectPosition(GetCenter(), radius, j, numberOfObjects);
+				vector pos = GetPhysicalZoneObjectPosition(GetCenter(), radius, j, numericalNumberOfObjects);
 				m_PhysicalZone.Insert(GetGame().CreateObject("LargeTent", pos));
 			}
 		}
 		
 		for (int k = 0; k < m_PhysicalZone.Count(); k++)
 		{
-			m_PhysicalZone.Get(k).SetPosition(GetPhysicalZoneObjectPosition(GetCenter(), radius, k, m_PhysicalZone.Count()));
+			m_PhysicalZone.Get(k).SetPosition(GetPhysicalZoneObjectPosition(GetCenter(), radius, k, numericalNumberOfObjects));
 		}
-		
 	}
 
 	void StartRound()
