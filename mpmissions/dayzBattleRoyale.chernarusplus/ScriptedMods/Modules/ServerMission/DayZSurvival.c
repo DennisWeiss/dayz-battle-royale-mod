@@ -403,7 +403,7 @@ class DayZSurvival : MissionServer
 					players.Get(i).DecreaseHealth("GlobalHealth", "Blood", deltaTime * GetBloodDamagePerSec());
 					if (!PlayerAlreadyOutOfZone(players.Get(i)))
 					{
-						Send(players.Get(i), "You are leaving the safe zone!")
+						Send(players.Get(i), "You are leaving the safe zone!", "colorImportant");
 						playersOutOfZone.Insert(players.Get(i));
 						SendOutOfZone(player, true);
 					}
@@ -412,7 +412,7 @@ class DayZSurvival : MissionServer
 				{
 					if (PlayerAlreadyOutOfZone(players.Get(i)))
 					{
-						Send(players.Get(i), "You have entered the safe zone again!")
+						Send(players.Get(i), "You have entered the safe zone again!", "colorFriendly");
 						RemovePlayerFromOutOfZone(players.Get(i));
 						SendOutOfZone(player, false);
 					}
@@ -437,7 +437,7 @@ class DayZSurvival : MissionServer
 		{
 			if (ShouldBeKilledBecauseOutOfSpawnZone(players.Get(i)))
 			{
-				Send(players.Get(i), "Don't leave spawn island!");
+				Send(players.Get(i), "Don't leave spawn island!", "colorImportant");
 				players.Get(i).SetHealth("GlobalHealth", "Health", 0);
 			}
 		}
@@ -716,10 +716,11 @@ class DayZSurvival : MissionServer
 		PlacePhysicalZone();
     }
 
-	void Send(PlayerBase player, string message)
+	void Send(PlayerBase player, string message, string type)
 	{
 		ScriptRPC rpc = new ScriptRPC();
 		rpc.Write(message);
+		rpc.Write(type);
 		rpc.Send(player, 1337133710, true, player.GetIdentity());
 	}
 
