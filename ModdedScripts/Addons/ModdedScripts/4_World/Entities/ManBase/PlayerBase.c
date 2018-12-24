@@ -19,6 +19,11 @@ modded class PlayerBase
 	{
 		return m_KilledBy;
 	}
+	
+	override bool IsMan()
+	{
+		return true;
+	}
 
     override void EEKilled( Object killer )
     {
