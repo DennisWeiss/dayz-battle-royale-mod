@@ -41,6 +41,8 @@ class DayZSurvival : MissionServer
 	const float PRINT_PLAYERS_ALIVE_INTERVAL = 30.0;
 	float lastTimePlayersAlivePrinted = 0.0;
 	bool m_WinnerMessageShown = false;
+	float m_WinnerMessageShownAt = 0.0;
+	const float ROUND_END_PERIOD = 15.0;
 	
 	const float m_PhysicalZoneObjectDistance = 2.0;
 	ref array<Object> m_PhysicalZone;
@@ -472,8 +474,10 @@ class DayZSurvival : MissionServer
 		{
 			PlayerBase player = GetPlayerById(m_PlayersInRound.Get(0));
 		    GlobalMessage(player.GetIdentity().GetName() + " - WINNER, WINNER, CHICKEN DINNER!!!");
+			GlobalMessage("Restarting round in " + ROUND_END_PERIOD + "s...");
 		    GivePlayerChickenDinner(player);
 			m_WinnerMessageShown = true;
+			m_WinnerMessageShownAt = m_RoundTime;
 		}
 	}
 
@@ -489,6 +493,35 @@ class DayZSurvival : MissionServer
 				m_PlayersInRound.RemoveOrdered(i);
 				i--;
 			}
+		}
+	}
+	
+	void KillRemainingPlayers()
+	{
+		for (int i = 0; i < m_PlayersInRound.Count(); i++)
+		{
+			PlayerBase player = GetPlayerById(m_PlayersInRound.Get(i));
+			player.SetHealth("GlobalHealth", "Health", 5000);
+			player.SetHealth("GlobalHealth", "Blood", 5000);
+		}
+	}
+	
+	void CheckIfShouldRestartRound()
+	{
+		if (m_PlayersInRound.Count() == 1 && m_RoundTime > m_WinnerMessageShownAt + ROUND_END_PERIOD)
+		{
+			KillRemainingPlayers();
+			m_LastRoundTimeShown = 0.0;
+			center = "2700 0 10000";
+			nextCenter = "2700 0 10000";
+			m_Phase = 1;
+			m_GameStatus = GameStatus.IN_LOBBY;
+			m_RoundTime = 0.0;
+			playersOutOfZone = new set<Man>;
+			m_PlayersInRound = new array<string>;
+			m_PlayersStartedRound = 0.0;
+			lastTimePlayersAlivePrinted = 0.0;
+			m_PhysicalZone = new array<Object>;
 		}
 	}
 
@@ -563,6 +596,7 @@ class DayZSurvival : MissionServer
 			CheckIfWon();
 			SendZoneToAllPlayersInRound();
 			UpdatePhysicalZone();
+			CheckIfShouldRestartRound();
         }
 	}
 	
