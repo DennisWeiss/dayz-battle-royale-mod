@@ -1,20 +1,11 @@
 #include "$CurrentDir:\\mpmissions\\DayZBattleRoyale.chernarusplus\\ScriptedMods\\ModuleManager.c"
 #include "$CurrentDir:\\mpmissions\\DayZBattleRoyale.chernarusplus\\ScriptedMods\\Tunables.c"
-#include "$CurrentDir:\\mpmissions\\DayZBattleRoyale.chernarusplus\\ScriptedMods\\Modules\\AdminTool\\AdminTool.c"
-#include "$CurrentDir:\\mpmissions\\DayZBattleRoyale.chernarusplus\\ScriptedMods\\Modules\\AdvancedLoadouts\\AdvancedLoadouts.c"
-#include "$CurrentDir:\\mpmissions\\DayZBattleRoyale.chernarusplus\\ScriptedMods\\Modules\\Misc\\BuildingSpawner.c"
-#include "$CurrentDir:\\mpmissions\\DayZBattleRoyale.chernarusplus\\ScriptedMods\\Modules\\SafeZone\\SafeZoneFunctions.c"
-#include "$CurrentDir:\\mpmissions\\DayZBattleRoyale.chernarusplus\\ScriptedMods\\Modules\\ServerEvents\\InfectedHordes.c"
 #include "$CurrentDir:\\mpmissions\\DayZBattleRoyale.chernarusplus\\ScriptedMods\\Modules\\UI\\CustomWidgetEventHandler.c"
 #include "$CurrentDir:\\mpmissions\\DayZBattleRoyale.chernarusplus\\ScriptedMods\\Modules\\ServerMission\\GameStatus.c"
-//#include "$CurrentDir:\\mpmissions\\DayZBattleRoyale.chernarusplus\\ScriptedMods\\Modules\\ServerMission\\CirclePhase.c"
-
-//#include "$CurrentDir:\\mpmissions\\DayZBattleRoyale.chernarusplus\\ScriptedMods\\Modules\\Misc\\MOTDMessages.c"
 
 class DayZSurvival : MissionServer
 {
 	private ref set<ref ModuleManager> m_Modules;
-	ref InfectedHordes m_ZombieEvents;
 	protected float m_LogInTimerLength = 1;     //in seconds the spawn timer when players login!
 	bool m_StaminaStatus = false;
 	ref CustomWidgetEventHandler widgetEventHandler;
@@ -91,22 +82,7 @@ class DayZSurvival : MissionServer
 
 	void RegisterModules()
 	{
-		/*m_Modules.Insert(new ModTunables(this));
-
-		if (ModTunables.Cast(GetModule(ModTunables)).IsActive("AdminTools"))
-		{
-			m_Modules.Insert(new AdminTool(this));
-		}
-
-		if (ModTunables.Cast(GetModule(ModTunables)).IsActive("AdvancedLoadouts"))
-		{
-			m_Modules.Insert(new AdvancedLoadouts(this));
-		}
-
-		if (ModTunables.Cast(GetModule(ModTunables)).IsActive("SafeZone"))
-		{
-			m_Modules.Insert(new SafeZone(this));
-		}*/
+		
 	}
 
 	void InitModules()
@@ -142,43 +118,6 @@ class DayZSurvival : MissionServer
 			if (ce)
 			ce.InitOffline();
 		}
-
-		if (ModTunables.Cast(GetModule(ModTunables)).IsActiveMisc("ProxyExportMode"))
-		{
-			CETesting TestHive = GetTesting();
-			TestHive.ExportProxyProto();
-			TestHive.ExportProxyData( "7500 0 7500", 15000 );
-		}
-
-		if (ModTunables.Cast(GetModule(ModTunables)).IsActiveMisc("SessionFeed"))
-		{
-			g_Game.SetProfileString("SessionFeed", "true");
-		}
-		else
-		{
-			g_Game.SetProfileString("SessionFeed", "false");
-		}
-
-		if (ModTunables.Cast(GetModule(ModTunables)).IsActiveMisc("CustomBuildings"))
-		{
-			ref BuildingSpawner bldspnwer = new BuildingSpawner;
-			bldspnwer.Init();
-		}
-
-		if (ModTunables.Cast(GetModule(ModTunables)).IsActiveMisc("StaminaStatus"))
-		{
-			m_StaminaStatus = true; //Disable Stamina
-		}
-
-		if (ModTunables.Cast(GetModule(ModTunables)).IsActive("InfectedHordes"))
-		{
-			m_ZombieEvents = new InfectedHordes;
-		}
-
-		//-----------
-		//GetGame().GetCallQueue(CALL_CATEGORY_GAMEPLAY).CallLater(this.PlayerCounter, 110000, true);  //Default 120000 2 mins Looped
-		//GetGame().GetCallQueue(CALL_CATEGORY_GAMEPLAY).CallLater(this.CustomMOTD, TIME_INTERVAL, true);  //Default 120000 2 mins Looped
-		//-----------
 	}
 
 	override void OnPreloadEvent(PlayerIdentity identity, out bool useDB, out vector pos, out float yaw, out int queueTime)
@@ -425,11 +364,16 @@ class DayZSurvival : MissionServer
 	
 	private bool IsOutOfSpawnZone(PlayerBase player)
 	{
+		Print("is out of zone " + (Get2dDistanceSquared(SPAWN_ISLAND_CENTER, player.GetPosition()) > SPAWN_ISLAND_MAX_DISTANCE * SPAWN_ISLAND_MAX_DISTANCE).ToString());
 		return Get2dDistanceSquared(SPAWN_ISLAND_CENTER, player.GetPosition()) > SPAWN_ISLAND_MAX_DISTANCE * SPAWN_ISLAND_MAX_DISTANCE;
 	}
 	
 	private bool ShouldBeKilledBecauseOutOfSpawnZone(PlayerBase player)
 	{
+		Print("out of spawn zone " + IsOutOfSpawnZone(player).ToString());
+		Print("in lobby status " + (m_GameStatus == GameStatus.IN_LOBBY).ToString());
+		Print("in round status " + (m_GameStatus == GameStatus.IN_ROUND).ToString());
+		Print("Player is in round " + PlayerIsInRound(player));
 		return IsOutOfSpawnZone(player) && (m_GameStatus == GameStatus.IN_LOBBY || m_GameStatus == GameStatus.IN_ROUND && !PlayerIsInRound(player)) && player.GetHealth("GlobalHealth", "Health") > 0;
 	}
 	
@@ -562,7 +506,6 @@ class DayZSurvival : MissionServer
                 currentPlayer.GetStaminaHandler().SyncStamina(1000,1000);
                 currentPlayer.GetStatStamina().Set(currentPlayer.GetStaminaHandler().GetStaminaCap());
             }
-            if (GetModule(SafeZone)) { SafeZone.Cast(GetModule(SafeZone)).SafeZoneHandle(currentPlayer); }
             m_currentPlayer++;
         }
 
