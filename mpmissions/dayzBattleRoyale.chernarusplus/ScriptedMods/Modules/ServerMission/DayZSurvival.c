@@ -10,7 +10,7 @@ class DayZSurvival : MissionServer
 	bool m_StaminaStatus = false;
 	ref CustomWidgetEventHandler widgetEventHandler;
 
-	const float LOBBY_TIME = 60.0;
+	const float LOBBY_TIME = 20.0;
     const float INITIAL_RADIUS = 8000.0;
     ref array<ref array<float>> circleConf;
 
